@@ -12,6 +12,10 @@ namespace Expense_Tracker_App.Controllers
         {
             return View();
         }
+        public ActionResult Menu()
+        {
+            return View();
+        }
 
         public ActionResult About()
         {
