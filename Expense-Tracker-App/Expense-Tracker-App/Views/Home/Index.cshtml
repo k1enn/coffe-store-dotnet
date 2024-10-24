@@ -2,32 +2,55 @@
     ViewBag.Title = "Home Page";
 }
 
-<main>
-    <section class="row" aria-labelledby="aspnetTitle">
-        <h1 id="title">ASP.NET</h1>
-        <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-        <p><a href="https://asp.net" class="btn btn-primary btn-md">Learn more &raquo;</a></p>
-    </section>
+<style>
 
-    <div class="row">
-        <section class="col-md-4" aria-labelledby="gettingStartedTitle">
-            <h2 id="gettingStartedTitle">Getting started</h2>
-            <p>
-                ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-                enables a clean separation of concerns and gives you full control over markup
-                for enjoyable, agile development.
-            </p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="librariesTitle">
-            <h2 id="librariesTitle">Get more libraries</h2>
-            <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
-        </section>
-        <section class="col-md-4" aria-labelledby="hostingTitle">
-            <h2 id="hostingTitle">Web Hosting</h2>
-            <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-            <p><a class="btn btn-outline-dark" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-        </section>
+
+
+    /* Main Banner */
+    .banner-section {
+        /*background-color:white;*/
+        padding-top: 15vh;
+        color: black;
+    }
+
+    .banner-title {
+        margin-top: 40vh;
+        padding-left: 10%;
+        font-size: 5rem;
+        font-family: "Playfair Display", serif;
+        font-weight: bold;
+        position: relative;
+        text-align: left;
+    }
+
+    .banner-subtitle {
+        padding-left: 10%;
+        font-weight: bold;
+        font-size: 1.1rem;
+        font-family: 'Arial', sans-serif;
+        margin-top: 10px;
+        text-align: left;
+    }
+
+    .drink-img {
+        margin-right: 5rem;
+        height:70vh;
+        padding-bottom: 5vh;
+    }
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+<section class="banner-section">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6">
+
+                <h1 class="banner-title">Boys Coffee</h1>
+                <p class="banner-subtitle">Chất lượng làm nên thương hiệu cà phê ngon cho người có gu</p>
+            </div>
+            <div class="col-md-6">
+                <img  src="~/Content/images/twocoffee.png" alt="Cafe" class="drink-img" />
+            </div>
+        </div>
     </div>
-</main>
+</section>
