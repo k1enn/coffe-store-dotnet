@@ -15,7 +15,7 @@ This project is a web application designed to offer a diverse range of coffee dr
 ### Technology Stack
 - **Framework**: ASP.NET
 - **Database**: Microsoft SQL Server
-- 
+  
 ### Project Timeline
 - **Start Date**: October 9, 2024
 - **Deadline**: November 15, 2024
