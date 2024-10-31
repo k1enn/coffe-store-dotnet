@@ -1,0 +1,102 @@
+﻿body {
+    background-image: url('@Url.Content("~/Content/images/bg.PNG")');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    background-color: #9bc9f4;
+}
+
+.navbar-nav li {
+    position: relative;
+    padding-right: 5px; /* Space after each link */
+    padding-left: 5px;
+    background-color: white;
+}
+
+    .navbar-nav li:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 50%; /* Start from the middle */
+        transform: translateY(-50%); /* Center it vertically */
+        height: 60%; /* Adjust hight for a shorter vertical line */
+        width: 0.1rem;
+        background-color: #000; /* Vertical line color */
+        margin-left: 15px; /* Adjust to add space around the vertical line */
+    }
+
+.nav-link {
+    padding-right: 10px; /* Adjust padding for the nav links if needed */
+    color: black;
+}
+
+.vietnam-flag {
+    height: 40px;
+    border-radius: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* The container must be positioned relative: */
+.autocomplete {
+    position: relative;
+    display: inline-block;
+}
+
+input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 0 10px;
+    font-size: 16px;
+    height: 40px;
+    position: relative;
+    display: flex;
+}
+
+    input[type=text] {
+        background-color: #f1f1f1;
+        width: 100%;
+    }
+
+    input[type=submit] {
+        background-color: DodgerBlue;
+        color: #fff;
+        cursor: pointer;
+        margin-right: 20px;
+        border-radius: 0;
+    }
+
+.autocomplete-items {
+    position: absolute;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /* Position the autocomplete items to be the same width as the container: */
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+    .autocomplete-items div {
+        padding: 10px;
+        cursor: pointer;
+        background-color: #fff;
+        border-bottom: 1px solid #d4d4d4;
+        width: 93.2%;
+    }
+
+        /* When hovering an item: */
+        .autocomplete-items div:hover {
+            background-color: #e9e9e9;
+        }
+
+/* When navigating through the items using the arrow keys: */
+.autocomplete-active {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
