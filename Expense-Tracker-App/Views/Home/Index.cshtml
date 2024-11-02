@@ -4,13 +4,14 @@
 
 <style>
     /*Add background*/
-body {
-    background-image: url('@Url.Content("~/Content/images/bg.PNG")');
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-}
-
+    body {
+        min-height: 100vh;
+        background: url('@Url.Content("~/Content/images/bg-trans.PNG")');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
 
 /* Main Banner */
 .banner-section {
@@ -20,13 +21,24 @@ body {
 }
 
 .banner-title {
-    margin-top: 40vh;
+    margin-top: 38vh;
     padding-left: 10%;
     font-size: 5rem;
     font-family: serif;
     font-weight: bold;
     position: relative;
     text-align: left;
+    z-index: -1;
+}
+
+@@media (max-width: 800px) {
+    .banner-title {
+        margin-top: auto;
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    }
+    .banner-subtitle {
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+    }
 }
 
 .banner-subtitle {
@@ -53,6 +65,7 @@ body {
 
                 <h1 class="banner-title">Boys Coffee</h1>
                 <p class="banner-subtitle">Chất lượng làm nên thương hiệu cà phê ngon cho người có gu</p>
+                <blockquote>Login ~/Account/Login</blockquote>
             </div>
             <div class="col-md-6">
                 <img src="~/Content/images/twocoffee.png" alt="Cafe" class="drink-img" />

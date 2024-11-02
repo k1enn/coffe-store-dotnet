@@ -14,37 +14,46 @@
 
     <!--Style for navbar-->
     <link rel="stylesheet" href="~/Content/navbar.css" />
-    
 </head>
 <body>
     <!--Custom navigation bar-->
-    <nav class="navbar navbar-expand-sm navbar-toggleable-sm ">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
         <div class="container">
-            <a href="@Url.Action("Index", "Home", new { area = "" })" class="navbar-brand">
-                <img src="~/Content/images/logo.png" alt="Application Logo" style="height: 40px;" />
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="@Url.Action("Index", "Home", new { area = "" })">
+                <img src="~/Content/images/logo.png" height="35" alt="Logo" style="width: 40px;">
             </a>
 
-            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <!-- Toggler for mobile view -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between">
-                <ul class="navbar-nav flex-grow-1">
-                    <li>@Html.ActionLink("Thực đơn", "Menu", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Về chúng tôi", "About", "Home", new { area = "" }, new { @class = "nav-link" })</li>
-                    <li>@Html.ActionLink("Mua ngay", "Shopping", "Home", new { area = "" }, new { @class = "nav-link" })</li>
+
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="@Url.Action("Index", "Home", new { area = "" })">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Thực đơn", "Menu", "Home", new { area = "" }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Về chúng tôi", "About", "Home", new { area = "" }, new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("Mua ngay", "Shopping", "Home", new { area = "" }, new { @class = "nav-link" })
+                    </li>
                 </ul>
+
+                <!-- Search box -->
+                <form class="d-flex ms-auto" autocomplete="off" action="/action_page.php">
+                    <div class="input-group">
+                        <input id="input" type="text" name="myDrink" placeholder="Tìm kiếm sản phẩm" class="form-control" aria-label="Search">
+                        <button class="btn btn-primary" type="submit">Tìm kiếm</button>
+                    </div>
+                </form>
             </div>
-
-            
-            <form class="d-flex input-group w-auto" autocomplete="off" action="/action_page.php">
-                <div class="autocomplete" style="width:300px;">
-                    <input id="input" type="text" name="myDrink" placeholder="Tìm kiếm sản phẩm">
-                </div>
-                <input type="submit" value="Tìm kiếm">
-                <img height="40px" src="~/Content/images/vietnam-flag.png" alt="Vietnam Flag" class="vietnam-flag" />
-            </form>
-
         </div>
     </nav>
     <div class="container body-content">
@@ -52,6 +61,7 @@
     </div>
     <!--Search bar autocomplete-->
     <script src="~/Scripts/autocomplete-search.js"></script>
+    
     <!--Others-->
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
