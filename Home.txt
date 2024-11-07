@@ -1,0 +1,114 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width", initial-scale="1.0" />
+    <link rel="stylesheet" href="~/Content/Site.css" />
+</head>
+<body>
+    <header>
+        <h2 class="logo"><img src="~/Content/images/logo.png" height="70" alt="Logo" style="width: 75px;"></h2>
+        <nav class="navigation">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+    <section class="parallax">
+        <img src="~/Content/images/hill1.png" />
+        <img src="~/Content/images/hill2.png" />
+        <img src="~/Content/images/hill3.png" />
+        <img src="~/Content/images/hill4.png" />
+        <img src="~/Content/images/hill5.png" />
+        <img src="~/Content/images/tree.png" />
+        <h2 id="text">Boys Coffee</h2>
+        <img src="~/Content/images/leaf.png" />
+        <img src="~/Content/images/plant.png" />
+    </section>
+
+    <section class="sec">
+        <div class="column-left">
+            <h2>Chúng tôi là</h2>
+            <h2>Boy Coffee</h2>
+            <h2>Thứ hai đến thứ bảy 8:30am - 11:00pm</h2>
+            <h3>
+                Chào mừng bạn đến với BoysCoffee! Tại đây, chúng tôi mang đến cho bạn những trải nghiệm<br /> cà phê và trà tuyệt vời nhất. Được thành lập từ niềm đam mê với hương vị, BoysCoffee<br /> tự hào sử dụng nguyên liệu tự nhiên và chất lượng cao, tạo ra những tách<br /> cà phê rang xay tươi ngon và trà thơm mát
+            </h3>
+        </div>
+        <div class="column-right">
+            <img src="~/Content/images/logo.png" />
+        </div>
+    </section>
+    <section class="menu">
+        <h2>THỰC ĐƠN HÔM NAY</h2>
+        <div class="menu-columns">
+            <!-- Coffee Section -->
+            <div class="column">
+                <h3>Coffee</h3>
+                <div class="menu-item">
+                    <img src="coffee1.png" alt="Cà phê đen">
+                    <p>Cà phê đen</p>
+                </div>
+                <div class="menu-item">
+                    <img src="coffee2.png" alt="Cà phê sữa">
+                    <p>Cà phê sữa</p>
+                </div>
+                <div class="menu-item">
+                    <img src="coffee3.png" alt="Bạc xỉu">
+                    <p>Bạc xỉu</p>
+                </div>
+                <div class="menu-item">
+                    <img src="coffee4.png" alt="Cà phê muối">
+                    <p>Cà phê muối</p>
+                </div>
+            </div>
+
+            <!-- Tea Section -->
+            <div class="column">
+                <h3>Tea</h3>
+                <div class="menu-item">
+                    <img src="tea1.png" alt="Trà xanh">
+                    <p>Trà xanh</p>
+                </div>
+                <div class="menu-item">
+                    <img src="tea2.png" alt="Trà sữa">
+                    <p>Trà sữa</p>
+                </div>
+                <div class="menu-item">
+                    <img src="tea3.png" alt="Trà chanh">
+                    <p>Trà chanh</p>
+                </div>
+                <div class="menu-item">
+                    <img src="tea4.png" alt="Trà đào">
+                    <p>Trà đào</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonial">
+        <h2>KHÁCH HÀNG NÓI GÌ</h2>
+        <div class="testimonial-icons">
+            <img src="path_to_image_placeholder.png" alt="icon">
+            <img src="path_to_image_placeholder.png" alt="icon">
+            <img src="path_to_image_placeholder.png" alt="icon">
+            <img src="path_to_image_placeholder.png" alt="icon">
+        </div>
+        <hr class="separator">
+        <div class="testimonial-content">
+            <img src="path_to_profile_image.png" alt="Customer photo" class="customer-photo">
+            <h3>MR. Gia Lâm</h3>
+            <p>
+                <span class="quote-start">“</span>
+                Tôi vừa ghé thăm BoysCoffee và thật sự ấn tượng! Cà phê ở đây rất ngon, hương vị đậm đà và thơm lừng. Tôi đã thử cappuccino và nó thật sự tuyệt vời! Không gian quán rất thoải mái, giúp mình thư giãn và làm việc hiệu quả. Nhân viên cũng rất thân thiện và chu đáo. Chắc chắn sẽ quay lại thường xuyên! Highly recommend cho những ai yêu thích cà phê!
+                <span class="quote-end">”</span>
+            </p>
+        </div>
+    </section>
+
+
+    <script src="~/Scripts/script.js"></script>
+</body>
