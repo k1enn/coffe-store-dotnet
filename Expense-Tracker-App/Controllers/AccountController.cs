@@ -1,6 +1,9 @@
-﻿using System.Linq;
+﻿using System.Data.Entity.Core.Objects;
+using System.Linq;
+using System.Runtime.Remoting.Contexts;
 using System.Web.Mvc;
 using CoffeeShopApp.Models;
+using Expense_Tracker_App.Migrations;
 
 namespace CoffeeShopApp.Controllers
 {
@@ -28,28 +31,37 @@ namespace CoffeeShopApp.Controllers
                 return View();
             }
 
-            // Kiểm tra thông tin đăng nhập
-            var user = _context.Users
-                .FirstOrDefault(u => u.Username == username && u.Password == password);
+            // Check login credentials
+            var user = _context.Users.FirstOrDefault(u => u.Username == username && u.Password == password);
 
             if (user != null)
             {
-                // Đăng nhập thành công, có thể tạo session hoặc cookie
-                Session["UserId"] = user.UserId; // lưu UserId vào session
-                return RedirectToAction("Index", "Home"); // chuyển hướng về trang chính
+                // Store user ID and role in session
+                Session["UserId"] = user.UserId;
+                Session["Role"] = user.Role;
+
+                // Redirect based on user role
+                if (user.Role == "Admin")
+                {
+                    return RedirectToAction("Index", "Products"); // Adjust action and controller names if necessary
+                }
+                else
+                {
+                    return RedirectToAction("Index", "Home");
+                }
             }
 
             ModelState.AddModelError("", "Thông tin đăng nhập không đúng.");
             return View();
         }
 
-
         public ActionResult Logout()
         {
-            Session.Abandon(); // Xóa session
+            Session.Clear(); // Clear all session data
             return RedirectToAction("Login", "Account");
-
         }
+
+        [HttpGet]
         public ActionResult Register()
         {
             return View();
@@ -60,23 +72,31 @@ namespace CoffeeShopApp.Controllers
         {
             if (ModelState.IsValid)
             {
+                // Password confirmation check
+                if (model.Password != confirmPassword)
+                {
+                    ModelState.AddModelError("confirmPassword", "Mật khẩu xác nhận không khớp.");
+                    return View(model);
+                }
 
-
-                // Kiểm tra tên người dùng đã tồn tại
+                // Check if username already exists
                 if (_context.Users.Any(u => u.Username == model.Username))
                 {
                     ModelState.AddModelError("Username", "Tên người dùng đã tồn tại.");
                     return View(model);
                 }
-                // Lưu người dùng mới vào database
+
+                // Set default role for new user as Customer
+                model.Role = "Customer";
+
+                // Add new user to the database
                 _context.Users.Add(model);
                 _context.SaveChanges();
+
                 return RedirectToAction("Login");
             }
 
             return View(model);
         }
-
-
     }
 }

@@ -6,14 +6,14 @@ namespace Expense_Tracker_App.Migrations
     using System.Data.Entity.Migrations.Infrastructure;
     using System.Resources;
     
-    [GeneratedCode("EntityFramework.Migrations", "6.5.1")]
-    public sealed partial class InitialCreate : IMigrationMetadata
+    [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
+    public sealed partial class UpdateDatabase : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(InitialCreate));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(UpdateDatabase));
         
         string IMigrationMetadata.Id
         {
-            get { return "202410300330431_InitialCreate"; }
+            get { return "202411071737355_UpdateDatabase"; }
         }
         
         string IMigrationMetadata.Source

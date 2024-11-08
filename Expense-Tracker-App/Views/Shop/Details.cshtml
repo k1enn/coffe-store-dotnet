@@ -1,0 +1,12 @@
+﻿@model CoffeeShopApp.Models.Product
+
+<h2>@Model.Name</h2>
+<p>@Model.Description</p>
+<p>Giá: @Model.Price.ToString("C")</p>
+
+<form action="@Url.Action("AddToCart", "Shop")" method="post">
+    <input type="hidden" name="productId" value="@Model.ProductId" />
+    <label>Số Lượng:</label>
+    <input type="number" name="quantity" min="1" value="1" />
+    <button type="submit" class="btn btn-primary">Thêm vào Giỏ Hàng</button>
+</form>

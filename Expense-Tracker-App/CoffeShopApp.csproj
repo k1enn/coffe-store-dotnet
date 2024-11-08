@@ -128,24 +128,23 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202410300330431_InitialCreate.cs" />
-    <Compile Include="Migrations\202410300330431_InitialCreate.Designer.cs">
-      <DependentUpon>202410300330431_InitialCreate.cs</DependentUpon>
+    <Compile Include="Migrations\202411071737355_UpdateDatabase.cs" />
+    <Compile Include="Migrations\202411071737355_UpdateDatabase.Designer.cs">
+      <DependentUpon>202411071737355_UpdateDatabase.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\CoffeShopContext.cs" />
-    <Compile Include="Models\OrderItem.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderItem.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -209,7 +208,6 @@
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\About.cshtml" />
-    <Content Include="Views\Home\Shopping.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Home\Menu.cshtml" />
     <Content Include="Views\Products\Create.cshtml" />
@@ -224,9 +222,12 @@
     <Content Include="Views\Categories\Index.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Shop\Index.cshtml" />
+    <Content Include="Views\Shop\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\ShoppingCart\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -256,8 +257,8 @@
     <Content Include="Scripts\jquery-3.7.0.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202410300330431_InitialCreate.resx">
-      <DependentUpon>202410300330431_InitialCreate.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202411071737355_UpdateDatabase.resx">
+      <DependentUpon>202411071737355_UpdateDatabase.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

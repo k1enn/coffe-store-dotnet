@@ -15,10 +15,26 @@ namespace Expense_Tracker_App.Migrations
 
         protected override void Seed(CoffeeShopContext context)
         {
-            //  This method will be called after migrating to the latest version.
+            if (!context.Users.Any(u => u.Username == "admin"))
+            {
+                var adminUser = new User
+                {
+                    Username = "iamk1en",
+                    Password = "kiendeptrai", // Ideally, hash this password before storing
+                    Email = "dinhtrungkien05@gmail.com",
+                    Role = "Admin"
+                };
 
-            //  You can use the DbSet<T>.AddOrUpdate() helper extension method
-            //  to avoid creating duplicate seed data.
+                context.Users.Add(adminUser);
+                try
+                {
+                    context.SaveChanges();
+                }
+                catch (Exception ex) {
+                
+                    Console.WriteLine($"Error saving default admin user: {ex.Message}");
+                }
+            }
         }
     }
 }

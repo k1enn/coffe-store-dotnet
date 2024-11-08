@@ -162,9 +162,9 @@ D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\bin\Newtonsoft.Json.xm
 D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\bin\Antlr3.Runtime.pdb
 D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\obj\Debug\CoffeShopApp.csproj.AssemblyReference.cache
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\obj\Debug\Expense_Tracker_App.Migrations.InitialCreate.resources
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\obj\Debug\CoffeShopApp.csproj.GenerateResource.cache
 D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\obj\Debug\CoffeShopApp.csproj.CoreCompileInputs.cache
 D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\obj\Debug\CoffeSho.6308A4B1.Up2Date
 D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\obj\Debug\Expense-Tracker-App.dll
 D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\obj\Debug\Expense-Tracker-App.pdb
+D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\obj\Debug\Expense_Tracker_App.Migrations.UpdateDatabase.resources
+D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\obj\Debug\CoffeShopApp.csproj.GenerateResource.cache

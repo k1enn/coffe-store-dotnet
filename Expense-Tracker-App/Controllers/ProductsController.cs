@@ -10,18 +10,21 @@ using CoffeeShopApp.Models;
 
 namespace Expense_Tracker_App.Controllers
 {
+  
     public class ProductsController : Controller
     {
         private CoffeeShopContext db = new CoffeeShopContext();
 
         // GET: Products
+
         public ActionResult Index()
         {
-            var products = db.Products.Include(p => p.Category);
+            var products = db.Products;
             return View(products.ToList());
         }
 
         // GET: Products/Details/5
+
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -39,7 +42,6 @@ namespace Expense_Tracker_App.Controllers
         // GET: Products/Create
         public ActionResult Create()
         {
-            ViewBag.CategoryId = new SelectList(db.Categories, "CategoryId", "Name");
             return View();
         }
 
@@ -57,7 +59,7 @@ namespace Expense_Tracker_App.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.CategoryId = new SelectList(db.Categories, "CategoryId", "Name", product.CategoryId);
+           
             return View(product);
         }
 
@@ -73,7 +75,7 @@ namespace Expense_Tracker_App.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.CategoryId = new SelectList(db.Categories, "CategoryId", "Name", product.CategoryId);
+           
             return View(product);
         }
 
@@ -90,7 +92,7 @@ namespace Expense_Tracker_App.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.CategoryId = new SelectList(db.Categories, "CategoryId", "Name", product.CategoryId);
+          
             return View(product);
         }
 

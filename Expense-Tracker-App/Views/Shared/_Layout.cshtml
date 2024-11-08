@@ -31,26 +31,68 @@
 
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="@Url.Action("Index", "Home", new { area = "" })">Trang chủ</a>
-                    </li>
-                    <li class="nav-item">
-                        @Html.ActionLink("Thực đơn", "Menu", "Home", new { area = "" }, new { @class = "nav-link" })
-                    </li>
-                    <li class="nav-item">
-                        @Html.ActionLink("Về chúng tôi", "About", "Home", new { area = "" }, new { @class = "nav-link" })
-                    </li>
-                    <li class="nav-item">
-                        @Html.ActionLink("Mua ngay", "Shopping", "Home", new { area = "" }, new { @class = "nav-link" })
-                    </li>
-                </ul>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">                    
+                    @if (Session["Role"] == null)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="@Url.Action("Index", "Home", new { area = "" })">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Thực đơn", "Menu", "Home", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Về chúng tôi", "About", "Home", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Mua ngay", "Shopping", "Home", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Đăng nhậpa", "Login", "Account", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                    }
+                    else if (Session["Role"].ToString() == "Customer")
+                    {
 
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="@Url.Action("Index", "Home", new { area = "" })">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Thực đơn", "Menu", "Home", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Về chúng tôi", "About", "Home", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Mua ngay", "Shopping", "Home", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Đăng xuất", "Logout", "Account", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                    }
+                    else if (Session["Role"].ToString() == "Admin")
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="@Url.Action("Index", "Home", new { area = "" })">Trang chủ</a>
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Sản phẩm", "Index", "Product", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Về chúng tôi", "About", "Home", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
+                            @Html.ActionLink("Mua ngay", "Shopping", "Home", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                    }
+
+
+                </ul>
                 <!-- Search box -->
                 <form class="d-flex ms-auto" autocomplete="off" action="/action_page.php">
                     <div class="input-group">
                         <input id="input" type="text" name="myDrink" placeholder="Tìm kiếm sản phẩm" class="form-control" aria-label="Search">
                         <button class="btn btn-primary" type="submit">Tìm kiếm</button>
+                        <p>@("Session Role: " + Session["Role"])</p>
                     </div>
                 </form>
             </div>
