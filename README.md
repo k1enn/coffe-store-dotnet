@@ -1,10 +1,10 @@
 <h1 align="left">Coffe Shop Web Application</h1>
 
 ### Team Members
-- **Đinh Trung Kiên** - [GitHub Profile](https://github.com/k1enn)
-- **Trương Gia Lâm** - [GitHub Profile](https://github.com/LamaTrw)
-- **Mai Đông Anh** - [GitHub Profile](https://github.com/bebaobanhbao)
-- **Dương Nguyễn Gia Khang** - [GitHub Profile](https://github.com/Naga-OS)
+- **Đinh Trung Kiên** - [k1enn](https://github.com/k1enn)
+- **Trương Gia Lâm** - [LamaTrw](https://github.com/LamaTrw)
+- **Mai Đông Anh** - [bebaobanhbao](https://github.com/bebaobanhbao)
+- **Dương Nguyễn Gia Khang** - [Naga-OS](https://github.com/Naga-OS)
 
 ### Project Overview
 This project is a web application designed to offer a diverse range of coffee drinks in Vietnam. The goal is to create a user-friendly platform for coffee lovers to explore, customize, and order their favorite beverages.
