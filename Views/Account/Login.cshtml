@@ -1,0 +1,162 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Chewy&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+        background-color: #9bc9f4;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        flex-direction: column; /* Align children vertically */
+    }
+
+    .login-container {
+        width: 90%;
+        max-width: 400px; /* Max width for the login box */
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        padding: 30px;
+        text-align: center;
+        opacity: 0.95;
+    }
+
+    .bungee {
+        font-family: "Bungee", sans-serif;
+        font-weight: bold;
+    }
+
+    .login-container h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+        color: #38b6ff;
+    }
+
+    .login-container input {
+        width: 100%;
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box; /* Ensure padding doesn't change size */
+    }
+
+    .password-container {
+        position: relative; /* To position the toggle button */
+        margin: 10px 0; /* Space between input fields */
+    }
+
+    .toggle-password {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 20px; /* Size for the toggle icon */
+        background: none;
+        border: none; /* No border */
+        cursor: pointer; /* Pointer cursor for button */
+    }
+
+    #dangnhap {
+        width: 100%; /* Button takes full width */
+        padding: 15px;
+        background-color: #28a745;
+        color: white;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        margin: 20px 0; /* Space around button */
+        transition: background-color 0.3s; /* Smooth background change */
+    }
+
+        #dangnhap:hover {
+            background-color: #218838; /* Darker shade on hover */
+        }
+
+    .welcome-text {
+        font-family: "Chewy", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 8vh;
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+
+    p {
+        margin-top: 0;
+    }
+</style>
+<body>
+    <div class="welcome-text">
+        <h style="color:white">
+            Welcome to <br />
+            <span style="color: black; font-size: 9vh;">
+                BoysCoffee
+            </span>
+        </h>
+    </div>
+
+
+    <div class="login-container">
+        <h2 class="bungee" style="font-size:40px; text-align: center; color: #38b6ff;">ĐĂNG NHẬP</h2>
+
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+        {
+            <!-- Display error message if there is one -->
+            if (!ViewData.ModelState.IsValid)
+            {
+                <div style="color:red">
+                    @Html.ValidationSummary()
+                </div>
+            }
+            <input id="user" type="text" name="username" placeholder="Username" required>
+
+            <div class="password-container">
+                <input id="pass" type="password" name="Password" placeholder="Mật khẩu" required>
+                <button type="button" id="togglePassword" class="toggle-password">
+                    <i class="fas fa-eye"></i>
+                </button>
+            </div>
+            <button id="dangnhap" type="submit">Đăng nhập</button>
+        }
+
+        <p>
+            Chưa có tài khoản? @Html.ActionLink("Đăng ký ngay", "Register", "Account", null, new { style = "color: #38b6ff; text-decoration: none;" })
+        </p>
+    </div>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordField = document.getElementById('pass');
+
+        togglePassword.addEventListener('click', function () {
+            // Toggle password visibility
+            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', type);
+
+            // Change the icon
+            const icon = type === 'password' ? '<i class="fas fa-eye"></i>' : '<i class="fas fa-eye-slash"></i>';
+            togglePassword.innerHTML = icon; // Update the button content
+        });
+    });
+</script>
+
+</html>
