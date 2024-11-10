@@ -31,7 +31,7 @@
 
             <!-- Navbar links -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">                    
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     @if (Session["Role"] == null)
                     {
                         <li class="nav-item">
@@ -88,17 +88,19 @@
 
                 </ul>
                 <!-- Search box -->
+                <!-- Search box -->
                 <form class="d-flex ms-auto" autocomplete="off" action="/action_page.php">
                     <div class="input-group">
-                        <input id="input" type="text" name="myDrink" placeholder="Tìm kiếm sản phẩm" class="form-control" aria-label="Search">
-                        <button class="btn btn-primary" type="submit">Tìm kiếm</button>
-                        <p>@("Session Role: " + Session["Role"])</p>
+                        <input id="input" style="height:40px" type="text" name="myDrink" placeholder="Tìm kiếm sản phẩm" class="form-control" aria-label="Search">
+                        <button class="btn btn-primary" type="submit">
+                            <img src="~/Content/images/search-icon.png" height="25" width="25" /> <!-- Search box  chỉnh sửa cho bnt bằng với ô input-->
+                        </button>
                     </div>
                 </form>
             </div>
         </div>
     </nav>
-    <div class="container-fluid">
+    <div class="container-fluid body-content">
         @RenderBody()
     </div>
     <!--Search bar autocomplete-->
