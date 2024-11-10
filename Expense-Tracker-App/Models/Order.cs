@@ -14,6 +14,7 @@ namespace CoffeeShopApp.Models
         public DateTime OrderDate { get; set; }
 
         public int UserId { get; set; }
+        public decimal TotalPrice { get; set; }
 
         [ForeignKey("UserId")]
         public virtual User User { get; set; }

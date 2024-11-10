@@ -58,7 +58,7 @@ namespace CoffeeShopApp.Controllers
         public ActionResult Logout()
         {
             Session.Clear(); // Clear all session data
-            return RedirectToAction("Login", "Account");
+            return RedirectToAction("Index", "Home"); // Return home page
         }
 
         [HttpGet]

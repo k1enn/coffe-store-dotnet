@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
+using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
+using System.Web.UI.WebControls;
 using CoffeeShopApp.Models;
 
 namespace Expense_Tracker_App.Controllers
@@ -40,8 +42,24 @@ namespace Expense_Tracker_App.Controllers
         }
 
         // GET: Products/Create
-        public ActionResult Create()
+        public ActionResult Create(Product product, HttpPostedFileBase imageFile)
         {
+            var categories = db.Categories.Select(c => new SelectListItem
+            {
+                Value = c.CategoryId.ToString(),
+                Text = c.Name
+            }).ToList();
+
+            ViewBag.CategoryList = categories;
+
+            // Check if image uploaded
+            if (imageFile != null && imageFile.ContentLength > 0)
+            {
+                // Save the uploaded image to a specific folder (implement saving logic)
+                var fileName = Path.GetFileName(imageFile.FileName);
+                imageFile.SaveAs(Path.Combine(Server.MapPath("~/images/products/"), fileName));
+                product.ImageUrl = "~/images/products/" + fileName; // Update image path
+            }
             return View();
         }
 

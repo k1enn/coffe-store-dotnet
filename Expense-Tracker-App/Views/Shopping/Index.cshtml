@@ -1,0 +1,25 @@
+﻿@model IEnumerable<CoffeeShopApp.Models.Product>
+
+@{
+    ViewBag.Title = "Sản phẩm";
+}
+
+<h2>Danh sách sản phẩm</h2>
+
+<div class="row">
+    @foreach (var product in Model)
+    {
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-img-top" src="@product.ImageUrl" alt="@product.Name">
+                <div class="card-body">
+                    <h5 class="card-title">@product.Name</h5>
+                    <p class="card-text">@product.Description</p>
+                    <p class="card-text">Giá: @product.Price VNĐ</p>
+                    <a asp-action="Details" asp-route-id="@product.ProductId" class="btn btn-primary">Chi tiết</a>
+                    <a asp-action="AddToCart" asp-route-id="@product.ProductId" class="btn btn-success">Thêm vào giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+    }
+</div>

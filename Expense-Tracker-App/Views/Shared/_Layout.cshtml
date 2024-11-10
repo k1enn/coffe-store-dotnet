@@ -47,7 +47,7 @@
                             @Html.ActionLink("Mua ngay", "Shopping", "Home", new { area = "" }, new { @class = "nav-link" })
                         </li>
                         <li class="nav-item">
-                            @Html.ActionLink("Đăng nhậpa", "Login", "Account", new { area = "" }, new { @class = "nav-link" })
+                            @Html.ActionLink("Đăng nhập", "Login", "Account", new { area = "" }, new { @class = "nav-link" })
                         </li>
                     }
                     else if (Session["Role"].ToString() == "Customer")
@@ -98,7 +98,7 @@
             </div>
         </div>
     </nav>
-    <div class="container body-content">
+    <div class="container-fluid">
         @RenderBody()
     </div>
     <!--Search bar autocomplete-->

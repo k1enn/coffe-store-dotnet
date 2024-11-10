@@ -128,14 +128,17 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\CategoriesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202411071737355_UpdateDatabase.cs" />
-    <Compile Include="Migrations\202411071737355_UpdateDatabase.Designer.cs">
-      <DependentUpon>202411071737355_UpdateDatabase.cs</DependentUpon>
+    <Compile Include="Migrations\202411080333566_Update-Database.cs" />
+    <Compile Include="Migrations\202411080333566_Update-Database.Designer.cs">
+      <DependentUpon>202411080333566_Update-Database.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cart.cs" />
@@ -143,6 +146,9 @@
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\CoffeShopContext.cs" />
     <Compile Include="Models\Customer.cs" />
+    <Compile Include="Controllers\ShoppingController.cs" />
+    <Compile Include="ViewModel\AdminDashboardViewModel.cs" />
+    <Compile Include="Models\LoginHistory.cs" />
     <Compile Include="Models\Order.cs" />
     <Compile Include="Models\OrderItem.cs" />
     <Compile Include="Models\Product.cs" />
@@ -168,10 +174,32 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\home.css" />
     <Content Include="Content\images\bg-trans.png" />
     <Content Include="Content\images\bg.PNG" />
     <Content Include="Content\images\Cafe .png" />
+    <Content Include="Content\images\hill1.png" />
+    <Content Include="Content\images\hill2.png" />
+    <Content Include="Content\images\hill3.png" />
+    <Content Include="Content\images\hill4.png" />
+    <Content Include="Content\images\hill5.png" />
+    <Content Include="Content\images\leaf.png" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\photos 141515.png" />
+    <Content Include="Content\images\photos 141817.png" />
+    <Content Include="Content\images\photos 142204.png" />
+    <Content Include="Content\images\photos 142322.png" />
+    <Content Include="Content\images\photos 142408.png" />
+    <Content Include="Content\images\photos 142515.png" />
+    <Content Include="Content\images\photos 142929.png" />
+    <Content Include="Content\images\photos 143126.png" />
+    <Content Include="Content\images\photos 143838.png" />
+    <Content Include="Content\images\photos 143903.png" />
+    <Content Include="Content\images\photos 144203.png" />
+    <Content Include="Content\images\photos 144215.png" />
+    <Content Include="Content\images\plant.png" />
+    <Content Include="Content\images\tree.png" />
+    <Content Include="Content\images\twocoffee.jpeg" />
     <Content Include="Content\images\twocoffee.png" />
     <Content Include="Content\images\vietnam-flag.PNG" />
     <Content Include="Content\navbar.css" />
@@ -186,6 +214,7 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.7.0.intellisense.js" />
+    <Content Include="Scripts\home.js" />
     <Content Include="Scripts\jquery-3.7.0.js" />
     <Content Include="Scripts\jquery-3.7.0.min.js" />
     <Content Include="Scripts\jquery-3.7.0.slim.js" />
@@ -224,10 +253,16 @@
     <Content Include="Views\Account\Login.cshtml" />
     <Content Include="Views\Shop\Index.cshtml" />
     <Content Include="Views\Shop\Details.cshtml" />
+    <Content Include="Views\Admin\Dashboard.cshtml" />
+    <Content Include="Views\Shopping\Index.cshtml" />
+    <Content Include="Views\Orders\Create.cshtml" />
+    <Content Include="Views\Orders\Delete.cshtml" />
+    <Content Include="Views\Orders\Details.cshtml" />
+    <Content Include="Views\Orders\Edit.cshtml" />
+    <Content Include="Views\Orders\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\ShoppingCart\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\bootstrap.rtl.min.css.map" />
@@ -257,8 +292,8 @@
     <Content Include="Scripts\jquery-3.7.0.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202411071737355_UpdateDatabase.resx">
-      <DependentUpon>202411071737355_UpdateDatabase.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202411080333566_Update-Database.resx">
+      <DependentUpon>202411080333566_Update-Database.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

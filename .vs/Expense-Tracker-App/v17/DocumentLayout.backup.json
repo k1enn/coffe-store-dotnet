@@ -3,108 +3,36 @@
   "WorkspaceRootPath": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\expense-tracker-app\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\expense-tracker-app\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\expense-tracker-app\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\expense-tracker-app\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\expense-tracker-app\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\expense-tracker-app\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\expense-tracker-app\\viewmodel\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\viewmodel\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\expense-tracker-app\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\expense-tracker-app\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\views\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\expense-tracker-app\\models\\coffeshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\models\\coffeshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\expense-tracker-app\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\expense-tracker-app\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\expense-tracker-app\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\expense-tracker-app\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\expense-tracker-app\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\expense-tracker-app\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\expense-tracker-app\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\expense-tracker-app\\models\\coffeshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\models\\coffeshopcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\expense-tracker-app\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\expense-tracker-app\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\expense-tracker-app\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\expense-tracker-app\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\views\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\expense-tracker-app\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\viewmodel\\loginviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\expense-tracker-app\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\app_start\\routeconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\expense-tracker-app\\views\\home\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\views\\home\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\expense-tracker-app\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\expense-tracker-app\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\views\\shop\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\expense-tracker-app\\views\\shop\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\views\\shop\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\expense-tracker-app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\expense-tracker-app\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\views\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\expense-tracker-app\\content\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\content\\navbar.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\expense-tracker-app\\scripts\\autocomplete-search.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{84EF555E-5192-470E-AC6B-B79E1B8667D3}|Expense-Tracker-App\\CoffeShopApp.csproj|solutionrelative:expense-tracker-app\\scripts\\autocomplete-search.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -114,46 +42,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Expense-Tracker-App\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACQAAAAAAAAAAAAAACkAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-01T11:20:02.794Z",
-              "IsPinned": true,
+              "DocumentIndex": 0,
+              "Title": "OrdersController.cs",
+              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Controllers\\OrdersController.cs",
+              "RelativeDocumentMoniker": "Expense-Tracker-App\\Controllers\\OrdersController.cs",
+              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Controllers\\OrdersController.cs",
+              "RelativeToolTip": "Expense-Tracker-App\\Controllers\\OrdersController.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:45:07.897Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Configuration.cs",
               "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Migrations\\Configuration.cs",
               "RelativeDocumentMoniker": "Expense-Tracker-App\\Migrations\\Configuration.cs",
               "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Migrations\\Configuration.cs",
               "RelativeToolTip": "Expense-Tracker-App\\Migrations\\Configuration.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAADgvxgAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAABQAAAAAAAAAAIAwwB4AAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:41:51.972Z",
+              "WhenOpened": "2024-11-09T15:41:03.119Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Web.config",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Views\\Web.config",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Web.config",
-              "RelativeToolTip": "Expense-Tracker-App\\Views\\Web.config",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-07T18:04:41.801Z",
+              "DocumentIndex": 2,
+              "Title": "AdminDashboardViewModel.cs",
+              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\ViewModel\\AdminDashboardViewModel.cs",
+              "RelativeDocumentMoniker": "Expense-Tracker-App\\ViewModel\\AdminDashboardViewModel.cs",
+              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\ViewModel\\AdminDashboardViewModel.cs",
+              "RelativeToolTip": "Expense-Tracker-App\\ViewModel\\AdminDashboardViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:36:45.282Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CoffeShopContext.cs",
+              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\CoffeShopContext.cs",
+              "RelativeDocumentMoniker": "Expense-Tracker-App\\Models\\CoffeShopContext.cs",
+              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\CoffeShopContext.cs",
+              "RelativeToolTip": "Expense-Tracker-App\\Models\\CoffeShopContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:23:58.457Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Order.cs",
+              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "Expense-Tracker-App\\Models\\Order.cs",
+              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\Order.cs",
+              "RelativeToolTip": "Expense-Tracker-App\\Models\\Order.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwBYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:23:43.784Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "Expense-Tracker-App\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "Expense-Tracker-App\\Controllers\\AdminController.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-09T15:23:09.513Z",
               "EditorCaption": ""
             },
             {
@@ -166,312 +132,28 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Controllers\\ProductsController.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "Expense-Tracker-App\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAYwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T02:59:12.579Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Expense-Tracker-App\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAzwAwAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T02:59:07.636Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Expense-Tracker-App\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAkwCsAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T06:16:48.584Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Web.config",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Web.config",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Web.config",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Web.config",
-              "RelativeToolTip": "Expense-Tracker-App\\Web.config",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-11-07T17:58:17.423Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Models\\Product.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\Product.cs",
-              "RelativeToolTip": "Expense-Tracker-App\\Models\\Product.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAkwBkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:27:16.241Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "OrderItem.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\OrderItem.cs",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Models\\OrderItem.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\OrderItem.cs",
-              "RelativeToolTip": "Expense-Tracker-App\\Models\\OrderItem.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAkwBwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:35:17.83Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Order.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\Order.cs",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Models\\Order.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\Order.cs",
-              "RelativeToolTip": "Expense-Tracker-App\\Models\\Order.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAkwBgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:35:14.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Customer.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\Customer.cs",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Models\\Customer.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\Customer.cs",
-              "RelativeToolTip": "Expense-Tracker-App\\Models\\Customer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:35:11.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Models\\Category.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\Category.cs",
-              "RelativeToolTip": "Expense-Tracker-App\\Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:35:07.24Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "CartItem.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\CartItem.cs",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Models\\CartItem.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\CartItem.cs",
-              "RelativeToolTip": "Expense-Tracker-App\\Models\\CartItem.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAkwBwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:34:50.653Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Cart.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\Cart.cs",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Models\\Cart.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\Cart.cs",
-              "RelativeToolTip": "Expense-Tracker-App\\Models\\Cart.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T17:27:12.864Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "CoffeShopContext.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\CoffeShopContext.cs",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Models\\CoffeShopContext.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\CoffeShopContext.cs",
-              "RelativeToolTip": "Expense-Tracker-App\\Models\\CoffeShopContext.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAADwvyEAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T04:34:56.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "RouteConfig.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\App_Start\\RouteConfig.cs",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\App_Start\\RouteConfig.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\App_Start\\RouteConfig.cs",
-              "RelativeToolTip": "Expense-Tracker-App\\App_Start\\RouteConfig.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T03:18:06.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Menu.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Home\\Menu.cshtml",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Views\\Home\\Menu.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Home\\Menu.cshtml",
-              "RelativeToolTip": "Expense-Tracker-App\\Views\\Home\\Menu.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-03T03:15:33.869Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Shop\\Details.cshtml",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Views\\Shop\\Details.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Shop\\Details.cshtml",
-              "RelativeToolTip": "Expense-Tracker-App\\Views\\Shop\\Details.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-03T03:09:41.656Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 7,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Shop\\Index.cshtml",
               "RelativeDocumentMoniker": "Expense-Tracker-App\\Views\\Shop\\Index.cshtml",
               "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Shop\\Index.cshtml",
               "RelativeToolTip": "Expense-Tracker-App\\Views\\Shop\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-03T03:07:17.132Z"
+              "WhenOpened": "2024-11-09T15:22:59.304Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Views\\Account\\Register.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Account\\Register.cshtml",
-              "RelativeToolTip": "Expense-Tracker-App\\Views\\Account\\Register.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAaAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "Expense-Tracker-App\\Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "Expense-Tracker-App\\Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T06:42:50.553Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Account\\Login.cshtml",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Views\\Account\\Login.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Account\\Login.cshtml",
-              "RelativeToolTip": "Expense-Tracker-App\\Views\\Account\\Login.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAADkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-02T06:17:16.941Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "LoginViewModel.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\ViewModel\\LoginViewModel.cs",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\ViewModel\\LoginViewModel.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\ViewModel\\LoginViewModel.cs",
-              "RelativeToolTip": "Expense-Tracker-App\\ViewModel\\LoginViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-02T06:16:23.591Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "navbar.css",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Content\\navbar.css",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Content\\navbar.css",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Content\\navbar.css",
-              "RelativeToolTip": "Expense-Tracker-App\\Content\\navbar.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-11-01T11:28:53.111Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "autocomplete-search.js",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Scripts\\autocomplete-search.js",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Scripts\\autocomplete-search.js",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Scripts\\autocomplete-search.js",
-              "RelativeToolTip": "Expense-Tracker-App\\Scripts\\autocomplete-search.js",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAwwGgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2024-11-02T05:48:02.963Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Expense-Tracker-App\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEEAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-01T11:28:04.621Z"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "a1280880-aa88-43df-9d03-5699dbc79296",
-        "Display": 0,
-        "X": 322,
-        "Y": 320,
-        "Width": 1199,
-        "Height": 555,
-        "WindowState": 0
-      },
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "User.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Expense-Tracker-App\\Models\\User.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\Expense-Tracker-App\\Models\\User.cs",
-              "RelativeToolTip": "Expense-Tracker-App\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-03T04:29:03.843Z",
+              "WhenOpened": "2024-11-09T15:22:27.534Z",
               "EditorCaption": ""
             }
           ]

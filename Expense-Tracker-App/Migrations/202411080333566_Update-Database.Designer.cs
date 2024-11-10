@@ -13,7 +13,7 @@ namespace Expense_Tracker_App.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202411071737355_UpdateDatabase"; }
+            get { return "202411080333566_Update-Database"; }
         }
         
         string IMigrationMetadata.Source

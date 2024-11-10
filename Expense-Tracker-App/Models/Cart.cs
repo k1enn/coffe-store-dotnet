@@ -8,8 +8,8 @@ namespace CoffeeShopApp.Models
     {
         [Key, ForeignKey("User")]
         public int CartId { get; set; }
-
         public virtual User User { get; set; }
+        public int UserId { get; set; }
         public virtual ICollection<CartItem> CartItems { get; set; }
     }
 

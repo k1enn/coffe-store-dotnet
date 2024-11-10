@@ -1,75 +1,82 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- Home style -->
+    <link rel="stylesheet" href="~/Content/home.css">
 
-<style>
-    /*Add background*/
-    body {
-        min-height: 100vh;
-        background: url('@Url.Content("~/Content/images/bg-trans.PNG")');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
+</head>
+<body>
+    <!-- Simple parallax -->
+    <section class="parallax">
+        <img src="~/Content/images/hill1.png" />
+        <img src="~/Content/images/hill2.png" />
+        <img src="~/Content/images/hill3.png" />
+        <img src="~/Content/images/hill4.png" />
+        <img src="~/Content/images/hill5.png" />
+        <img src="~/Content/images/tree.png" />
+        <h2 id="text">Boys Coffee</h2>
+        <img src="~/Content/images/leaf.png" />
+        <img src="~/Content/images/plant.png" />
+    </section>
 
-/* Main Banner */
-.banner-section {
-    /*background-color:white;*/
-    padding-top: 15vh;
-    color: black;
-}
-
-.banner-title {
-    margin-top: 38vh;
-    padding-left: 10%;
-    font-size: 5rem;
-    font-family: serif;
-    font-weight: bold;
-    position: relative;
-    text-align: left;
-    z-index: -1;
-}
-
-@@media (max-width: 800px) {
-    .banner-title {
-        margin-top: auto;
-        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
-    }
-    .banner-subtitle {
-        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
-    }
-}
-
-.banner-subtitle {
-    padding-left: 10%;
-    font-weight: bold;
-    font-size: 1.1rem;
-    font-family: 'Arial', sans-serif;
-    margin-top: 10px;
-    text-align: left;
-}
-
-.drink-img {
-    margin-right: 5rem;
-    height: 70vh;
-    padding-bottom: 5vh;
-}
-
-</style>
-
-<section class="banner-section">
-    <div class="container text-center">
-        <div class="row">
-            <div class="col-md-6">
-
-                <h1 class="banner-title">Boys Coffee</h1>
-                <p class="banner-subtitle">Chất lượng làm nên thương hiệu cà phê ngon cho người có gu</p>
-                <blockquote>Login ~/Account/Login</blockquote>
+    <!-- Giới thiệu -->
+    <div class="content-wrapper">
+        <section class="sec">
+            <div class="column-left" style="text-align: center; margin: 0 20px;">
+                <h2>Chúng tôi là</h2>
+                <h2>Boy Coffee</h2>
+                <h2>Thứ hai đến thứ bảy <br />8:30am - 11:00pm</h2>
+                <h3 style="line-height: 1.6;">
+                    Chào mừng bạn đến với BoysCoffee! Tại đây, chúng tôi mang đến cho bạn những trải nghiệm<br /> cà phê và trà tuyệt vời nhất. Được thành lập từ niềm đam mê với hương vị, BoysCoffee<br /> tự hào sử dụng nguyên liệu tự nhiên và chất lượng cao, tạo ra những tách<br /> cà phê rang xay tươi ngon và trà thơm mát
+                </h3>
             </div>
-            <div class="col-md-6">
-                <img src="~/Content/images/twocoffee.png" alt="Cafe" class="drink-img" />
+
+            <div class="column-right">
+                <img src="~/Content/images/logo.png" />
             </div>
-        </div>
+        </section>
+
+        <!-- Menu -->
+        <section class="content-wrapper menu">
+            <h2>THỰC ĐƠN HÔM NAY</h2>
+            <div class="menu-columns">
+                <div class="column">
+                    <h3>Coffee</h3>
+                    <!-- Menu items -->
+                </div>
+                <div class="column">
+                    <h3>Tea</h3>
+                    <!-- Menu items -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section class="content-wrapper testimonial">
+            <h2>KHÁCH HÀNG NÓI GÌ</h2>
+            <div class="testimonial-icons">
+                <img src="path_to_image_placeholder.png" alt="icon">
+                <img src="path_to_image_placeholder.png" alt="icon">
+                <img src="path_to_image_placeholder.png" alt="icon">
+                <img src="path_to_image_placeholder.png" alt="icon">
+            </div>
+            <hr class="separator">
+            <div class="testimonial-content">
+                <img src="path_to_profile_image.png" alt="Customer photo" class="customer-photo">
+                <h3>MR. Gia Lâm</h3>
+                <p>
+                    <span class="quote-start">“</span>
+                    Tôi vừa ghé thăm BoysCoffee và thật sự ấn tượng! Cà phê ở đây rất ngon, hương vị đậm đà và thơm lừng. Tôi đã thử cappuccino và nó thật sự tuyệt vời! Không gian quán rất thoải mái, giúp mình thư giãn và làm việc hiệu quả. Nhân viên cũng rất thân thiện và chu đáo. Chắc chắn sẽ quay lại thường xuyên! Highly recommend cho những ai yêu thích cà phê!
+                    <span class="quote-end">”</span>
+                </p>
+            </div>
+        </section>
     </div>
-</section>
+    <script src="~/Scripts/home.js"></script>
+</body>
+</html>
