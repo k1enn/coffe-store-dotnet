@@ -178,11 +178,14 @@
     <Content Include="Content\images\bg-trans.png" />
     <Content Include="Content\images\bg.PNG" />
     <Content Include="Content\images\Cafe .png" />
+    <Content Include="Content\images\feelback1.jpg" />
+    <Content Include="Content\images\feelback2.png" />
     <Content Include="Content\images\hill1.png" />
     <Content Include="Content\images\hill2.png" />
     <Content Include="Content\images\hill3.png" />
     <Content Include="Content\images\hill4.png" />
     <Content Include="Content\images\hill5.png" />
+    <Content Include="Content\images\image.png" />
     <Content Include="Content\images\leaf.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\photos 141515.png" />

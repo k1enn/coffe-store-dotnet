@@ -1,20 +1,65 @@
-﻿.input-group {
-    border: none; /* Remove border */
+﻿/* Navbar có nền trong suốt và cố định khi cuộn */
+.navbar {
+    background-color: rgb(202,244,244,0.5) !important; /* Nền trong suốt 80% */
+    backdrop-filter: blur(5px); /* Hiệu ứng mờ cho nền */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Đảm bảo navbar luôn ở phía trên các phần tử khác */
+    transition: background-color 0.3s; /* Hiệu ứng mượt khi cuộn */
 }
 
-    .input-group .form-control,
-    .input-group .btn {
-        box-shadow: none; /* Remove shadow */
-        border-radius: 0; /* Remove border radius */
+/* Điều chỉnh khoảng cách nội dung so với navbar cố định */
+.body-content {
+    padding-top: 70px; /* Điều chỉnh cho phù hợp với chiều cao của navbar */
+}
+
+/* Định dạng nhóm input */
+/* Đảm bảo form có chiều cao bằng nhau */
+
+
+/* Đảm bảo chiều cao của ô input và nút tìm kiếm bằng nhau */
+
+.input-group .btn {
+    height: 40px; /* Đặt chiều cao của ô input và nút tìm kiếm bằng nhau */
+    padding: 0; /* Đảm bảo không có padding thừa */
+}
+
+/* Đảm bảo nút tìm kiếm có chiều rộng cố định */
+.input-group .btn {
+    width: 40px; /* Đặt chiều rộng của nút tìm kiếm */
+}
+
+.input-group {
+    border: none; /* Bỏ viền */
+    width: 100%;
+}
+
+    .input-group .form-control {
+        text-align: center;
+        vertical-align: middle;
+        border-radius: 20px;
+        height: 40px;
     }
-        /* Optional: Add custom styling if needed */
-        .input-group .form-control::placeholder {
-            color: #999; /* Customize placeholder color */
-            opacity: 1; /* Ensure the placeholder is fully opaque */
+
+    .input-group .btn {
+        box-shadow: none; /* Bỏ bóng */
+        border-radius: 20px;
+        background-color: transparent;
+    }
+
+        .input-group .btn img {
+            background-color: aliceblue;
+            padding: 5px;
+            border-radius: 50%;
         }
 
+    .input-group .form-control::placeholder {
+        color: #999; /* Màu của placeholder */
+        opacity: 1; /* Độ đậm của placeholder */
+    }
 
-/* Vertical divider */
+/* Divider dọc giữa các mục navbar */
 .navbar-nav .nav-item:not(:last-child) {
     position: relative;
 }
@@ -23,23 +68,23 @@
         content: "";
         position: absolute;
         right: 0;
-        top: 30%; /* Adjusts vertical positioning of the line */
-        height: 40%; /* Adjusts the length of the line */
-        border-right: 1px solid #ccc; /* Line color */
+        top: 30%; /* Vị trí dọc của đường kẻ */
+        height: 40%; /* Chiều dài của đường kẻ */
+        border-right: 1px solid #ccc; /* Màu của đường kẻ */
     }
 
 .navbar-nav .nav-link {
-    padding-right: 20px; /* Spacing between text and border */
+    padding-right: 20px; /* Khoảng cách giữa văn bản và đường kẻ */
 }
 
-/* Hide the vertical divider on mobile view */
+/* Ẩn đường kẻ dọc trên mobile */
 @media (max-width: 767px) {
     .navbar-nav .nav-item:not(:last-child)::after {
-        display: none; /* Hide divider line on mobile */
+        display: none;
     }
 }
-/*Do not touch this*/
-/* The container must be positioned relative: */
+
+/* Tùy chỉnh ô input và autocomplete */
 .autocomplete {
     position: relative;
     display: block;
@@ -64,6 +109,7 @@ input[type="submit"] {
     white-space: nowrap;
 }
 
+/* Responsive cho ô input và autocomplete */
 @media (max-width: 768px) {
     .autocomplete {
         width: 100%; /* Full width on smaller screens */

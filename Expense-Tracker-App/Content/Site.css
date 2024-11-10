@@ -1,21 +1,271 @@
-﻿/* Set padding to keep content from hitting the edges */
-.body-content {
-    margin-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+
+body {
+    background: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
 }
 
+.logo {
+    font-size: 2em;
+    color: aquamarine;
+    pointer-events: none;
+    margin-right: 270px;
+}
+
+
+/*nav */
+.navigation a {
+    text-decoration: none;
+    color: black; /*đổi màu chữ thành đen */
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+    .navigation a:hover,
+    .navigation a.active {
+        background: aquamarine; /* Màu nền khi hover */
+        color: white; /* Màu chữ khi hover */
+    }
+/*banner*/
+.banner_home {
+    margin-top: 20px; /* Tạo khoảng cách với navbar phía trên */
+    margin-bottom: 20px; /* Tạo khoảng cách với phần dưới */
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.banner-slider {
+    display: flex;
+    width: 300%; /*  đặt chiều rộng gấp ba lần để chứa ba ảnh */
+    transition: transform 1s ease-in-out; /* Di chuyển mượt hơn */
+}
+
+    .banner-slider img {
+        width: 33.3333%; /* Mỗi ảnh chiếm 1/3 chiều rộng của banner */
+        height: 380px;
+        object-fit: cover; /* để nảnh không bị méo mó */
+        transition: transform 1s ease-in-out;
+    }
+
+/*chỉnh để phù hợp kích thước đt*/
+@media (max-width: 768px) {
+    .banner-slider img {
+        height: 200px;
+    }
+
+    .menu-columns {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .sec {
+        flex-direction: column;
+        text-align: center;
+    }
+
+        .sec .column-left, .sec .column-right {
+            padding: 0;
+        }
+
+            .sec .column-right img {
+                max-width: 70%;
+            }
+}
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.menu {
+    text-align: center;
+    padding: 50px;
+    background-color: #f9f9f9;
+}
+
+    .menu h2 {
+        font-size: 2.5em;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+.menu-columns {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.column {
+    flex: 1;
+    text-align: center;
+}
+
+    .column h3 {
+        font-size: 1.8em;
+        font-weight: normal;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+
+/*Menu*/
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+    .menu-item img {
+        width: 100px;
+        height: auto;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+
+    .menu-item p {
+        font-size: 1.1em;
+        font-weight: bold;
+        margin: 0;
+    }
+
+/*Feedback*/
+.testimonial {
+    font-family: Arial, sans-serif;
+    background-color: #e0f6e6; /* Nền sáng nhẹ, phù hợp với màu chủ đạo */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+    .testimonial h2 {
+        color: #6fddaa; /* Màu tiêu đề với màu chủ đạo */
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+
+.testimonial-icons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+    .testimonial-icons img {
+        width: 50px;
+        height: 50px;
+        margin: 0 15px;
+        cursor: pointer;
+        border-radius: 50%;
+        transition: transform 0.3s ease;
+    }
+
+        .testimonial-icons img:hover {
+            transform: scale(1.1);
+        }
+
+.separator {
+    width: 100px;
+    height: 4px;
+    background-color: #6fddaa; /* Separator có màu chủ đạo */
+    margin: 20px auto;
+}
+
+.testimonial-content {
+    margin-top: 30px;
+}
+
+.customer-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid #6fddaa; /* Viền ảnh với màu chủ đạo */
+}
+
+.testimonial-content h3 {
+    color: #6fddaa; /* Màu tên khách hàng với màu chủ đạo */
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.testimonial-content p {
+    font-size: 18px;
+    color: #555; /* Màu chữ bình thường để dễ đọc */
+    line-height: 1.6;
+}
+
+.quote-start, .quote-end {
+    font-size: 30px;
+    color: #6fddaa; /* Màu cho dấu ngoặc kép */
+}
+
+
+/*về chúng tôi*/
+.sec {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #03312e;
+    padding: 50px;
+    border-radius: 10px; /* Thêm góc bo tròn cho phần này */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Thêm bóng cho phần này */
+}
+
+    .sec .column-left {
+        flex: 1;
+        text-align: left;
+        padding: 20px;
+    }
+
+
+        .sec .column-left h2 {
+            font-size: 3em;
+            color: #6fddaa;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .sec .column-left h3 {
+            font-size: 1.2em;
+            color: #ffffff;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+
+    .sec .column-right {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+        .sec .column-right img {
+            max-width: 40%;
+            height: auto;
+            border-radius: 50%; /* Thêm border-radius để tạo hình ảnh tròn */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Thêm bóng cho ảnh */
+        }
