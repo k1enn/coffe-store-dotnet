@@ -18,22 +18,22 @@
 <body>
     <!--Custom navigation bar-->
     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
-        <div class="container">
-            <!-- Brand/logo -->
-            <a class="navbar-brand" href="@Url.Action("Index", "Home", new { area = "" })">
-                <img src="~/Content/images/logo.png" height="35" alt="Logo" style="width: 40px;">
-            </a>
+        @if (Session["Role"] == null)
+        {
+            <div class="container">
+                <!-- Brand/logo -->
+                <a class="navbar-brand" href="@Url.Action("Index", "Home", new { area = "" })">
+                    <img src="~/Content/images/logo.png" height="35" alt="Logo" style="width: 40px;">
+                </a>
 
-            <!-- Toggler for mobile view -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <!-- Toggler for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <!-- Navbar links -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    @if (Session["Role"] == null)
-                    {
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="@Url.Action("Index", "Home", new { area = "" })">Trang chủ</a>
                         </li>
@@ -49,10 +49,36 @@
                         <li class="nav-item">
                             @Html.ActionLink("Đăng nhập", "Login", "Account", new { area = "" }, new { @class = "nav-link" })
                         </li>
-                    }
-                    else if (Session["Role"].ToString() == "Customer")
-                    {
+                    </ul>
+                    <!-- Search box -->
+                    <form class="d-flex ms-auto" autocomplete="off" action="/action_page.php">
+                        <div class="input-group">
+                            <input id="input" style="height:40px" type="text" name="myDrink" placeholder="Tìm kiếm sản phẩm" class="form-control" aria-label="Search">
+                            <button class="btn" type="submit">
+                                <!--Cần tìm lại cái hình khác-->
+                                <img src="~/Content/images/search-icon.png" height="25" width="25" /> <!-- Search box  chỉnh sửa cho bnt bằng với ô input-->
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        }
+        else if (Session["Role"].ToString() == "Customer")
+        {
+            <div class="container">
+                <!-- Brand/logo -->
+                <a class="navbar-brand" href="@Url.Action("Index", "Home", new { area = "" })">
+                    <img src="~/Content/images/logo.png" height="35" alt="Logo" style="width: 40px;">
+                </a>
 
+                <!-- Toggler for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="@Url.Action("Index", "Home", new { area = "" })">Trang chủ</a>
                         </li>
@@ -68,38 +94,53 @@
                         <li class="nav-item">
                             @Html.ActionLink("Đăng xuất", "Logout", "Account", new { area = "" }, new { @class = "nav-link" })
                         </li>
-                    }
-                    else if (Session["Role"].ToString() == "Admin")
-                    {
+                    </ul>
+                    <!-- Search box -->
+                    <form class="d-flex ms-auto" autocomplete="off" action="/action_page.php">
+                        <div class="input-group">
+                            <input id="input" style="height:40px" type="text" name="myDrink" placeholder="Tìm kiếm sản phẩm" class="form-control" aria-label="Search">
+                            <button class="btn" type="submit">
+                                <!--Cần tìm lại cái hình khác-->
+                                <img src="~/Content/images/search-icon.png" height="25" width="25" /> <!-- Search box  chỉnh sửa cho bnt bằng với ô input-->
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        }
+        else if (Session["Role"].ToString() == "Admin")
+        {
+            <div  style="padding-left: 10rem;" class="container">
+                <!-- Brand/logo -->
+                <a class="navbar-brand" href="@Url.Action("Index", "Home", new { area = "" })">
+                    <img src="~/Content/images/logo.png" height="35" alt="Logo" style="width: 40px;">
+                </a>
+
+                <!-- Toggler for mobile view -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="@Url.Action("Index", "Home", new { area = "" })">Trang chủ</a>
                         </li>
                         <li class="nav-item">
-                            @Html.ActionLink("Sản phẩm", "Index", "Product", new { area = "" }, new { @class = "nav-link" })
+                            @Html.ActionLink("Dashboard", "Dashboard", "Admin", new { area = "" }, new { @class = "nav-link" })
                         </li>
                         <li class="nav-item">
-                            @Html.ActionLink("Về chúng tôi", "About", "Home", new { area = "" }, new { @class = "nav-link" })
+                            @Html.ActionLink("Products", "Index", "Products", new { area = "" }, new { @class = "nav-link" })
                         </li>
                         <li class="nav-item">
                             @Html.ActionLink("Mua ngay", "Shopping", "Home", new { area = "" }, new { @class = "nav-link" })
                         </li>
-                    }
-
-
-                </ul>
-                <!-- Search box -->
-                <!-- Search box -->
-                <form class="d-flex ms-auto" autocomplete="off" action="/action_page.php">
-                    <div class="input-group">
-                        <input id="input" style="height:40px" type="text" name="myDrink" placeholder="Tìm kiếm sản phẩm" class="form-control" aria-label="Search">
-                        <button class="btn" type="submit">
-                            <!--Cần tìm lại cái hình khác-->
-                            <img src="~/Content/images/search-icon.png" height="25" width="25" /> <!-- Search box  chỉnh sửa cho bnt bằng với ô input-->
-                        </button>
-                    </div>
-                </form>
+                    </ul>
+                   
+                </div>
             </div>
-        </div>
+        }
     </nav>
     <div class="container-fluid body-content">
         @RenderBody()

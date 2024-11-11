@@ -17,6 +17,28 @@ namespace CoffeeShopApp.Controllers
         }
 
         [HttpGet]
+        public ActionResult Create()
+        {
+            ViewBag.RoleOptions = new SelectList(new[] { "Admin", "Customer" });
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult Create(User model)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Users.Add(model);
+                _context.SaveChanges();
+                return RedirectToAction("Index"); // Redirect to an appropriate page after creating
+            }
+
+            ViewBag.RoleOptions = new SelectList(new[] { "Admin", "Customer" });
+            return View(model);
+        }
+
+
+        [HttpGet]
         public ActionResult Login()
         {
             return View();

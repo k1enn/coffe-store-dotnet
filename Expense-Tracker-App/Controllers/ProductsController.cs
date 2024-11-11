@@ -7,26 +7,22 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using System.Web.UI.WebControls;
 using CoffeeShopApp.Models;
 
 namespace Expense_Tracker_App.Controllers
 {
-  
     public class ProductsController : Controller
     {
         private CoffeeShopContext db = new CoffeeShopContext();
 
         // GET: Products
-
         public ActionResult Index()
         {
-            var products = db.Products;
+            var products = db.Products.Include(p => p.Category);
             return View(products.ToList());
         }
 
         // GET: Products/Details/5
-
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -42,45 +38,62 @@ namespace Expense_Tracker_App.Controllers
         }
 
         // GET: Products/Create
-        public ActionResult Create(Product product, HttpPostedFileBase imageFile)
+        public ActionResult Create()
         {
-            var categories = db.Categories.Select(c => new SelectListItem
-            {
-                Value = c.CategoryId.ToString(),
-                Text = c.Name
-            }).ToList();
-
-            ViewBag.CategoryList = categories;
-
-            // Check if image uploaded
-            if (imageFile != null && imageFile.ContentLength > 0)
-            {
-                // Save the uploaded image to a specific folder (implement saving logic)
-                var fileName = Path.GetFileName(imageFile.FileName);
-                imageFile.SaveAs(Path.Combine(Server.MapPath("~/images/products/"), fileName));
-                product.ImageUrl = "~/images/products/" + fileName; // Update image path
-            }
+            ViewBag.CategoryId = new SelectList(db.Categories, "CategoryId", "Name");
             return View();
         }
 
         // POST: Products/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        //[HttpPost]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult Create([Bind(Include = "ProductId,Name,Description,ImageUrl,Price,CategoryId")] Product product)
+        //{
+        //    if (ModelState.IsValid)
+        //    {
+        //        db.Products.Add(product);
+        //        db.SaveChanges();
+        //        return RedirectToAction("Index");
+        //    }
+
+        //    ViewBag.CategoryId = new SelectList(db.Categories, "CategoryId", "Name", product.CategoryId);
+        //    return View(product);
+        //}
+        //// POST: Products/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ProductId,Name,Description,Price,CategoryId")] Product product)
+        public ActionResult Create([Bind(Include = "ProductId,Name,Description,Price,CategoryId")] Product product, HttpPostedFileBase imageFile)
         {
             if (ModelState.IsValid)
             {
+                if (imageFile != null && imageFile.ContentLength > 0)
+                {
+                    // Lấy tên file và lưu nó vào thư mục images trên server
+                    var fileName = Path.GetFileName(imageFile.FileName);
+                    var filePath = Path.Combine(Server.MapPath("~/Content/images/"), fileName);
+                    imageFile.SaveAs(filePath);
+
+                    // Lưu đường dẫn hình ảnh vào property ImageUrl
+                    product.ImageUrl = "/Content/images/" + fileName;
+                }
+                else
+                {
+                    // Nếu không có hình ảnh, bạn có thể để giá trị mặc định hoặc thông báo lỗi
+                    ModelState.AddModelError("", "Vui lòng chọn hình ảnh cho sản phẩm.");
+                    return View(product);
+                }
+
+                // Lưu sản phẩm vào cơ sở dữ liệu
                 db.Products.Add(product);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", "Products");
             }
-
-           
+            ViewBag.CategoryId = new SelectList(db.Categories, "CategoryId", "Name", product.CategoryId);
+            // Nếu model không hợp lệ, trở lại view
             return View(product);
         }
-
         // GET: Products/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -93,7 +106,7 @@ namespace Expense_Tracker_App.Controllers
             {
                 return HttpNotFound();
             }
-           
+            ViewBag.CategoryId = new SelectList(db.Categories, "CategoryId", "Name", product.CategoryId);
             return View(product);
         }
 
@@ -102,7 +115,7 @@ namespace Expense_Tracker_App.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ProductId,Name,Description,Price,CategoryId")] Product product)
+        public ActionResult Edit([Bind(Include = "ProductId,Name,Description,ImageUrl,Price,CategoryId")] Product product)
         {
             if (ModelState.IsValid)
             {
@@ -110,7 +123,7 @@ namespace Expense_Tracker_App.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-          
+            ViewBag.CategoryId = new SelectList(db.Categories, "CategoryId", "Name", product.CategoryId);
             return View(product);
         }
 

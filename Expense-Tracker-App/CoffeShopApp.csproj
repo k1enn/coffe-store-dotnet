@@ -146,7 +146,6 @@
     <Compile Include="Models\Category.cs" />
     <Compile Include="Models\CoffeShopContext.cs" />
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="Controllers\ShoppingController.cs" />
     <Compile Include="ViewModel\AdminDashboardViewModel.cs" />
     <Compile Include="Models\LoginHistory.cs" />
     <Compile Include="Models\Order.cs" />
@@ -179,6 +178,7 @@
     <Content Include="Content\images\feelback2.png" />
     <Content Include="Content\images\image.png" />
     <Content Include="Content\images\logo.png" />
+    <Content Include="Content\images\menu.png" />
     <Content Include="Content\images\search-icon.png" />
     <Content Include="Content\images\vietnam-flag.PNG" />
     <Content Include="Content\navbar.css" />
@@ -230,15 +230,13 @@
     <Content Include="Views\Categories\Index.cshtml" />
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\Login.cshtml" />
-    <Content Include="Views\Shop\Index.cshtml" />
-    <Content Include="Views\Shop\Details.cshtml" />
     <Content Include="Views\Admin\Dashboard.cshtml" />
-    <Content Include="Views\Shopping\Index.cshtml" />
     <Content Include="Views\Orders\Create.cshtml" />
     <Content Include="Views\Orders\Delete.cshtml" />
     <Content Include="Views\Orders\Details.cshtml" />
     <Content Include="Views\Orders\Edit.cshtml" />
     <Content Include="Views\Orders\Index.cshtml" />
+    <Content Include="Views\Account\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

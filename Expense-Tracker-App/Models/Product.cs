@@ -13,7 +13,7 @@ namespace CoffeeShopApp.Models
 
         public string Description { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "Sản phầm cần có hình ảnh")]
         public string ImageUrl { get; set; }
 
         [Required]
@@ -21,7 +21,7 @@ namespace CoffeeShopApp.Models
 
         public int CategoryId { get; set; }
 
-        [ForeignKey("CategoryId")]
+        [ForeignKey("Category")]
         public virtual Category Category { get; set; }
     }
 
