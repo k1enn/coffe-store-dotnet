@@ -1,0 +1,158 @@
+@model CoffeeShopApp.Models.AdminDashboardViewModel
+
+<div class="container-fluid">
+    <!-- Sidebar Navigation -->
+    <nav class="sidebar">
+        <ul>
+            <li>@Html.ActionLink("Admin Dashboard", "Index", "Admin")</li>
+            <li>@Html.ActionLink("Recent Orders", "Orders", "Admin")</li>
+            <li>@Html.ActionLink("Manage Products", "Products", "Admin")</li>
+            <li>@Html.ActionLink("Manage Orders", "Orders", "Admin")</li>
+            <li>@Html.ActionLink("Manage Users", "Users", "Admin")</li>
+        </ul>
+    </nav>
+
+    <!-- Main Dashboard Content -->
+    <div class="dashboard-section">
+        <h3>Admin Dashboard</h3>
+        <div class="row g-5">
+            <!-- g-4 thiết lập khoảng cách giữa các box -->
+            <div class="col-12 col-md-4">
+                <div class="stat-box">
+                    <h3>Total Sales</h3>
+                    <p>@Model.TotalSales.ToString("C")</p>  <!-- Hiển thị tổng doanh thu -->
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="stat-box">
+                    <h3>Products</h3>
+                    <p>@Model.ProductCount</p>  <!-- Hiển thị số lượng sản phẩm -->
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="stat-box">
+                    <h3>Users</h3>
+                    <p>@Model.UserCount</p>  <!-- Hiển thị số lượng người dùng -->
+                </div>
+            </div>
+
+            <div class="dashboard-section">
+                <h3>Recent Orders</h3>
+                <table class="table">
+                    <tr>
+                        <th>Order ID</th>
+                        <th>Date</th>
+                        <th>Total</th>
+                        <th>User</th>
+                    </tr>
+                    @foreach (var order in Model.RecentOrders)
+                    {
+                        <tr>
+                            <td>@order.OrderId</td>
+                            <td>@order.OrderDate.ToShortDateString()</td>
+                            <td>@order.TotalPrice.ToString("C")</td>
+                            <td>@order.User.Username</td>
+                        </tr>
+                    }
+                </table>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<style>
+    /* Container */
+    .container-fluid {
+        display: flex;
+        margin-top: 0px; /* Điều chỉnh khoảng cách giữa navbar và content */
+        padding-left: 140px; /* Đảm bảo nội dung không bị che khuất bởi sidebar */
+    }
+
+    /* Sidebar Navigation */
+    .sidebar {
+        width: 250px;
+        background-color: #2f6f56;
+        color: #ffffff;
+        height: 100vh;
+        padding: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        margin-top: 0; /* Đảm bảo sidebar không bị đẩy xuống dưới */
+    }
+        .sidebar ul {
+            list-style: none; /* Removes bullet points */
+            padding: 0;
+        }
+            .sidebar ul li:hover {
+                background-color: #3a8f7c; /* Slightly lighter color on hover */
+                cursor: pointer;
+            }
+
+            .sidebar ul li {
+                margin-bottom: 10px; /* Adjusted for 10px spacing between items */
+                background-color: #2f6f56; /* Box background color */
+                padding: 10px;
+                border-radius: 8px;
+                width: 100%;
+                transition: background-color 0.3s, transform 0.1s; /* Smooth transition */
+            }
+
+                .sidebar ul li a {
+                    color: #ffffff;
+                    text-decoration: none;
+                    display: block; /* Make the link cover the entire box */
+                    font-size: 18px;
+                }
+
+                    .sidebar ul li a:hover {
+                        background-color: #3a8f7c; /* Slightly lighter color on hover */
+                        cursor: pointer;
+                    }
+
+    /* Main Content */
+    .main-content {
+        margin-left: 250px; /* Đặt khoảng cách trái bằng chiều rộng của sidebar */
+        padding: 20px;
+        background-color: #96e9c5;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: calc(100% - 250px); /* Đảm bảo phần nội dung chiếm hết chiều rộng còn lại */
+    }
+
+    .dashboard-stats {
+        display: flex;
+        justify-content: space-between; /* Distribute the boxes evenly */
+        gap: 50px;
+        width: 100%; /* Ensure it stretches across the page */
+    }
+
+    .stat-box {
+        background-color: #f8f9fa;
+        padding: 30px;
+        text-align: center;
+        border-radius: 8px;
+        font-size: 30px;
+        height: 150px; /* Đảm bảo chiều cao cố định cho các hộp */
+        width: 100%;
+    }
+
+    .dashboard-section {
+        margin-top: 20px;
+        width: 100%;
+    }
+    /* Table */
+    .table {
+        width: 100%; /* Đảm bảo bảng chiếm hết chiều rộng của phần tử chứa */
+        border-collapse: collapse; /* Loại bỏ khoảng cách giữa các ô trong bảng */
+    }
+        .table th, .table td {
+            padding: 12px; /* Thêm padding cho các ô trong bảng */
+            text-align: left; /* Thêm đường viền cho các ô */
+        }
+    body {
+        background-color: #96e9c5;
+    }
+</style>
