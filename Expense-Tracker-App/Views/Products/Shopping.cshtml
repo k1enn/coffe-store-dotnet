@@ -1,0 +1,99 @@
+﻿@using CoffeeShopApp.Models;
+@{
+    ViewBag.Title = "Shopping";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model IEnumerable<Product>
+<style>
+    body {
+        /* background-color and color removed */
+    }
+
+    .container {
+        /* background-color removed */
+        padding: 20px;
+        border-radius: 24px;
+    }
+
+    h2 {
+        /* color removed */
+    }
+
+    .search-box {
+        /* background-color and border-color removed */
+        padding: 15px;
+        border-radius: 5px;
+    }
+
+    .btn-warning {
+        /* all colors removed */
+    }
+
+    .btn-danger {
+        /* all colors removed */
+    }
+
+    .btn-info {
+        /* all colors removed */
+    }
+
+    .card-pro {
+        /* background-color removed */
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 5px;
+    }
+
+    .pagination > li > a {
+        /* background-color and color removed */
+    }
+
+    .pagination > .active > a {
+        /* background-color and border-color removed */
+    }
+</style>
+
+<div class="container">
+    <h2>MUA HÀNG</h2>
+    <div class="search-box">
+        @using (Html.BeginForm("ProductList", "Products", FormMethod.Get))
+        {
+            <div class="row">
+                <div class="col-md-10">
+
+                </div>
+
+                <div class="col-md-2 text-right">
+                    <a class="btn btn-danger" href="\ShoppingCart\ShowCart" style="font-weight:200;"> <span class="glyphicon glyphicon-shopping-cart"></span> Your Cart </a>
+                </div>
+            </div>
+        }
+    </div>
+
+
+    <div class="container">
+        <div class="row justify-content-center">
+            @foreach (var pro in Model)
+            {
+                <div class="col-sm-12 col-md-6 col-lg-4 d-flex justify-content-center mb-4">
+                    <div class="card-pro text-center">
+                        <img src="~/Content/images/@pro.ImageUrl" width="200" height="250" style="border-radius: 24px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" />
+                        <p>@Html.DisplayFor(model => pro.Name)</p>
+                        <p>Đơn giá: <font color="red">@Html.DisplayFor(model => pro.Price)</font></p>
+                        <p>
+                            <a class="btn btn-info" href="/Products/Details/@pro.ProductId"> Chi tiết </a>
+                        </p>
+                        <!-- Form for adding the product to the cart -->
+                        <form action="@Url.Action("AddToCart", "Product", new { id = pro.ProductId })" method="post" style="display:inline;">
+                            <button type="submit" class="btn btn-danger"> Mua </button>
+                        </form>
+
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+
+
+</div>

@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Web.Mvc;
 using CoffeeShopApp.Models;
+using CoffeeShopApp.Data;
 
 namespace CoffeeShopApp.Controllers
 {

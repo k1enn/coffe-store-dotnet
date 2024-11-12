@@ -4,6 +4,7 @@ using System.Runtime.Remoting.Contexts;
 using System.Web.Mvc;
 using CoffeeShopApp.Models;
 using Expense_Tracker_App.Migrations;
+using CoffeeShopApp.Data;
 
 namespace CoffeeShopApp.Controllers
 {

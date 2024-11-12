@@ -8,6 +8,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CoffeeShopApp.Models;
+using CoffeeShopApp.Data;
 
 namespace Expense_Tracker_App.Controllers
 {
@@ -17,6 +18,12 @@ namespace Expense_Tracker_App.Controllers
 
         // GET: Products
         public ActionResult Index()
+        {
+            var products = db.Products.Include(p => p.Category);
+            return View(products.ToList());
+        }
+
+        public ActionResult Shopping()
         {
             var products = db.Products.Include(p => p.Category);
             return View(products.ToList());

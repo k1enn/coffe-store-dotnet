@@ -166,5 +166,5 @@ D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\obj\Debug\CoffeShopApp
 D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\obj\Debug\CoffeSho.6308A4B1.Up2Date
 D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\obj\Debug\Expense-Tracker-App.dll
 D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\obj\Debug\Expense-Tracker-App.pdb
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\obj\Debug\Expense_Tracker_App.Migrations.UpdateDatabase.resources
+D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\obj\Debug\Expense_Tracker_App.Migrations.db.resources
 D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys\Expense-Tracker-App\obj\Debug\CoffeShopApp.csproj.GenerateResource.cache

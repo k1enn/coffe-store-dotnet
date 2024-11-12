@@ -1,0 +1,9 @@
+﻿@using CoffeeShopApp.Models;
+@foreach (var item in Model.CartItems)
+{
+    <div>
+        <p>@item.Product.Name</p>
+        <p>Quantity: @item.Quantity</p>
+        <p>Total: @item.TotalPrice.ToString("C")</p>
+    </div>
+}

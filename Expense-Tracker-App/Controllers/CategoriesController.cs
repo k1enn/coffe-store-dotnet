@@ -7,8 +7,9 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using CoffeeShopApp.Models;
+using CoffeeShopApp.Data;
 
-namespace Expense_Tracker_App.Controllers
+namespace CoffeeShopApp.Controllers
 {
     public class CategoriesController : Controller
     {
