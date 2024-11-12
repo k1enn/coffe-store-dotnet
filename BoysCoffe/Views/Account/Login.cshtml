@@ -1,0 +1,211 @@
+﻿@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignIn</title>
+
+    <!-- Liên kết tới Google Fonts để sử dụng font chữ Bungee và Chewy -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Liên kết tới Font Awesome cho các biểu tượng -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Chewy&display=swap" rel="stylesheet"> <!-- Liên kết tới Google Fonts cho Bungee và Chewy -->
+</head>
+<style>
+    /* Style cho toàn bộ trang */
+    body {
+        background-color: #66cdaa; /* Màu nền xanh ngọc */
+        font-family: Arial, sans-serif; /* Font chữ mặc định */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Chiều cao đầy đủ của viewport */
+        margin: 0; /* Bỏ margin mặc định */
+        flex-direction: column; /* Sắp xếp theo chiều dọc */
+    }
+
+    /* Container chứa form đăng nhập */
+    .login-container {
+        width: 90%; /* Chiều rộng 90% của viewport */
+        max-width: 400px; /* Tối đa chiều rộng là 400px */
+        background-color: white; /* Màu nền trắng */
+        border-radius: 20px; /* Bo góc của container */
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Bóng đổ mờ */
+        padding: 30px;
+        text-align: center;
+        opacity: 0.95; /* Độ mờ của container */
+    }
+
+    /* Style cho tiêu đề đăng nhập */
+    .bungee {
+        font-family: "Bungee", sans-serif; /* Sử dụng font chữ Bungee */
+        font-weight: bold; /* Chữ đậm */
+    }
+
+    /* Style cho tiêu đề h2 trong container */
+    .login-container h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 2.5rem; /* Kích thước chữ */
+        color: #38b6ff; /* Màu chữ xanh dương nhạt */
+    }
+
+    /* Style cho các ô nhập liệu */
+    .login-container input {
+        width: 100%; /* Chiều rộng 100% */
+        padding: 15px;
+        margin: 10px 0;
+        border: 1px solid #ccc; /* Đường viền xám */
+        border-radius: 4px; /* Bo góc của ô nhập liệu */
+        box-sizing: border-box; /* Đảm bảo padding không làm tăng chiều rộng */
+    }
+
+    /* Style cho phần mật khẩu, nơi có nút hiển thị/ẩn mật khẩu */
+    .password-container {
+        position: relative; /* Cần position: relative để đặt nút ẩn/hiện */
+        margin: 10px 0; /* Khoảng cách giữa các ô nhập liệu */
+    }
+
+    /* Nút hiển thị/ẩn mật khẩu */
+    .toggle-password {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%); /* Căn chỉnh nút theo chiều dọc */
+        font-size: 20px; /* Kích thước của biểu tượng toggle */
+        background: none;
+        border: none; /* Không có đường viền */
+        cursor: pointer; /* Con trỏ kiểu tay cho nút */
+    }
+
+    /* Style cho nút Đăng nhập */
+    #dangnhap {
+        width: 100%; /* Nút chiếm toàn bộ chiều rộng */
+        padding: 15px;
+        background-color: #28a745; /* Màu nền xanh lá cây */
+        color: white; /* Màu chữ trắng */
+        border: none;
+        border-radius: 20px; /* Bo góc của nút */
+        cursor: pointer;
+        margin: 20px 0; /* Khoảng cách xung quanh nút */
+        transition: background-color 0.3s; /* Hiệu ứng chuyển màu nền khi hover */
+    }
+
+        /* Khi hover vào nút Đăng nhập */
+        #dangnhap:hover {
+            background-color: #218838; /* Màu nền thay đổi khi hover */
+        }
+
+    /* Style cho văn bản chào mừng */
+    .welcome-text {
+        font-family: "Chewy", system-ui;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 8vh; /* Kích thước chữ bằng 8% chiều cao viewport */
+        text-align: center;
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+
+    /* Style cho các đoạn văn bản trong form */
+    p {
+        margin-top: 0;
+    }
+
+    /* Style cho nút "Quay lại Trang Chủ" */
+    .back-to-home {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        padding: 10px 20px;
+        background-color: white;
+        opacity: 50%; /* Độ mờ 50% */
+        color: black; /* Màu chữ đen */
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s;
+    }
+
+        /* Khi hover vào nút Quay lại Trang Chủ */
+        .back-to-home:hover {
+            background-color: #2f9dbd; /* Màu nền thay đổi khi hover */
+        }
+</style>
+<body>
+    <!-- Nút "Quay lại Trang Chủ" -->
+    <button class="back-to-home" onclick="window.location.href='/'">Quay lại Trang Chủ</button>
+
+    <!-- Văn bản chào mừng -->
+    <div class="welcome-text">
+        <h style="color:white">
+            Welcome to <br />
+            <span style="color: black; font-size: 9vh;">
+                BoysCoffee
+            </span>
+        </h>
+    </div>
+
+    <!-- Form đăng nhập -->
+    <div class="login-container">
+        <!-- Tiêu đề của form đăng nhập -->
+        <h2 class="bungee" style="font-size: 40px; text-align: center; color: #2e8b57;">ĐĂNG NHẬP</h2>
+
+        <!-- Form đăng nhập với phương thức POST -->
+        @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+        {
+            <!-- Hiển thị thông báo lỗi nếu có -->
+            if (!ViewData.ModelState.IsValid)
+            {
+                <div style="color:red">
+                    @Html.ValidationSummary()
+                </div>
+            }
+
+            <!-- Ô nhập tài khoản -->
+            <input id="user" type="text" name="username" placeholder="Tài khoản" required>
+
+            <!-- Ô nhập mật khẩu và nút hiển thị/ẩn mật khẩu -->
+            <div class="password-container">
+                <input id="pass" type="password" name="Password" placeholder="Mật khẩu" required>
+                <button type="button" id="togglePassword" class="toggle-password">
+                    <i class="fas fa-eye"></i> <!-- Biểu tượng mắt để hiển thị mật khẩu -->
+                </button>
+            </div>
+
+            <!-- Nút Đăng nhập -->
+            <button id="dangnhap" type="submit">Đăng nhập</button>
+        }
+
+        <!-- Liên kết tới trang đăng ký nếu chưa có tài khoản -->
+        <p>
+            Chưa có tài khoản? @Html.ActionLink("Đăng ký ngay", "Register", "Account", null, new { style = "color: #38b6ff; text-decoration: none;" })
+        </p>
+    </div>
+</body>
+
+<!-- JavaScript để hiển thị/ẩn mật khẩu khi nhấn vào biểu tượng mắt -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordField = document.getElementById('pass');
+
+        // Sự kiện nhấn nút hiển thị/ẩn mật khẩu
+        togglePassword.addEventListener('click', function () {
+            // Chuyển đổi giữa kiểu 'password' và 'text' để ẩn/hiện mật khẩu
+            const type = passwordField.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordField.setAttribute('type', type);
+
+            // Thay đổi biểu tượng
+            const icon = type === 'password' ? '<i class="fas fa-eye"></i>' : '<i class="fas fa-eye-slash"></i>';
+            togglePassword.innerHTML = icon; // Cập nhật nội dung của nút
+        });
+    });
+</script>
+
+</html>
