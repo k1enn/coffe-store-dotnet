@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BoysCoffe.Models;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
@@ -7,7 +8,6 @@ using System.Linq;
 using System.Net;
 using System.Web;
 using System.Web.Mvc;
-using BoysCoffe.Models;
 
 
 namespace BoysCoffe.Controllers
@@ -28,6 +28,128 @@ namespace BoysCoffe.Controllers
             var products = db.Products.Include(p => p.Category).ToList();
             return View(products);
         }
+        public ActionResult AddToCart(int id)
+        {
+            // Get the product by its ID
+            var product = db.Products.FirstOrDefault(p => p.ProductId == id);
+
+            if (product == null)
+                return HttpNotFound();
+
+            // Get the current cart from the session, or create a new one if it doesn't exist
+            var cart = Session["Cart"] as List<CartItem>;
+            if (cart == null)
+            {
+                cart = new List<CartItem>();
+                Session["Cart"] = cart;
+            }
+
+            // Check if the product already exists in the cart
+            var existingItem = cart.FirstOrDefault(ci => ci.Product.ProductId == id);
+            if (existingItem == null)
+            {
+                // Add new item to cart
+                cart.Add(new CartItem { Product = product, Quantity = 1, Price = product.Price });
+            }
+            else
+            {
+                // Update quantity and total price
+                existingItem.Quantity++;
+                existingItem.Price = existingItem.Quantity * product.Price;
+            }
+
+            return RedirectToAction("ShowCart", "Products");
+        }
+        private List<CartItem> GetCart()
+        {
+            // For the sake of example, let's assume we're using session to store the cart
+            return Session["Cart"] as List<CartItem>;
+        }
+        public ActionResult Checkout()
+        {
+            var cart = GetCart(); // You should replace this with the method to retrieve the user's cart
+
+            if (cart == null || !cart.Any())
+            {
+                return RedirectToAction("Index", "Products"); // Or another page to notify the user that the cart is empty
+            }
+
+            // Replace with your logic to get the logged-in user’s ID
+            int userId = GetCurrentUserId(); // Assuming you have a method to get the logged-in user's ID
+
+            var order = new Order
+            {
+                OrderDate = DateTime.Now,
+                TotalPrice = cart.Sum(c => c.TotalPrice),
+                UserId = userId // Use the userId from your method
+            };
+
+            db.Orders.Add(order); // Add order to database
+            db.SaveChanges(); // Save the order first to generate the OrderId
+
+            // Add OrderItems based on the cart
+            foreach (var item in cart)
+            {
+                // Check if the product exists in the database
+                var product = db.Products.FirstOrDefault(p => p.ProductId == item.Product.ProductId);
+                if (product == null)
+                {
+                    // Optionally, you can log or handle the case where the product does not exist
+                    return RedirectToAction("Index", "Products"); // Redirect to a page where the product does not exist
+                }
+
+                var orderItem = new OrderItem
+                {
+                    OrderId = order.OrderId,
+                    ProductId = item.Product.ProductId, // Use the ProductId explicitly
+                    Quantity = item.Quantity,
+                    TotalPrice = item.TotalPrice
+                };
+
+                db.OrderItems.Add(orderItem); // Add OrderItem to database
+            }
+
+            db.SaveChanges(); // Save all changes to the database
+
+            return RedirectToAction("OrderConfirmation", new { orderId = order.OrderId }); // Redirect to order confirmation page
+        }
+
+        public int GetCurrentUserId()
+        {
+            // You can fetch the user ID based on your authentication method
+            // For example, you might have a session or a cookie storing the user ID
+            return Session["UserId"] != null ? (int)Session["UserId"] : 0;
+        }
+
+
+        [HttpPost]
+        public ActionResult RemoveFromCart(int id)
+        {
+            var cart = Session["Cart"] as List<CartItem>;
+            if (cart == null)
+            {
+                return RedirectToAction("ShowCart");
+            }
+
+            var item = cart.FirstOrDefault(ci => ci.Product.ProductId == id);
+            if (item != null)
+            {
+                cart.Remove(item);
+            }
+
+            return RedirectToAction("ShowCart");
+        }
+        public ActionResult ShowCart()
+        {
+            var cart = Session["Cart"] as List<CartItem>;
+            if (cart == null || cart.Count == 0)
+            {
+                return View("EmptyCart"); // Show empty cart view if no items
+            }
+
+            return View(cart);
+        }
+
 
         // GET: Products/Details/5
         public ActionResult Details(int? id)
@@ -50,25 +172,21 @@ namespace BoysCoffe.Controllers
             ViewBag.CategoryId = new SelectList(db.Categories, "CategoryId", "Name");
             return View();
         }
+        public ActionResult OrderConfirmation(int orderId)
+        {
+            // Fetch the order with its associated items and product details
+            var order = db.Orders
+                .Include(o => o.OrderItems.Select(oi => oi.Product)) // Include order items and associated products
+                .FirstOrDefault(o => o.OrderId == orderId);
 
-        // POST: Products/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to, for 
-        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
-        //[HttpPost]
-        //[ValidateAntiForgeryToken]
-        //public ActionResult Create([Bind(Include = "ProductId,Name,Description,ImageUrl,Price,CategoryId")] Product product)
-        //{
-        //    if (ModelState.IsValid)
-        //    {
-        //        db.Products.Add(product);
-        //        db.SaveChanges();
-        //        return RedirectToAction("Index");
-        //    }
+            if (order == null)
+            {
+                return HttpNotFound(); // If the order doesn't exist, return a 404 error
+            }
 
-        //    ViewBag.CategoryId = new SelectList(db.Categories, "CategoryId", "Name", product.CategoryId);
-        //    return View(product);
-        //}
-        //// POST: Products/Create
+            return View(order); // Pass the order to the view
+        }
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ProductId,Name,Description,Price,CategoryId")] Product product, HttpPostedFileBase imageFile)

@@ -81,5 +81,5 @@ D:\LapTrinhWeb\BoysCoffe\BoysCoffe\obj\Debug\BoysCoffe.csproj.CoreCompileInputs.
 D:\LapTrinhWeb\BoysCoffe\BoysCoffe\obj\Debug\BoysCoffe.csproj.Up2Date
 D:\LapTrinhWeb\BoysCoffe\BoysCoffe\obj\Debug\BoysCoffe.dll
 D:\LapTrinhWeb\BoysCoffe\BoysCoffe\obj\Debug\BoysCoffe.pdb
+D:\LapTrinhWeb\BoysCoffe\BoysCoffe\obj\Debug\BoysCoffe.Migrations.test.resources
 D:\LapTrinhWeb\BoysCoffe\BoysCoffe\obj\Debug\BoysCoffe.csproj.GenerateResource.cache
-D:\LapTrinhWeb\BoysCoffe\BoysCoffe\obj\Debug\BoysCoffe.Migrations.New.resources

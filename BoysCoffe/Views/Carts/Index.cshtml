@@ -1,40 +1,8 @@
-﻿@model IEnumerable<BoysCoffe.Models.Cart>
-
-@{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+﻿@model BoysCoffe.Models.Cart
+<h2>Your Cart</h2>
+@foreach (var item in Model.CartItems)
+{
+    <p>@item.Product.Name - Quantity: @item.Quantity - Price: @item.Price</p>
 }
-
-<h2>Index</h2>
-
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.User.Username)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.UserId)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.User.Username)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.UserId)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.CartId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.CartId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.CartId })
-        </td>
-    </tr>
-}
-
-</table>
+<p>Total: @Model.CartItems.Sum(item => item.TotalPrice)</p>
+<a href="@Url.Action("Index", "Checkout")" class="btn btn-primary">Checkout</a>

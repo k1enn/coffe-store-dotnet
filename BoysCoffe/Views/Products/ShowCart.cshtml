@@ -1,0 +1,49 @@
+﻿@model List<BoysCoffe.Models.CartItem>
+
+<div class="container">
+    <h2>Your Cart</h2>
+
+    @if (Model.Count == 0)
+    {
+        <div class="alert alert-warning">
+            <p>Your cart is currently empty. Start adding some items to your cart!</p>
+            <a href="@Url.Action("Shopping", "Products")" class="btn btn-primary">Go Shopping</a>
+        </div>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Product.Name</td>
+                        <td>@item.Product.Price</td>
+                        <td>@item.Quantity</td>
+                        <td>@item.Price</td>
+                        <td>
+                            <!-- Add remove functionality here if needed -->
+                            <form action="@Url.Action("RemoveFromCart", "Products", new { id = item.Product.ProductId })" method="post">
+                                <button type="submit" class="btn btn-danger">Remove</button>
+                            </form>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="text-right">
+            <a href="@Url.Action("Checkout", "Products")" class="btn btn-success">Proceed to Checkout</a>
+            <a href="@Url.Action("Shopping", "Products")" class="btn btn-warning">Back to Shopping</a>
+        </div>
+    }
+</div>

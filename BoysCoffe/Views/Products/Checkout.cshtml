@@ -1,0 +1,35 @@
+﻿@using BoysCoffe.Models;
+@model IEnumerable<CartItem>
+
+<div class="container">
+    <h2>Checkout</h2>
+
+    <form action="@Url.Action("Checkout", "Checkout")" method="post">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Product.Name</td>
+                        <td>@item.Price</td>
+                        <td>@item.Quantity</td>
+                        <td>@item.Price * @item.Quantity</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <div class="text-right">
+            <p>Total: @Model.Sum(item => item.Price)</p>
+            <button type="submit" class="btn btn-success">Place Order</button>
+        </div>
+    </form>
+</div>

@@ -1,6 +1,5 @@
-﻿using System.Data.Entity;
-using System.ComponentModel.DataAnnotations.Schema;
-using BoysCoffe.Models;
+﻿using BoysCoffe.Models;
+using System.Data.Entity;
 
 public class BoysCoffeContext : DbContext
 {

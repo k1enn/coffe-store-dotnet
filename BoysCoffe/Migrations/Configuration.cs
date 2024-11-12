@@ -1,11 +1,8 @@
 ﻿namespace BoysCoffe.Migrations
 {
     using BoysCoffe.Models;
-    using System;
     using System.Collections.Generic;
-    using System.Data.Entity;
     using System.Data.Entity.Migrations;
-    using System.Linq;
 
     internal sealed class Configuration : DbMigrationsConfiguration<BoysCoffeContext>
     {
@@ -31,7 +28,7 @@
             {
                 // CAFÉ products
                 new Product { ProductId = 1, Name = "Cà phê muối", Description = "Giống chú Long nhưng ngon hơn", Price = 25, CategoryId = 1, ImageUrl = "/coffee/muoi.jpg" },
-                new Product { ProductId = 2, Name = "Cappucino", Description = "Love foam sữa mịn màng, cân bằng giữa ngọt béo hoà quyện cùng cà phê, tạo hương vị tinh tế lôi cuốn", Price = 30, CategoryId = 1, ImageUrl = "/coffee/cappucino.jpg" },
+                new Product { ProductId = 2, Name = "Cappucino", Description = "Love foam sữa mịn màng, cân bằng giữa ngọt béo hoà quyện cùng cà phê, tạo hương vị tinh tế lôi cuốn", Price = 30, CategoryId = 1, ImageUrl = "/coffee/cappuccino.jpg" },
                 new Product { ProductId = 3, Name = "Cafe Đen", Description = "Cà phê đen đậm vị, thơm nồng, đánh thức mọi giác quan, tỉnh táo suốt ngày dài", Price = 20, CategoryId = 1, ImageUrl = "/coffee/den.jpg" },
                 new Product { ProductId = 4, Name = "Cà phê sữa", Description = "Cà phê sữa béo ngậy, ngọt vừa, đánh thức năng lượng tức thì, dành cho người cần khởi đầu nhẹ nhàng", Price = 22, CategoryId = 1, ImageUrl = "/coffee/sua.jpg" },
 

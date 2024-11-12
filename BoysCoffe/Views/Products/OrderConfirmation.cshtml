@@ -1,0 +1,43 @@
+﻿@model BoysCoffe.Models.Order
+
+@{
+    ViewBag.Title = "Order Confirmation";
+}
+
+<div class="container">
+    <h2>Order Confirmation</h2>
+
+    <div>
+        <p>Thank you for your order!</p>
+        <p><strong>Order ID:</strong> @Model.OrderId</p>
+        <p><strong>Order Date:</strong> @Model.OrderDate.ToString("g")</p>
+        <p><strong>Total Price:</strong> @Model.TotalPrice.ToString("C")</p>
+
+        <h3>Order Details</h3>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.OrderItems)
+                {
+                    <tr>
+                        <td>@item.Product.Name</td>
+                        <td>@item.Product.Price.ToString("C")</td>
+                        <td>@item.Quantity</td>
+                        <td>@item.TotalPrice.ToString("C")</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+        <p><strong>Grand Total:</strong> @Model.TotalPrice.ToString("C")</p>
+
+        <a href="@Url.Action("Index", "Products")" class="btn btn-success">Continue Shopping</a>
+    </div>
+</div>

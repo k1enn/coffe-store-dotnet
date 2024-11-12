@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="col-md-2 text-right">
-                    <a class="btn btn-danger" href="\ShoppingCart\ShowCart" style="font-weight:200;"> <span class="glyphicon glyphicon-shopping-cart"></span> Your Cart </a>
+                    <a class="btn btn-danger" href="\Products\ShowCart" style="font-weight:200;"> <span class="glyphicon glyphicon-shopping-cart"></span> Your Cart </a>
                 </div>
             </div>
         }
@@ -72,13 +72,14 @@
                         <img src="~/Content/images/@pro.ImageUrl" width="200" height="250" style="border-radius: 24px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" />
                         <p>@Html.DisplayFor(model => pro.Name)</p>
                         <p>Đơn giá: <font color="red">@Html.DisplayFor(model => pro.Price)</font></p>
-                        <p>
-                            <a class="btn btn-info" href="/Products/Details/@pro.ProductId"> Chi tiết </a>
-                        </p>
+                        <span><a class="btn btn-info" href="/Products/Details/@pro.ProductId"> Chi tiết </a></span>
+                            
+                        
                         <!-- Form for adding the product to the cart -->
-                        <form action="@Url.Action("AddToCart", "Product", new { id = pro.ProductId })" method="post" style="display:inline;">
+                        <form action="@Url.Action("AddToCart", "Products", new { id = pro.ProductId })" method="post" style="display:inline;">
                             <button type="submit" class="btn btn-danger"> Mua </button>
                         </form>
+
                     </div>
                 </div>
             }

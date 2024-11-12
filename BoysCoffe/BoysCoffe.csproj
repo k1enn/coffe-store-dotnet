@@ -137,9 +137,9 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202411121546476_New.cs" />
-    <Compile Include="Migrations\202411121546476_New.Designer.cs">
-      <DependentUpon>202411121546476_New.cs</DependentUpon>
+    <Compile Include="Migrations\202411121653054_test.cs" />
+    <Compile Include="Migrations\202411121653054_test.Designer.cs">
+      <DependentUpon>202411121653054_test.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BoysCoffeContext.cs" />
@@ -270,6 +270,10 @@
     <Content Include="Views\Products\Details.cshtml" />
     <Content Include="Views\Products\Edit.cshtml" />
     <Content Include="Views\Products\Delete.cshtml" />
+    <Content Include="Views\Products\ShowCart.cshtml" />
+    <Content Include="Views\Products\Checkout.cshtml" />
+    <Content Include="Views\Products\EmptyCart.cshtml" />
+    <Content Include="Views\Products\OrderConfirmation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -286,8 +290,8 @@
     <Content Include="Scripts\jquery-3.7.0.slim.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202411121546476_New.resx">
-      <DependentUpon>202411121546476_New.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202411121653054_test.resx">
+      <DependentUpon>202411121653054_test.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

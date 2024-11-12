@@ -1,12 +1,10 @@
-﻿using System;
+﻿using BoysCoffe.Models;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
-using System.Web;
 using System.Web.Mvc;
-using BoysCoffe.Models;
 
 namespace BoysCoffe.Controllers
 {
@@ -17,8 +15,56 @@ namespace BoysCoffe.Controllers
         // GET: Carts
         public ActionResult Index()
         {
-            var carts = db.Carts.Include(c => c.User);
-            return View(carts.ToList());
+            var cart = GetOrCreateCart();
+            return View(cart);
+        }
+        public Cart GetOrCreateCart()
+        {
+            // Fetch the existing cart or create a new one if it doesn't exist
+            // This example uses session as a simple cart identifier
+            int? cartId = (int?)Session["CartId"];
+            Cart cart;
+
+            if (cartId == null || (cart = db.Carts.Include(c => c.CartItems.Select(ci => ci.Product)).FirstOrDefault(c => c.CartId == cartId)) == null)
+            {
+                cart = new Cart { CartItems = new List<CartItem>() };
+                db.Carts.Add(cart);
+                db.SaveChanges();
+                Session["CartId"] = cart.CartId;
+            }
+
+            return cart;
+        }
+        [HttpPost]
+        public ActionResult AddToCart(int productId, int quantity = 1)
+        {
+            var product = db.Products.Find(productId);
+            if (product == null)
+                return HttpNotFound();
+
+            // Fetch existing cart or create a new one
+            var cart = GetOrCreateCart();
+
+            // Check if item is already in the cart
+            var cartItem = cart.CartItems.FirstOrDefault(ci => ci.ProductId == productId);
+            if (cartItem == null)
+            {
+                cartItem = new CartItem
+                {
+                    ProductId = productId,
+                    Quantity = quantity,
+                    Price = product.Price,
+                    CartId = cart.CartId
+                };
+                cart.CartItems.Add(cartItem);
+            }
+            else
+            {
+                cartItem.Quantity += quantity;
+            }
+
+            db.SaveChanges();
+            return RedirectToAction("Index");
         }
 
         // GET: Carts/Details/5

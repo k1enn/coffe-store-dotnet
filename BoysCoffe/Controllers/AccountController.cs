@@ -1,8 +1,6 @@
-﻿using System.Data.Entity.Core.Objects;
+﻿using BoysCoffe.Models;
 using System.Linq;
-using System.Runtime.Remoting.Contexts;
 using System.Web.Mvc;
-using BoysCoffe.Models;
 
 
 namespace BoysCoffe.Controllers

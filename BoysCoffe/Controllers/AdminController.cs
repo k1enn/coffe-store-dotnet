@@ -1,7 +1,6 @@
-﻿using System;
+﻿using BoysCoffe.Models;
 using System.Linq;
 using System.Web.Mvc;
-using BoysCoffe.Models;
 
 namespace BoysCoffe.Controllers
 {
@@ -37,7 +36,7 @@ namespace BoysCoffe.Controllers
             return View(dashboardData);
         }
 
-        
-       
+
+
     }
 }
