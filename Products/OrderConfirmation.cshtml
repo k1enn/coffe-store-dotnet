@@ -1,0 +1,49 @@
+﻿@model BoysCoffe.Models.Order
+
+@{
+    ViewBag.Title = "Order Confirmation";
+}
+
+<div class="container my-5" >
+    <h2 class="text-center text-success my-4">Order Confirmation</h2>
+
+    <div class="bg-light p-4 rounded shadow-sm" style="background-color:#e0f6e6">
+        <p class="lead">Thank you for your order!</p>
+
+        <div class="mb-3">
+            <p><strong>Order ID:</strong> <span class="text-muted">@Model.OrderId</span></p>
+            <p><strong>Order Date:</strong> <span class="text-muted">@Model.OrderDate.ToString("g")</span></p>
+            <p><strong>Total Price:</strong> <span class="text-success">@Model.TotalPrice.ToString("C")</span></p>
+        </div>
+
+        <h4 class="my-4">Order Details</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model.OrderItems)
+                    {
+                        <tr>
+                            <td>@item.Product.Name</td>
+                            <td>@item.Product.Price.ToString("C")</td>
+                            <td>@item.Quantity</td>
+                            <td>@item.TotalPrice.ToString("C")</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center my-4">
+            <h5 class="text-muted"><strong>Grand Total:</strong> @Model.TotalPrice.ToString("C")</h5>
+            <a href="@Url.Action("Index", "Products")" class="btn btn-lg btn-primary" style="background-color:forestgreen">Continue Shopping</a>
+        </div>
+    </div>
+</div>
