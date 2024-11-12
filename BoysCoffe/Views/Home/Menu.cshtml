@@ -1,0 +1,186 @@
+﻿
+@{
+    ViewBag.Title = "Menu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boys Coffee - Giới thiệu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Tổng thể */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Màu nền đen */
+            color: #000000; /* Màu chữ đen */
+            background-image: none; /* Bỏ background image nếu không cần */
+        }
+
+        /* Tiêu đề chính */
+        h2 {
+            font-size: 4rem; /* Giảm kích thước chữ tiêu đề */
+            text-align: center;
+            margin-top: 80px; /* Tăng khoảng cách trên */
+            margin-bottom: 30px; /* Thêm khoảng cách dưới */
+            font-family: 'Bungee', sans-serif; /* Font chữ */
+            font-weight: bold;
+            color: #66cdaa; /* Màu sắc */
+            text-transform: uppercase;
+        }
+
+        /* Phần Giới thiệu và các phần khác */
+        .section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0;
+            width: 100%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Thêm bóng mờ cho khung */
+            padding: 20px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.85); /* Nền trắng mờ */
+        }
+
+            .section img {
+                width: 50%;
+                border-radius: 20px;
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            }
+
+        .section-content {
+            width: 50%;
+            padding-left: 20px;
+            text-align: left; /* Căn lề trái cho phần văn bản */
+        }
+
+            .section-content h3 {
+                color: #000000;
+                font-size: 3rem;
+                margin-bottom: 20px;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+
+            .section-content p {
+                font-size: 1.5rem;
+                line-height: 1.8;
+                color: #000000;
+                margin-bottom: 20px; /* Thêm khoảng cách dưới cho phần mô tả */
+            }
+
+        /* Các hiệu ứng di chuyển và làm mờ */
+        .move-in {
+            opacity: 0.3;
+            transform: translateX(-50px);
+            transition: transform 1s ease, opacity 1s ease;
+        }
+
+        .active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .section.reverse {
+            flex-direction: row-reverse;
+        }
+
+        /* Nền Coffee (mờ và loang loang) */
+        .coffee-section {
+            background: linear-gradient(45deg, rgba(111, 79, 40, 0.8), rgba(111, 79, 40, 0.4)); /* Gradient mờ nâu */
+            color: white;
+        }
+
+        /* Nền Tea (mờ và loang loang) */
+        .tea-section {
+            background: linear-gradient(45deg, rgba(102, 205, 170, 0.8), rgba(102, 205, 170, 0.4)); /* Gradient mờ xanh lá */
+            color: white;
+        }
+
+        /* Style cho button */
+        .btn {
+            background-color: #66cdaa; /* Màu nền xanh */
+            color: white; /* Màu chữ trắng */
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            margin-top: 20px;
+            display: inline-block; /* Đảm bảo button hiển thị trong dòng */
+        }
+
+            .btn:hover {
+                background-color: #55a88a; /* Màu nền khi hover */
+                transform: translateY(-3px); /* Hiệu ứng đẩy nút lên khi hover */
+            }
+
+            .btn:active {
+                transform: translateY(1px); /* Khi nhấn, nút sẽ hơi đẩy xuống */
+            }
+    </style>
+</head>
+<body>
+    <h2>Menu</h2>
+
+    <!-- Phần Giới thiệu Coffee -->
+    <div class="section move-in coffee-section">
+        <div class="section-content">
+            <h3 style="color:white">Coffee</h3>
+            <p>
+                Cà phê là sự kết hợp hoàn hảo giữa hương thơm nồng nàn và vị đậm đà, mỗi ngụm mang đến cảm giác sâu lắng và sảng khoái. Từ sự mạnh mẽ của espresso cho đến sự mượt mà của cappuccino, cà phê không chỉ đánh thức các giác quan mà còn là một trải nghiệm tinh tế, mang lại sự thư giãn và nguồn cảm hứng bất tận.
+            </p>
+            <!-- Button cho Coffee -->
+            <button class="btn">Khám Phá Cà Phê</button>
+        </div>
+        <img src="~/Content/images/logo.png" alt="Boys Coffee Image" style="width: 30%; border-radius: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+    </div>
+
+    <!-- Phần Giới thiệu Tea -->
+    <div class="section move-in tea-section">
+        <img src="~/Content/images/lịch sử.jpg" alt="History Image">
+        <div class="section-content">
+            <h3 style="color:white">Tea</h3>
+            <p>Trà là một hành trình của sự nhẹ nhàng và thanh thoát, nơi mỗi ngụm mang đến sự tươi mới và thư giãn. Từ hương vị dịu nhẹ của trà xanh đến sự đậm đà của trà đen, trà không chỉ làm dịu mát cơ thể mà còn mang đến một không gian yên bình, giúp tâm hồn tĩnh lặng và sảng khoái. Chất liệu tự nhiên, kết hợp cùng cách pha chế tinh tế, tạo nên một trải nghiệm đầy cảm hứng và bình yên.</p>
+            <!-- Button cho Tea -->
+            <button class="btn">Khám Phá Trà</button>
+        </div>
+    </div>
+
+    <!-- JavaScript để kích hoạt hiệu ứng di chuyển -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const elements = document.querySelectorAll('.move-in');
+
+            function checkPosition() {
+                const windowHeight = window.innerHeight;
+                elements.forEach(function (element) {
+                    const elementTop = element.getBoundingClientRect().top;
+                    if (elementTop <= windowHeight * 0.8 && elementTop >= 0) {
+                        // Khi phần tử trong tầm nhìn, tăng độ mờ lên
+                        element.classList.add('active');
+                    } else {
+                        // Khi phần tử ra khỏi tầm nhìn, làm mờ đi mà không ẩn
+                        element.classList.remove('active');
+                    }
+                });
+            }
+
+            // Kiểm tra lần đầu
+            checkPosition();
+
+            // Kiểm tra khi cuộn trang lên hoặc xuống
+            window.addEventListener('scroll', checkPosition);
+        });
+    </script>
+</body>
+</html>
+

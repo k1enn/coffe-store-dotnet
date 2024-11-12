@@ -274,6 +274,7 @@
     <Content Include="Views\Products\Checkout.cshtml" />
     <Content Include="Views\Products\EmptyCart.cshtml" />
     <Content Include="Views\Products\OrderConfirmation.cshtml" />
+    <Content Include="Views\Home\Menu.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

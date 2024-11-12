@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\boyscoffe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\boyscoffe\\views\\home\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\home\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\boyscoffe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\boyscoffe\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "BoysCoffe\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "BoysCoffe\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T17:07:11.746Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Menu.cshtml",
+              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Home\\Menu.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Home\\Menu.cshtml",
+              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Home\\Menu.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Home\\Menu.cshtml",
+              "ViewState": "AgIAADkAAAAAAAAAAAAAABQAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T17:06:12.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Home\\About.cshtml",
+              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T17:04:55.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAGgAAAAAAAAAAAAYwC8AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-12T17:03:07.781Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
