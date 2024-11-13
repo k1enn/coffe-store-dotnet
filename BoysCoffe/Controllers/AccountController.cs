@@ -43,7 +43,7 @@ namespace BoysCoffe.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(string username, string password)
+        public ActionResult Login(string username, string password, string returnUrl)
         {
             if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
             {
@@ -51,19 +51,25 @@ namespace BoysCoffe.Controllers
                 return View();
             }
 
-            // Check login credentials
+            // Kiểm tra thông tin đăng nhập
             var user = _context.Users.FirstOrDefault(u => u.Username == username && u.Password == password);
 
             if (user != null)
             {
-                // Store user ID and role in session
+                // Lưu thông tin người dùng vào session
                 Session["UserId"] = user.UserId;
                 Session["Role"] = user.Role;
 
-                // Redirect based on user role
+                // Nếu returnUrl tồn tại, chuyển hướng về đó, nếu không thì chuyển hướng mặc định
+                if (!string.IsNullOrEmpty(returnUrl))
+                {
+                    return Redirect(returnUrl); // Chuyển hướng về trang Checkout hoặc trang ban đầu yêu cầu
+                }
+
+                // Chuyển hướng mặc định dựa trên vai trò người dùng nếu không có returnUrl
                 if (user.Role == "Admin")
                 {
-                    return RedirectToAction("Index", "Products"); // Adjust action and controller names if necessary
+                    return RedirectToAction("Index", "Products");
                 }
                 else
                 {

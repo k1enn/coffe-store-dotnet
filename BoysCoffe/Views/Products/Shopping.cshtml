@@ -5,44 +5,99 @@
 }
 
 @model IEnumerable<Product>
+
 <style>
+    /* Định dạng chung */
+    body {
+        background-color: #e0f6e6; /* Màu nền */
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
 
     h2 {
-        /* color removed */
+        color: #5a5a5a;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 2rem;
+        font-weight: bold;
     }
 
     .search-box {
-        /* background-color and border-color removed */
+        margin-bottom: 20px;
         padding: 15px;
-        border-radius: 5px;
-    }
-
-    .btn-warning {
-        /* all colors removed */
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
     }
 
     .btn-danger {
-        /* all colors removed */
+        background-color: #ff4b4b;
+        border: none;
+        color: #fff;
+        padding: 8px 15px;
+        border-radius: 8px;
+        font-weight: 500;
     }
 
-    .btn-info {
-        /* all colors removed */
+    .col-lg-4, .col-md-4, .col-sm-6 {
+        margin-bottom: 20px;
     }
 
     .card-pro {
-        /* background-color removed */
+        background-color: #fff;
         padding: 15px;
-        margin-bottom: 20px;
-        border-radius: 5px;
+        border-radius: 16px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 10px;
+        cursor: pointer;
     }
 
-    .pagination > li > a {
-        /* background-color and color removed */
-    }
+        .card-pro:hover {
+            transform: translateY(-10px);
+        }
 
-    .pagination > .active > a {
-        /* background-color and border-color removed */
-    }
+        .card-pro img {
+            border-radius: 16px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            max-height: 250px;
+            width: 200px;
+            height: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-pro p {
+            margin: 0;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .card-pro .product-name {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .card-pro .product-price {
+            font-size: 1rem;
+            color: #20c579; /* Màu thương hiệu */
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .card-pro .btn-buy {
+            background-color: #20c579; /* Màu thương hiệu */
+            border: none;
+            padding: 8px 15px;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: 500;
+        }
 </style>
 
 <div class="container">
@@ -50,43 +105,31 @@
     <div class="search-box">
         @using (Html.BeginForm("ProductList", "Products", FormMethod.Get))
         {
-            <div class="row">
-                <div class="col-md-10">
-
-                </div>
-
-                <div class="col-md-2 text-right">
-                    <a class="btn btn-danger" href="\Products\ShowCart" style="font-weight:200;"> <span class="glyphicon glyphicon-shopping-cart"></span> Your Cart </a>
-                </div>
+            <div class="col-md-2 text-right">
+                <a class="btn btn-danger" href="\Products\ShowCart" style="font-weight:200;">
+                    <span class="glyphicon glyphicon-shopping-cart"></span> Your Cart
+                </a>
             </div>
         }
     </div>
-
 
     <div class="container">
         <div class="row">
             @foreach (var pro in Model)
             {
                 <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
-                    <div class="card-pro text-center">
-                        <img src="~/Content/images/@pro.ImageUrl" width="200" height="250" style="border-radius: 24px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);" />
-                        <p>@Html.DisplayFor(model => pro.Name)</p>
-                        <p>Đơn giá: <font color="red">@Html.DisplayFor(model => pro.Price)</font></p>
-                        <span><a class="btn btn-info" href="/Products/Details/@pro.ProductId"> Chi tiết </a></span>
-                            
-                        
-                        <!-- Form for adding the product to the cart -->
-                        <form action="@Url.Action("AddToCart", "Products", new { id = pro.ProductId })" method="post" style="display:inline;">
-                            <button type="submit" class="btn btn-danger"> Mua </button>
-                        </form>
+                    <div class="card-pro text-center" onclick="window.location.href='/Products/Details/@pro.ProductId'">
+                        <img src="~/Content/images/@pro.ImageUrl" alt="@pro.Name" />
+                        <p class="product-name">@pro.Name</p>
+                        <p class="product-price">@pro.Price.ToString("N0") đ</p>
 
+                        <!-- Nút "Đặt ngay" -->
+                        <form action="@Url.Action("AddToCart", "Products", new { id = pro.ProductId })" method="post" style="display:inline;">
+                            <button type="submit" class="btn-buy">Đặt ngay</button>
+                        </form>
                     </div>
                 </div>
             }
         </div>
     </div>
-
-
-
 </div>
-

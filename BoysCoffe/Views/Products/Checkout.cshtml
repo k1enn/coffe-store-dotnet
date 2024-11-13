@@ -2,34 +2,36 @@
 @model IEnumerable<CartItem>
 
 <div class="container">
-    <h2>Checkout</h2>
+    <h2 class="text-center my-4">Checkout</h2>
 
     <form action="@Url.Action("Checkout", "Checkout")" method="post">
-        <table class="table table-bordered">
-            <thead>
-                <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Total</th>
-                </tr>
-            </thead>
-            <tbody>
-                @foreach (var item in Model)
-                {
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered">
+                <thead class="thead-dark">
                     <tr>
-                        <td>@item.Product.Name</td>
-                        <td>@item.Price</td>
-                        <td>@item.Quantity</td>
-                        <td>@item.Price * @item.Quantity</td>
+                        <th>Product</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
                     </tr>
-                }
-            </tbody>
-        </table>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>@item.Product.Name</td>
+                            <td>@item.Price.ToString("C")</td> <!-- Format Price -->
+                            <td>@item.Quantity</td>
+                            <td>@(item.Price * item.Quantity).ToString("C")</td> <!-- Format Total -->
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
 
-        <div class="text-right">
-            <p>Total: @Model.Sum(item => item.Price)</p>
-            <button type="submit" class="btn btn-success">Place Order</button>
+        <div class="d-flex justify-content-between align-items-center my-4">
+            <h4>Total: @Model.Sum(item => item.Price * item.Quantity).ToString("C")</h4>
+            <button type="submit" class="btn btn-lg btn-success">Place Order</button>
         </div>
     </form>
 </div>

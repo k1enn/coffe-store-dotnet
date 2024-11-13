@@ -67,52 +67,58 @@ namespace BoysCoffe.Controllers
         }
         public ActionResult Checkout()
         {
-            var cart = GetCart(); // You should replace this with the method to retrieve the user's cart
+            // Kiểm tra nếu người dùng chưa đăng nhập
+            if (Session["UserId"] == null)
+            {
+                // Chuyển hướng đến trang đăng nhập với ReturnUrl là Checkout
+                return RedirectToAction("Login", "Account", new { returnUrl = Url.Action("Checkout", "Products") });
+            }
+
+            var cart = GetCart(); // Lấy giỏ hàng của người dùng
 
             if (cart == null || !cart.Any())
             {
-                return RedirectToAction("Index", "Products"); // Or another page to notify the user that the cart is empty
+                return RedirectToAction("Index", "Products"); // Chuyển hướng nếu giỏ hàng trống
             }
 
-            // Replace with your logic to get the logged-in user’s ID
-            int userId = GetCurrentUserId(); // Assuming you have a method to get the logged-in user's ID
+            // Lấy ID của người dùng đã đăng nhập từ Session
+            int userId = (int)Session["UserId"];
 
             var order = new Order
             {
                 OrderDate = DateTime.Now,
                 TotalPrice = cart.Sum(c => c.TotalPrice),
-                UserId = userId // Use the userId from your method
+                UserId = userId
             };
 
-            db.Orders.Add(order); // Add order to database
-            db.SaveChanges(); // Save the order first to generate the OrderId
+            db.Orders.Add(order);
+            db.SaveChanges();
 
-            // Add OrderItems based on the cart
+            // Thêm các OrderItem vào database
             foreach (var item in cart)
             {
-                // Check if the product exists in the database
                 var product = db.Products.FirstOrDefault(p => p.ProductId == item.Product.ProductId);
                 if (product == null)
                 {
-                    // Optionally, you can log or handle the case where the product does not exist
-                    return RedirectToAction("Index", "Products"); // Redirect to a page where the product does not exist
+                    return RedirectToAction("Index", "Products");
                 }
 
                 var orderItem = new OrderItem
                 {
                     OrderId = order.OrderId,
-                    ProductId = item.Product.ProductId, // Use the ProductId explicitly
+                    ProductId = item.Product.ProductId,
                     Quantity = item.Quantity,
                     TotalPrice = item.TotalPrice
                 };
 
-                db.OrderItems.Add(orderItem); // Add OrderItem to database
+                db.OrderItems.Add(orderItem);
             }
 
-            db.SaveChanges(); // Save all changes to the database
+            db.SaveChanges();
 
-            return RedirectToAction("OrderConfirmation", new { orderId = order.OrderId }); // Redirect to order confirmation page
+            return RedirectToAction("OrderConfirmation", new { orderId = order.OrderId });
         }
+
 
         public int GetCurrentUserId()
         {

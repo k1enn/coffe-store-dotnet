@@ -1,59 +1,92 @@
 ﻿@model BoysCoffe.Models.Product
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Product Details";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
+<body>
+    <div class="container mt-5" style="padding-bottom:100px">
+        <div class="row">
+            <!-- Phần hình ảnh sản phẩm -->
+            <div class="col-md-6" >
+                @if (Model.ImageUrl != null)
+                {
+                    <img src="~/Content/images/@Model.ImageUrl" alt="@Model.Name" class="img-fluid rounded shadow-lg" style="width: 400px; height: 400px; background-color: #FAE9D4;" />
+                }
+                else
+                {
+                    <div class="placeholder-image rounded shadow-lg" style="width: 600px; height: 600px; background-color: #FAE9D4; display: flex; align-items: center; justify-content: center;">
+                        <span class="text-muted">No Image Available</span>
+                    </div>
+                }
+            </div>
 
-<h2>Details</h2>
+            <!-- Phần thông tin sản phẩm -->
+            <div class="col-md-6">
+                <h2 class="fw-bold">@Model.Name</h2>
+                <p class="h4 text-warning">@Model.Price.ToString("C")</p>
 
-<div>
-    <h4>Product</h4>
-    <hr />
-    <dl class="dl-horizontal">
-        <dt>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </dt>
+                <div class="mt-3 product-description" style="height: 300px; overflow-y: auto;">
+                    <h5 class="fw-bold">Mô tả sản phẩm</h5>
+                    <p>@Model.Description</p>
+                </div>
+                <div class="mt-4">
+                    <a href="@Url.Action("ShowCart", "Products", new { id = Model.ProductId })" class="btn btn-warning btn-lg me-2">Mua ngay</a>
+                    <a href="@Url.Action("AddToCart", "Products", new { id = Model.ProductId })" class="btn btn-outline-secondary btn-lg">Thêm vào giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    body {
+        background-color: #e0f6e6;
+        
+    }
 
-        <dd>
-            @Html.DisplayFor(model => model.Category.Name)
-        </dd>
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Name)
-        </dt>
+    .h4.text-warning {
+        color: #FF9900;
+    }
 
-        <dd>
-            @Html.DisplayFor(model => model.Name)
-        </dd>
+    .btn-group .btn {
+        border-radius: 10px;
+        margin-right: 10px;
+        font-size: 14px;
+    }
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
+    .btn-warning {
+        background-color: #FF9900;
+        color: white;
+        border: none;
+    }
 
-        <dd>
-            @Html.DisplayFor(model => model.Description)
-        </dd>
+    img.img-fluid {
+        max-width: 80%;
+        margin-bottom: 10px;
+    }
 
-        <dt>
-            @Html.DisplayNameFor(model => model.ImageUrl)
-        </dt>
+    .product-image, .placeholder-image {
+        width: 500px;
+        height: 500px;
+        object-fit: cover; /* Đảm bảo ảnh phủ đầy khung 500x500 */
+    }
 
-        <dd>
-            @Html.DisplayFor(model => model.ImageUrl)
-        </dd>
+    .placeholder-image {
+        background-color: #FAE9D4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #6c757d; /* Màu chữ cho văn bản "No Image Available" */
+        font-size: 1.2rem;
+    }
 
-        <dt>
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
+    .product-description {
+        height: 300px;
+        overflow-y: auto; /* Nếu mô tả quá dài, sẽ có thanh cuộn dọc */
+    }
 
-        <dd>
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-
-    </dl>
-</div>
-<p>
-    @Html.ActionLink("Edit", "Edit", new { id = Model.ProductId }) |
-    @Html.ActionLink("Back to List", "Index")
-</p>
+    .button-group {
+        margin-top: 20px;
+    }
+</style>
