@@ -1,4 +1,6 @@
-﻿@using BoysCoffe.Models;
+﻿
+
+@using BoysCoffe.Models;
 @{
     ViewBag.Title = "Shopping";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -13,7 +15,7 @@
     }
 
     .container {
-        max-width: 1100px;
+
         margin: 0 auto;
     }
 
@@ -25,6 +27,7 @@
         font-weight: bold;
     }
 
+    /* Tìm kiếm và giỏ hàng */
     .search-box {
         margin-bottom: 20px;
         padding: 15px;
@@ -46,15 +49,13 @@
         margin-bottom: 20px;
     }
 
+    /* Card sản phẩm */
     .card-pro {
         background-color: #fff;
-        padding: 15px;
-        border-radius: 16px;
+        padding: 20px;
+        border-radius: 10px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s;
-        padding: 20px;
-        margin-bottom: 30px;
-        border-radius: 10px;
         cursor: pointer;
     }
 
@@ -101,19 +102,9 @@
 </style>
 
 <div class="container">
-    <h2>MUA HÀNG</h2>
-    <div class="search-box">
-        @using (Html.BeginForm("ProductList", "Products", FormMethod.Get))
-        {
-            <div class="col-md-2 text-right">
-                <a class="btn btn-danger" href="\Products\ShowCart" style="font-weight:200;">
-                    <span class="glyphicon glyphicon-shopping-cart"></span> Your Cart
-                </a>
-            </div>
-        }
-    </div>
 
-    <div class="container">
+    <!-- Danh sách sản phẩm -->
+    <div class="container" style="padding-top: 5rem;">
         <div class="row">
             @foreach (var pro in Model)
             {

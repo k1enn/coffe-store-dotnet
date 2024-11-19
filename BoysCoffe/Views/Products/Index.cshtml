@@ -5,56 +5,128 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Product List</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
+<p class="text-center">
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-success" })
 </p>
+
+<style>
+    /* CSS cho các nút */
+    .btn {
+        padding: 5px 10px; /* Giảm kích thước nút */
+        border-radius: 4px;
+        font-size: 12px; /* Giảm font size */
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        text-decoration: none;
+    }
+
+    .btn-success {
+        background-color: #20c579;
+        color: white;
+    }
+
+        .btn-success:hover {
+            background-color: #17a060;
+        }
+
+    .btn-info {
+        background-color: #007bff;
+        color: white;
+    }
+
+        .btn-info:hover {
+            background-color: #0056b3;
+        }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: white;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+        }
+
+    /* CSS cho các nút nhỏ hơn và nằm trên một dòng */
+    .action-links {
+        display: flex;
+        gap: 10px;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+        /* CSS cho các ô bảng nhỏ hơn */
+        .table th, .table td {
+            padding: 8px 12px; /* Giảm padding cho các ô bảng */
+            text-align: left;
+            border: 1px solid #ddd;
+        }
+
+        .table th {
+            background-color: #20c579;
+            color: #333;
+        }
+
+        .table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .table img {
+            width: 50px; /* Giảm kích thước hình ảnh */
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+    /* CSS cho phần đầu trang */
+    h2 {
+        color: #333;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+</style>
+
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Category.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Description)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ImageUrl)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Price)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Category.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Description)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.ImageUrl)
-            <br />
-            <img src="~/Content/images/@item.ImageUrl" width="60" />
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Price)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ProductId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ProductId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ProductId })
-        </td>
-    </tr>
-}
-
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Category.Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th>@Html.DisplayNameFor(model => model.Description)</th>
+            <th>@Html.DisplayNameFor(model => model.ImageUrl)</th>
+            <th>@Html.DisplayNameFor(model => model.Price)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Category.Name)</td>
+                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                <td>@Html.DisplayFor(modelItem => item.Description)</td>
+                <td>
+                    <img src="~/Content/images/@item.ImageUrl" alt="@item.Name" />
+                </td>
+                <td>@item.Price.ToString("C")</td>
+                <td>
+                    <div class="action-links">
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ProductId }, new { @class = "btn btn-info btn-sm" }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ProductId }, new { @class = "btn btn-info btn-sm" }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ProductId }, new { @class = "btn btn-danger btn-sm" })
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>

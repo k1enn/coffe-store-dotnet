@@ -1,0 +1,144 @@
+﻿
+
+@using BoysCoffe.Models;
+@{
+    ViewBag.Title = "Menu";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model IEnumerable<Product>
+
+<style>
+    /* Định dạng chung */
+    body {
+        background-color: #e0f6e6; /* Màu nền */
+    }
+
+    .container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    h2 {
+        color: #5a5a5a;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    /* Tìm kiếm và giỏ hàng */
+    .search-box {
+        margin-bottom: 20px;
+        padding: 15px;
+        border-radius: 8px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-danger {
+        background-color: #ff4b4b;
+        border: none;
+        color: #fff;
+        padding: 8px 15px;
+        border-radius: 8px;
+        font-weight: 500;
+    }
+
+    .col-lg-4, .col-md-4, .col-sm-6 {
+        margin-bottom: 20px;
+    }
+
+    /* Card sản phẩm */
+    .card-pro {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        cursor: pointer;
+    }
+
+        .card-pro:hover {
+            transform: translateY(-10px);
+        }
+
+        .card-pro img {
+            border-radius: 16px;
+            object-fit: cover;
+            margin-bottom: 15px;
+            max-height: 250px;
+            width: 200px;
+            height: 200px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-pro p {
+            margin: 0;
+            color: #333;
+            font-weight: 500;
+        }
+
+        .card-pro .product-name {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .card-pro .product-price {
+            font-size: 1rem;
+            color: #20c579; /* Màu thương hiệu */
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .card-pro .btn-buy {
+            background-color: #20c579; /* Màu thương hiệu */
+            border: none;
+            padding: 8px 15px;
+            border-radius: 8px;
+            color: #fff;
+            font-weight: 500;
+        }
+</style>
+
+<div class="container">
+    <h2>Menu Sản Phẩm</h2>
+
+    <!-- Chọn danh mục sản phẩm -->
+    <div class="search-box">
+        @using (Html.BeginForm("Menu", "Products", FormMethod.Get))
+        {
+            <div class="col-md-2 text-right">
+                <select name="categoryId" class="form-control">
+                    <option value="">Chọn Danh Mục</option>
+                    @foreach (var category in ViewBag.Categories as IEnumerable<Category>)
+                    {
+                        <option value="@category.CategoryId">@category.Name</option>
+                    }
+                </select>
+                <button type="submit" class="btn btn-danger mt-2">Lọc</button>
+            </div>
+        }
+    </div>
+
+    <!-- Danh sách sản phẩm -->
+    <div class="container">
+        <div class="row">
+            @foreach (var pro in Model)
+            {
+                <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+                    <div class="card-pro text-center" onclick="window.location.href='/Products/Details/@pro.ProductId'">
+                        <img src="~/Content/images/@pro.ImageUrl" alt="@pro.Name" />
+                        <p class="product-name">@pro.Name</p>
+                        <p class="product-price">@pro.Price.ToString("N0") đ</p>
+
+                        <!-- Nút "Đặt ngay" -->
+                        <form action="@Url.Action("AddToCart", "Products", new { id = pro.ProductId })" method="post" style="display:inline;">
+                            <button type="submit" class="btn-buy">Đặt ngay</button>
+                        </form>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

@@ -1,0 +1,61 @@
+﻿
+@{
+    ViewBag.Title = "Unauthorized";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Unauthorized</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: #ff4d4f;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .countdown {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+    <script>
+        let countdown = 3;
+        const timer = setInterval(() => {
+            if (countdown > 0) {
+                document.getElementById("countdown").textContent = countdown--;
+            } else {
+                clearInterval(timer);
+                window.location.href = "/Home/Index"; // Chuyển hướng về Home/Index
+            }
+        }, 1000)
+    ;</script>
+</head>
+<body>
+    <div class="container">
+        <h1>Bạn không có quyền truy cập</h1>
+        <p>Bạn sẽ được chuyển hướng về trang chủ sau <span class="countdown" id="countdown">5</span> giây.</p>
+    </div>
+</body>
+</html>

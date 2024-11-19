@@ -6,6 +6,7 @@
     <title>Boys Coffee</title>
     <!--Favicon-->
     <link rel="icon" type="image/png" sizes="32x32" href="~/Content/images/logo.png" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
@@ -45,27 +46,60 @@
                 color: #FFD700;
                 text-decoration: underline;
             }
+         /* cho drop*/
+        .dropdown {
+            position: relative;
+            display: inline-block;
+            box-shadow: none;
+            margin-left: 25px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
+                display: block;
+            }
+
+                .dropdown-content a:hover {
+                    background-color: #f1f1f1;
+                }
+
+        .show {
+            display: block;
+        }
+
+        button {
+            border: none;
+            background: none;
+            padding: 0;
+        }
     </style>
     <!--Style for navbar-->
-    <link rel="stylesheet" href="~/Content/navbar.css" />
+    <link href="~/Content/navbar.css" rel="stylesheet" />
+    
 </head>
 <body>
     <!--Custom navigation bar-->
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: rgba(255, 255, 255, 0.9); backdrop-filter: blur(5px);">
         @if (Session["Role"] == null)
         {
             <div class="container">
-                <!-- Brand/logo -->
                 <a class="navbar-brand" href="@Url.Action("Index", "Home", new { area = "" })">
                     <img src="~/Content/images/logo.png" height="35" alt="Logo" style="width: 40px;">
                 </a>
-
-                <!-- Toggler for mobile view -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <!-- Navbar links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -75,42 +109,39 @@
                             @Html.ActionLink("Thực đơn", "Menu", "Home", new { area = "" }, new { @class = "nav-link" })
                         </li>
                         <li class="nav-item">
+                            @Html.ActionLink("Sản Phẩm", "Shopping", "Products", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
                             @Html.ActionLink("Về chúng tôi", "About", "Home", new { area = "" }, new { @class = "nav-link" })
                         </li>
-                        <li class="nav-item">
-                            @Html.ActionLink("Mua ngay", "Shopping", "Products", new { area = "" }, new { @class = "nav-link" })
-                        </li>
-                        <li class="nav-item">
-                            @Html.ActionLink("Đăng nhập", "Login", "Account", new { area = "" }, new { @class = "nav-link" })
-                        </li>
                     </ul>
-                    <!-- Search box -->
-                    <form class="d-flex ms-auto" autocomplete="off" action="/action_page.php">
+                    <form class="d-flex ms-auto" autocomplete="off" method="get" action="@Url.Action("Search", "Product")">
                         <div class="input-group">
-                            <input id="input" style="height:40px" type="text" name="myDrink" placeholder="Tìm kiếm sản phẩm" class="form-control" aria-label="Search">
+                            <input id="input" type="text" name="query" class="form-control" placeholder="Tìm kiếm sản phẩm" />
                             <button class="btn" type="submit">
-                                <!--Cần tìm lại cái hình khác-->
-                                <img src="~/Content/images/search-icon.png" height="25" width="25" /> <!-- Search box  chỉnh sửa cho bnt bằng với ô input-->
+                                <i class="fa-solid fa-magnifying-glass" style="color: #63E6BE; font-size:30px"></i>
                             </button>
                         </div>
                     </form>
+
+
+                    <a href="@Url.Action("Login", "Account")" class="d-flex align-items-center ms-auto" style=" padding-top: 5px; padding-bottom: 5px; text-decoration: none; color: #20c579; font-weight: 400;">
+                        <i class="fas fa-user-circle" style="font-size: 30px; color: #20c579;"></i>
+                        <span class="ms-2">Đăng nhập</span>
+                    </a>
+
                 </div>
             </div>
         }
         else if (Session["Role"].ToString() == "Customer")
         {
             <div class="container">
-                <!-- Brand/logo -->
                 <a class="navbar-brand" href="@Url.Action("Index", "Home", new { area = "" })">
                     <img src="~/Content/images/logo.png" height="35" alt="Logo" style="width: 40px;">
                 </a>
-
-                <!-- Toggler for mobile view -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
-                <!-- Navbar links -->
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -120,69 +151,76 @@
                             @Html.ActionLink("Thực đơn", "Menu", "Home", new { area = "" }, new { @class = "nav-link" })
                         </li>
                         <li class="nav-item">
+                            @Html.ActionLink("Sản Phẩm", "Shopping", "Products", new { area = "" }, new { @class = "nav-link" })
+                        </li>
+                        <li class="nav-item">
                             @Html.ActionLink("Về chúng tôi", "About", "Home", new { area = "" }, new { @class = "nav-link" })
                         </li>
-                        <li class="nav-item">
-                            @Html.ActionLink("Mua ngay", "Shopping", "Products", new { area = "" }, new { @class = "nav-link" })
-                        </li>
-                        <li class="nav-item">
-                            @Html.ActionLink("Đăng xuất", "Logout", "Account", new { area = "" }, new { @class = "nav-link" })
-                        </li>
                     </ul>
-                    <!-- Search box -->
-                    <form class="d-flex ms-auto" autocomplete="off" action="/action_page.php">
+                    <!-- Tìm kiếm -->
+                    <form class="d-flex ms-auto" autocomplete="off" method="get" action="@Url.Action("Search", "Product")">
                         <div class="input-group">
-                            <input id="input" style="height:40px" type="text" name="myDrink" placeholder="Tìm kiếm sản phẩm" class="form-control" aria-label="Search">
+                            <input id="input" type="text" name="query" class="form-control" placeholder="Tìm kiếm sản phẩm" />
                             <button class="btn" type="submit">
-                                <!--Cần tìm lại cái hình khác-->
-                                <img src="~/Content/images/search-icon.png" height="25" width="25" /> <!-- Search box  chỉnh sửa cho bnt bằng với ô input-->
+                                <i class="fa-solid fa-magnifying-glass" style="color: #63E6BE; font-size:30px"></i>
                             </button>
                         </div>
                     </form>
+
+
+                    <div class="cart-log d-flex align-items-center ms-auto" style="padding-top: 5px; padding-bottom: 5px;">
+                        <a href="@Url.Action("ShowCart", "Products")" class="d-flex align-items-center text-dark text-decoration-none">
+                            <i class="fa-solid fa-cart-shopping" style="font-size: 25px; color: #20c579;"></i>
+                            <span class="ms-2">Giỏ hàng</span>
+                        </a>
+                    </div>
+                    <a href="@Url.Action("Logout", "Account")" class="d-flex align-items-center ms-auto" style=" padding-top: 5px; padding-bottom: 5px; text-decoration: none; color: #20c579; font-weight: 400;">
+                        <i class="fas fa-user-circle" style="font-size: 30px; color: #20c579;"></i>
+                        <span class="ms-2">Đăng xuất</span>
+                    </a>
                 </div>
             </div>
         }
         else if (Session["Role"].ToString() == "Admin")
         {
-            <div style="padding-left: 10rem;" class="container">
-                <!-- Brand/logo -->
-                <a class="navbar-brand" href="@Url.Action("Index", "Home", new { area = "" })">
-                    <img src="~/Content/images/logo.png" height="35" alt="Logo" style="width: 40px;">
-                </a>
-
-                <!-- Toggler for mobile view -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="@Url.Action("Index", "Home", new { area = "" })">Trang chủ</a>
-                        </li>
-                        <li class="nav-item">
-                            @Html.ActionLink("Dashboard", "Dashboard", "Admin", new { area = "" }, new { @class = "nav-link" })
-                        </li>
-                        <li class="nav-item">
-                            @Html.ActionLink("Products", "Index", "Products", new { area = "" }, new { @class = "nav-link" })
-                        </li>
-                        <li class="nav-item">
-                            @Html.ActionLink("Category", "Index", "Categories", new { area = "" }, new { @class = "nav-link" })
-                        </li>
-                        <li class="nav-item">
-                            @Html.ActionLink("Order", "Index", "Orders", new { area = "" }, new { @class = "nav-link" })
-                        </li>
-                        <li class="nav-item">
-                            @Html.ActionLink("Shop", "Shopping", "Products", new { area = "" }, new { @class = "nav-link" })
-                        </li>
-
-                    </ul>
-
-                </div>
-            </div>
+    <div style="padding-left: 10rem;" class="container">
+        <a class="navbar-brand" href="@Url.Action("Index", "Home", new { area = "" })">
+            <img src="~/Content/images/logo.png" height="35" alt="Logo" style="width: 40px;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="@Url.Action("Index", "Home", new { area = "" })">Trang chủ</a>
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Dashboard", "Dashboard", "Admin", new { area = "" }, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Products", "Index", "Products", new { area = "" }, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Category", "Index", "Categories", new { area = "" }, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Order", "Index", "Orders", new { area = "" }, new { @class = "nav-link" })
+                </li>
+                <li class="nav-item">
+                    @Html.ActionLink("Shop", "Shopping", "Products", new { area = "" }, new { @class = "nav-link" })
+                </li>
+            </ul>
+        </div>
+        <a href="@Url.Action("Logout", "Account")" class="d-flex align-items-center" style="padding-top: 5px; padding-bottom: 5px; text-decoration: none; color: #20c579; font-weight: 400;">
+            <i class="fas fa-user-circle" style="font-size: 30px; color: #20c579;"></i>
+            <span>Đăng xuất</span>
+        </a>
+    </div>
+            
         }
     </nav>
+
     <div class="container-fluid body-content">
         @RenderBody()
     </div>
@@ -260,4 +298,11 @@
     @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
+
 </html>
+<script>
+    function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+
+    }
+</script>

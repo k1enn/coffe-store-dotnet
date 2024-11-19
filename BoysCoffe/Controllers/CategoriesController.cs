@@ -1,4 +1,5 @@
-﻿using BoysCoffe.Models;
+﻿using BoysCoffe.Custom_Attribute;
+using BoysCoffe.Models;
 using System.Data.Entity;
 using System.Linq;
 using System.Net;
@@ -6,6 +7,7 @@ using System.Web.Mvc;
 
 namespace BoysCoffe.Controllers
 {
+    [AdminAuthorize]
     public class CategoriesController : Controller
     {
         private BoysCoffeContext db = new BoysCoffeContext();

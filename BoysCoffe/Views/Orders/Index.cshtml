@@ -1,46 +1,151 @@
 ﻿@model IEnumerable<BoysCoffe.Models.Order>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Order List";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2 class="text-center">Order List</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
+<p class="text-center">
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-success" })
 </p>
+
+<style>
+    /* CSS cho các nút */
+    .btn {
+        padding: 6px 12px;
+        border-radius: 4px;
+        font-size: 14px;
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+    .btn-success {
+        background-color: #20c579; /* Màu giống Admin Dashboard */
+        color: white;
+        border: none;
+    }
+
+        .btn-success:hover {
+            background-color: #17a060;
+            box-shadow: 0 0 10px rgba(32, 197, 89, 0.5);
+        }
+
+    .btn-info {
+        background-color: #20c579; /* Màu giống Admin Dashboard */
+        color: white;
+        border: none;
+    }
+
+        .btn-info:hover {
+            background-color: #17a060;
+            box-shadow: 0 0 10px rgba(32, 197, 89, 0.5);
+        }
+
+    .btn-danger {
+        background-color: #dc3545; /* Màu giống Admin Dashboard */
+        color: white;
+        border: none;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            box-shadow: 0 0 10px rgba(220, 53, 69, 0.5);
+        }
+
+    /* CSS cho bảng */
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+        .table th, .table td {
+            padding: 10px 15px;
+            text-align: left;
+            border: 1px solid #ddd;
+            vertical-align: middle;
+            transition: background-color 0.3s ease; /* Thêm hiệu ứng cho các ô bảng */
+        }
+
+        .table th {
+            background-color: #20c579; /* Màu giống Admin Dashboard */
+            color: white;
+            font-weight: bold;
+        }
+
+        .table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .table tr:hover {
+            background-color: #20c579; /* Màu khi hover vào dòng */
+        }
+
+        .table img {
+            width: 50px;
+            height: 50px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+
+    h2 {
+        color: #333;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    /* CSS cho các nút Edit, Delete nằm trên một dòng */
+    .action-links {
+        display: flex;
+        gap: 8px;
+        justify-content: center;
+    }
+
+        .action-links a {
+            display: inline-block;
+        }
+
+    /* Định dạng tiền tệ cho TotalPrice */
+    .total-price {
+        color: #20c579; /* Màu giống Admin Dashboard */
+        font-weight: bold;
+    }
+</style>
+
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.User.Username)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.OrderDate)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TotalPrice)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.User.Username)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.OrderDate)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TotalPrice)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.OrderId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.OrderId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.OrderId })
-        </td>
-    </tr>
-}
-
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.User.Username)</th>
+            <th>@Html.DisplayNameFor(model => model.OrderDate)</th>
+            <th>@Html.DisplayNameFor(model => model.TotalPrice)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.User.Username)</td>
+                <td>@Html.DisplayFor(modelItem => item.OrderDate)</td>
+                <td class="total-price">@item.TotalPrice.ToString("C")</td>
+                <td>
+                    <div class="action-links">
+                        @Html.ActionLink("Edit", "Edit", new { id = item.OrderId }, new { @class = "btn btn-info btn-sm" })
+                        @Html.ActionLink("Details", "Details", new { id = item.OrderId }, new { @class = "btn btn-info btn-sm" })
+                        @Html.ActionLink("Delete", "Delete", new { id = item.OrderId }, new { @class = "btn btn-danger btn-sm" })
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>

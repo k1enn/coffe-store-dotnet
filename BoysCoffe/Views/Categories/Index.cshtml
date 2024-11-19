@@ -1,34 +1,130 @@
 ﻿@model IEnumerable<BoysCoffe.Models.Category>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Category List";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Category List</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
+<p class="text-center">
+    @Html.ActionLink("Create New", "Create", null, new { @class = "btn btn-success" })
 </p>
+
+<style>
+    /* CSS cho các nút */
+    .btn {
+        padding: 6px 12px; /* Giảm kích thước nút */
+        border-radius: 4px;
+        font-size: 14px; /* Giảm font size */
+        text-align: center;
+        display: inline-block;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        text-decoration: none;
+    }
+
+    .btn-success {
+        background-color: #20c579;
+        color: white;
+        border: none;
+    }
+
+        .btn-success:hover {
+            background-color: #17a060;
+            box-shadow: 0 0 10px rgba(32, 197, 89, 0.5);
+        }
+
+    .btn-info {
+        background-color: #20c579; /* Màu chủ đạo */
+        color: white;
+        border: none;
+    }
+
+        .btn-info:hover {
+            background-color: #17a060;
+            box-shadow: 0 0 10px rgba(32, 197, 89, 0.5);
+        }
+
+    .btn-danger {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+    }
+
+        .btn-danger:hover {
+            background-color: #c82333;
+            box-shadow: 0 0 10px rgba(220, 53, 69, 0.5);
+        }
+
+    /* CSS cho bảng */
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+        .table th, .table td {
+            padding: 10px 15px; /* Thêm padding để bảng rộng hơn */
+            text-align: left;
+            border: 1px solid #ddd;
+            vertical-align: middle;
+        }
+
+        .table th {
+            background-color: #f8f9fa;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+    /* CSS cho phần đầu trang */
+    h2 {
+        color: #333;
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .text-center {
+        text-align: center;
+    }
+
+    /* CSS cho các nút Edit, Delete nằm trên một dòng */
+    .action-links {
+        display: flex;
+        gap: 8px;
+        justify-content: center; /* Căn giữa các nút */
+    }
+
+        .action-links a {
+            display: inline-block;
+        }
+</style>
+
 <table class="table">
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Name)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Name)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.CategoryId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.CategoryId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.CategoryId })
-        </td>
-    </tr>
-}
-
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                <td>
+                    <div class="action-links">
+                        @Html.ActionLink("Edit", "Edit", new { id = item.CategoryId }, new { @class = "btn btn-info btn-sm" })
+                        @Html.ActionLink("Details", "Details", new { id = item.CategoryId }, new { @class = "btn btn-info btn-sm" })
+                        @Html.ActionLink("Delete", "Delete", new { id = item.CategoryId }, new { @class = "btn btn-danger btn-sm" })
+                    </div>
+                </td>
+            </tr>
+        }
+    </tbody>
 </table>

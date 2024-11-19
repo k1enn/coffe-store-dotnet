@@ -253,88 +253,181 @@ D:\cafe boys\menu\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.csproj.CoreComp
 D:\cafe boys\menu\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.csproj.Up2Date
 D:\cafe boys\menu\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.dll
 D:\cafe boys\menu\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.pdb
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\BoysCoffe.dll.config
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\BoysCoffe.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\BoysCoffe.pdb
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csc.exe
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csc.exe.config
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csc.rsp
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csi.exe
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csi.exe.config
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csi.rsp
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CodeAnalysis.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CSharp.Core.targets
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.Managed.Core.targets
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.VisualBasic.Core.targets
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.Win32.Primitives.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.AppContext.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Collections.Immutable.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Console.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Diagnostics.StackTrace.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Globalization.Calendars.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.IO.Compression.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.IO.Compression.ZipFile.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.IO.FileSystem.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.IO.FileSystem.Primitives.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Net.Http.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Net.Sockets.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Reflection.Metadata.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Security.Cryptography.Encoding.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Security.Cryptography.Primitives.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Text.Encoding.CodePages.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Threading.Tasks.Extensions.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.ValueTuple.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Xml.ReaderWriter.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Xml.XmlDocument.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Xml.XPath.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Xml.XPath.XDocument.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\vbc.exe
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\vbc.exe.config
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\vbc.rsp
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\VBCSCompiler.exe
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\VBCSCompiler.exe.config
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\Antlr3.Runtime.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\EntityFramework.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\EntityFramework.SqlServer.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\Microsoft.Web.Infrastructure.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\Newtonsoft.Json.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Helpers.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Mvc.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Optimization.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Razor.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.Deployment.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.Razor.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\WebGrease.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\EntityFramework.xml
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\EntityFramework.SqlServer.xml
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Helpers.xml
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Mvc.xml
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Optimization.xml
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Razor.xml
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.xml
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.Deployment.xml
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.Razor.xml
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\Newtonsoft.Json.xml
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\Antlr3.Runtime.pdb
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.csproj.AssemblyReference.cache
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.Migrations.test.resources
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.csproj.GenerateResource.cache
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.csproj.CoreCompileInputs.cache
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.csproj.Up2Date
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.dll
-D:\DuLieuGiaiThuat\TH\DSA\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.pdb
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\BoysCoffe.dll.config
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\BoysCoffe.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\BoysCoffe.pdb
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csc.exe
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csc.exe.config
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csc.rsp
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csi.exe
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csi.exe.config
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csi.rsp
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.Managed.Core.targets
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.AppContext.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Collections.Immutable.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Console.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Globalization.Calendars.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.IO.Compression.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.IO.FileSystem.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Net.Http.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Net.Sockets.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Reflection.Metadata.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.ValueTuple.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Xml.XmlDocument.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Xml.XPath.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\vbc.exe
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\vbc.exe.config
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\vbc.rsp
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\VBCSCompiler.exe
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\VBCSCompiler.exe.config
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\Antlr3.Runtime.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\EntityFramework.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\EntityFramework.SqlServer.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\Microsoft.Web.Infrastructure.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\Newtonsoft.Json.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Helpers.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Mvc.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Optimization.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Razor.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.Deployment.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.Razor.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\WebGrease.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\EntityFramework.xml
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\EntityFramework.SqlServer.xml
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Helpers.xml
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Mvc.xml
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Optimization.xml
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Razor.xml
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.xml
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.Deployment.xml
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.Razor.xml
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\Newtonsoft.Json.xml
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\Antlr3.Runtime.pdb
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.csproj.AssemblyReference.cache
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.Migrations.test.resources
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.csproj.GenerateResource.cache
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.csproj.CoreCompileInputs.cache
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.csproj.Up2Date
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.pdb
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\Microsoft.AspNet.Identity.Core.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\Microsoft.AspNet.Identity.Core.xml
+D:\cafe boys\menu\Ca-Phe-Boys-main\Ca-Phe-Boys-main\BoysCoffe\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\BoysCoffe.dll.config
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\BoysCoffe.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\BoysCoffe.pdb
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csc.exe
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csc.exe.config
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csc.rsp
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csi.exe
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csi.exe.config
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\csi.rsp
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.AppContext.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Collections.Immutable.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Console.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Globalization.Calendars.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.IO.Compression.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.IO.FileSystem.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Net.Http.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Net.Sockets.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Reflection.Metadata.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.ValueTuple.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Xml.XPath.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\vbc.exe
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\vbc.exe.config
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\vbc.rsp
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\VBCSCompiler.exe
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\roslyn\VBCSCompiler.exe.config
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\Antlr3.Runtime.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\EntityFramework.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\EntityFramework.SqlServer.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\Microsoft.AspNet.Identity.Core.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\Microsoft.Web.Infrastructure.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\Newtonsoft.Json.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Helpers.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Mvc.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Optimization.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Razor.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.Deployment.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.Razor.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\WebGrease.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\EntityFramework.xml
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\EntityFramework.SqlServer.xml
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\Microsoft.AspNet.Identity.Core.xml
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Helpers.xml
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Mvc.xml
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Optimization.xml
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.Razor.xml
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.xml
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.Deployment.xml
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\System.Web.WebPages.Razor.xml
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\Newtonsoft.Json.xml
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\Antlr3.Runtime.pdb
+D:\Ca-Phe-Boys-main\BoysCoffe\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.csproj.AssemblyReference.cache
+D:\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.Migrations.test.resources
+D:\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.csproj.GenerateResource.cache
+D:\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.csproj.CoreCompileInputs.cache
+D:\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.csproj.Up2Date
+D:\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.dll
+D:\Ca-Phe-Boys-main\BoysCoffe\obj\Debug\BoysCoffe.pdb

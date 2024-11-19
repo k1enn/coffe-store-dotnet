@@ -1,4 +1,5 @@
-﻿using BoysCoffe.Models;
+﻿using BoysCoffe.Custom_Attribute;
+using BoysCoffe.Models;
 using System.Linq;
 using System.Web.Mvc;
 
@@ -14,13 +15,14 @@ namespace BoysCoffe.Controllers
             _context = new BoysCoffeContext();
         }
 
+        [AdminAuthorize]
         [HttpGet]
         public ActionResult Create()
         {
             ViewBag.RoleOptions = new SelectList(new[] { "Admin", "Customer" });
             return View();
         }
-
+        [AdminAuthorize]
         [HttpPost]
         public ActionResult Create(User model)
         {

@@ -1,74 +1,62 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\",
+  "WorkspaceRootPath": "D:\\Ca-Phe-Boys-main\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\dulieugiaithuat\\th\\dsa\\ca-phe-boys\\boyscoffe\\views\\products\\shopping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\shopping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\boyscoffe\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\boyscoffe\\views\\products\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\orderconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\boyscoffe\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\boyscoffe\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\boyscoffe\\views\\products\\showcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\showcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\boyscoffe\\views\\products\\emptycart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\emptycart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\boyscoffe\\views\\products\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\checkout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\boyscoffe\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\boyscoffe\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\boyscoffe\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\boyscoffe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\boyscoffe\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\views\\products\\shopping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\shopping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\boyscoffe\\views\\home\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\home\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\boyscoffe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\boyscoffe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\Ca-Phe-Boys-main\\boyscoffe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\boyscoffe\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\Ca-Phe-Boys-main\\boyscoffe\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\views\\products\\searchresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\searchresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\controllers\\securecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\controllers\\securecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\views\\secure\\unauthorized.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\secure\\unauthorized.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\custom attribute\\adminauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\custom attribute\\adminauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\Ca-Phe-Boys-main\\boyscoffe\\views\\home\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\home\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -78,33 +66,87 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAABcBAAAAAAAAAAAAABcBAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Products\\Create.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\Create.cshtml",
+              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Products\\Create.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Products\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-12T17:13:55.085Z",
-              "IsPinned": true
+              "WhenOpened": "2024-11-19T16:47:21.742Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAMMAAAAAAAAAAAAAANkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T14:45:53.564Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Products\\Details.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\Details.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Products\\Details.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Products\\Details.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAACoAAAAhAAAAAAAAAA==",
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "BoysCoffe\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "BoysCoffe\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAALwAAAAAAAAAAADgv8wAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T16:16:01.667Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAAAG0AAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-12T17:21:58.451Z",
-              "IsPinned": true
+              "WhenOpened": "2024-11-19T16:41:30.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "BoysCoffe\\Migrations\\Configuration.cs",
+              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "BoysCoffe\\Migrations\\Configuration.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T16:37:42.669Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Shopping.cshtml",
+              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Products\\Shopping.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\Shopping.cshtml",
+              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Products\\Shopping.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Products\\Shopping.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T16:37:05.399Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -120,184 +162,106 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "OrderConfirmation.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Products\\OrderConfirmation.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\OrderConfirmation.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Products\\OrderConfirmation.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Products\\OrderConfirmation.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAoAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 8,
+              "Title": "SearchResult.cshtml",
+              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Products\\SearchResult.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\SearchResult.cshtml",
+              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Products\\SearchResult.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Products\\SearchResult.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-12T18:49:29.98Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "EmptyCart.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Products\\EmptyCart.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\EmptyCart.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Products\\EmptyCart.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Products\\EmptyCart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-12T18:49:17.066Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Products\\Delete.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\Delete.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Products\\Delete.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Products\\Delete.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-12T18:45:39.691Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Shopping.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Products\\Shopping.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\Shopping.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Products\\Shopping.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Products\\Shopping.cshtml",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAAAHQAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-12T17:36:52.76Z",
+              "WhenOpened": "2024-11-19T16:30:19.88Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
+              "Title": "SecureController.cs",
+              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Controllers\\SecureController.cs",
+              "RelativeDocumentMoniker": "BoysCoffe\\Controllers\\SecureController.cs",
+              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Controllers\\SecureController.cs",
+              "RelativeToolTip": "BoysCoffe\\Controllers\\SecureController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T16:16:43.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Products\\Index.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\Index.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Products\\Index.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Products\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-12T18:49:28.34Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ShowCart.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Products\\ShowCart.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\ShowCart.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Products\\ShowCart.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Products\\ShowCart.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAACIAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-12T17:52:24.097Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Checkout.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Products\\Checkout.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\Checkout.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Products\\Checkout.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Products\\Checkout.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-12T18:45:47.771Z"
+              "WhenOpened": "2024-11-19T14:06:44.316Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Configuration.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Migrations\\Configuration.cs",
-              "RelativeDocumentMoniker": "BoysCoffe\\Migrations\\Configuration.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Migrations\\Configuration.cs",
-              "RelativeToolTip": "BoysCoffe\\Migrations\\Configuration.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAYwBkAAABFAAAAAAAAAA==",
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "BoysCoffe\\Models\\Product.cs",
+              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Models\\Product.cs",
+              "RelativeToolTip": "BoysCoffe\\Models\\Product.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA1wCAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T17:34:15.832Z"
+              "WhenOpened": "2024-11-19T16:27:49.525Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "About.cshtml",
+              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Home\\About.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Home\\About.cshtml",
+              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Home\\About.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Home\\About.cshtml",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAAAIIAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T14:54:31.916Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Unauthorized.cshtml",
+              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Secure\\Unauthorized.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Secure\\Unauthorized.cshtml",
+              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Secure\\Unauthorized.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Secure\\Unauthorized.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T16:15:44.957Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "BoysCoffe\\Models\\Product.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Models\\Product.cs",
-              "RelativeToolTip": "BoysCoffe\\Models\\Product.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA1wAAAAAAAAAAAAAAAAA==",
+              "Title": "AdminAuthorizeAttribute.cs",
+              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Custom Attribute\\AdminAuthorizeAttribute.cs",
+              "RelativeDocumentMoniker": "BoysCoffe\\Custom Attribute\\AdminAuthorizeAttribute.cs",
+              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Custom Attribute\\AdminAuthorizeAttribute.cs",
+              "RelativeToolTip": "BoysCoffe\\Custom Attribute\\AdminAuthorizeAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T17:34:05.704Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "BoysCoffe\\Controllers\\ProductsController.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "BoysCoffe\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAQwEoAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T17:26:42.93Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "BoysCoffe\\Controllers\\AccountController.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "BoysCoffe\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAQwD8AAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T18:25:24.869Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "BoysCoffe\\Controllers\\HomeController.cs",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "BoysCoffe\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-12T17:07:11.746Z"
+              "WhenOpened": "2024-11-19T16:15:58.41Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
               "Title": "Menu.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Home\\Menu.cshtml",
+              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Home\\Menu.cshtml",
               "RelativeDocumentMoniker": "BoysCoffe\\Views\\Home\\Menu.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Home\\Menu.cshtml",
+              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Home\\Menu.cshtml",
               "RelativeToolTip": "BoysCoffe\\Views\\Home\\Menu.cshtml",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAABQAAAAXAAAAAAAAAA==",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAAAJMAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-12T17:06:12.702Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "About.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Home\\About.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Home\\About.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Home\\About.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Home\\About.cshtml",
-              "ViewState": "AgIAAEsAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-12T17:04:55.373Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\DuLieuGiaiThuat\\TH\\DSA\\Ca-Phe-Boys\\BoysCoffe\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAYwC8AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-12T17:03:07.781Z"
+              "WhenOpened": "2024-11-19T14:43:41.397Z"
             }
           ]
         }

@@ -7,7 +7,10 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Web;
+using System.Web.ModelBinding;
 using System.Web.Mvc;
+using BoysCoffe.Custom_Attribute;
+
 
 
 namespace BoysCoffe.Controllers
@@ -16,13 +19,32 @@ namespace BoysCoffe.Controllers
     {
         private BoysCoffeContext db = new BoysCoffeContext();
 
+
         // GET: Products
+        [AdminAuthorize]
         public ActionResult Index()
         {
             var products = db.Products.Include(p => p.Category);
             return View(products.ToList());
         }
 
+        // Action xử lý tìm kiếm sản phẩm
+        public ActionResult Search(string query)
+        {
+            if (string.IsNullOrEmpty(query))
+            {
+                // Nếu không có từ khóa, trả về tất cả sản phẩm
+                var products = db.Products.ToList();
+                return View("Shopping", products);
+            }
+
+            // Tìm kiếm sản phẩm theo tên
+            var searchResults = db.Products
+                                        .Where(p => p.Name.Contains(query)) // Tìm sản phẩm có tên chứa từ khóa
+                                        .ToList();
+
+            return View("SearchResult", searchResults); // Trả về view với kết quả tìm kiếm
+        }
         public ActionResult Shopping()
         {
             var products = db.Products.Include(p => p.Category).ToList();
@@ -72,7 +94,7 @@ namespace BoysCoffe.Controllers
             {
                 // Chuyển hướng đến trang đăng nhập với ReturnUrl là Checkout
                 return RedirectToAction("Login", "Account", new { returnUrl = Url.Action("Checkout", "Products") });
-            }
+            }   
 
             var cart = GetCart(); // Lấy giỏ hàng của người dùng
 
@@ -119,14 +141,7 @@ namespace BoysCoffe.Controllers
             return RedirectToAction("OrderConfirmation", new { orderId = order.OrderId });
         }
 
-
-        public int GetCurrentUserId()
-        {
-            // You can fetch the user ID based on your authentication method
-            // For example, you might have a session or a cookie storing the user ID
-            return Session["UserId"] != null ? (int)Session["UserId"] : 0;
-        }
-
+        public int GetCurrentUserId() => Session["UserId"] != null ? (int)Session["UserId"] : 0;        
 
         [HttpPost]
         public ActionResult RemoveFromCart(int id)
@@ -137,14 +152,27 @@ namespace BoysCoffe.Controllers
                 return RedirectToAction("ShowCart");
             }
 
+            // Tìm sản phẩm trong giỏ hàng
             var item = cart.FirstOrDefault(ci => ci.Product.ProductId == id);
+
             if (item != null)
             {
-                cart.Remove(item);
+                if (item.Quantity < 1)
+                {
+                    // Nếu Quantity < 1, xóa sản phẩm khỏi giỏ hàng
+                    cart.Remove(item);
+                }
+                else
+                {
+                    // Nếu Quantity >= 1, giảm số lượng sản phẩm đi 1
+                    item.Quantity -= 1;
+                }
             }
 
+            // Sau khi xử lý, quay lại trang giỏ hàng
             return RedirectToAction("ShowCart");
         }
+
         public ActionResult ShowCart()
         {
             var cart = Session["Cart"] as List<CartItem>;
@@ -173,6 +201,7 @@ namespace BoysCoffe.Controllers
         }
 
         // GET: Products/Create
+        [AdminAuthorize]
         public ActionResult Create()
         {
             ViewBag.CategoryId = new SelectList(db.Categories, "CategoryId", "Name");
@@ -195,6 +224,7 @@ namespace BoysCoffe.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [AdminAuthorize]
         public ActionResult Create([Bind(Include = "ProductId,Name,Description,Price,CategoryId")] Product product, HttpPostedFileBase imageFile)
         {
             if (ModelState.IsValid)
@@ -226,6 +256,7 @@ namespace BoysCoffe.Controllers
             return View(product);
         }
         // GET: Products/Edit/5
+        [AdminAuthorize]
         public ActionResult Edit(int? id)
         {
             if (id == null)
@@ -246,6 +277,7 @@ namespace BoysCoffe.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [AdminAuthorize]
         public ActionResult Edit([Bind(Include = "ProductId,Name,Description,ImageUrl,Price,CategoryId")] Product product)
         {
             if (ModelState.IsValid)
@@ -259,6 +291,7 @@ namespace BoysCoffe.Controllers
         }
 
         // GET: Products/Delete/5
+        [AdminAuthorize]
         public ActionResult Delete(int? id)
         {
             if (id == null)
@@ -276,6 +309,7 @@ namespace BoysCoffe.Controllers
         // POST: Products/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [AdminAuthorize]
         public ActionResult DeleteConfirmed(int id)
         {
             Product product = db.Products.Find(id);
@@ -283,7 +317,7 @@ namespace BoysCoffe.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-
+        [AdminAuthorize]
         protected override void Dispose(bool disposing)
         {
             if (disposing)

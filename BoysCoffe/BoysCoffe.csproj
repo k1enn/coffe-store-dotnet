@@ -52,6 +52,12 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.Core.2.2.4\lib\net45\Microsoft.AspNet.Identity.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.Identity.EntityFramework, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.Identity.EntityFramework.2.2.4\lib\net45\Microsoft.AspNet.Identity.EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -134,6 +140,8 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\OrdersController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
+    <Compile Include="Controllers\SecureController.cs" />
+    <Compile Include="Custom Attribute\AdminAuthorizeAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -174,13 +182,19 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\bootstrap.rtl.css" />
     <Content Include="Content\bootstrap.rtl.min.css" />
+    <Content Include="Content\images\banner\event1.jpg" />
+    <Content Include="Content\images\banner\event2.jpg" />
+    <Content Include="Content\images\banner\event3.jpg" />
     <Content Include="Content\images\coffee\cappuccino.jpg" />
     <Content Include="Content\images\coffee\den.jpg" />
     <Content Include="Content\images\coffee\muoi.jpg" />
     <Content Include="Content\images\coffee\sua.jpg" />
     <Content Include="Content\images\feelback1.jpg" />
     <Content Include="Content\images\feelback2.png" />
+    <Content Include="Content\images\feelback3.png" />
+    <Content Include="Content\images\feelback5.png" />
     <Content Include="Content\images\image.png" />
+    <Content Include="Content\images\kham-pha-tra.png" />
     <Content Include="Content\images\logo.png" />
     <Content Include="Content\images\matcha\cafe-sua.jpg" />
     <Content Include="Content\images\matcha\sua-tuoi.jpg" />
@@ -190,8 +204,14 @@
     <Content Include="Content\images\smoothie\dao.jpg" />
     <Content Include="Content\images\smoothie\xoai.jpg" />
     <Content Include="Content\images\tea\cam-buoi.jpg" />
+    <Content Include="Content\images\feelback4.png" />
     <Content Include="Content\images\tea\tao-que.jpg" />
+    <Content Include="Content\images\tea\tra-chanh.jpg" />
     <Content Include="Content\images\tea\vai-hoa-hong.jpg" />
+    <Content Include="Content\images\ve-chung-toi\cam-ket-chat-luong.jpg" />
+    <Content Include="Content\images\ve-chung-toi\bao-mat.jpg" />
+    <Content Include="Content\images\ve-chung-toi\contact.jpg" />
+    <Content Include="Content\images\ve-chung-toi\lịch sử.jpg" />
     <Content Include="Content\navbar.css" />
     <Content Include="Content\PagedList.css" />
     <Content Include="Content\Site.css" />
@@ -275,6 +295,10 @@
     <Content Include="Views\Products\EmptyCart.cshtml" />
     <Content Include="Views\Products\OrderConfirmation.cshtml" />
     <Content Include="Views\Home\Menu.cshtml" />
+    <Content Include="Views\Products\Menu.cshtml" />
+    <Content Include="Views\Secure\Unauthorized.cshtml" />
+    <Content Include="Views\Products\SearchResult.cshtml" />
+    <Content Include="Views\Products\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
