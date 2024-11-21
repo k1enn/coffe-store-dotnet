@@ -1,4 +1,10 @@
-<h1 align="left">Coffe Shop Web Application</h1>
+# BoysCoffee Web Application
+
+BoysCoffee is a web application designed to provide a convenient platform for customers to browse, select, and order beverages from anywhere. Beyond serving as an online shopping tool, BoysCoffee equips administrators with a powerful system for managing customer information, orders, and products, enabling effective business growth strategies.
+
+---
+
+## Project Overview
 
 ### Team Members
 - **Đinh Trung Kiên** - [k1enn](https://github.com/k1enn)
@@ -6,29 +12,63 @@
 - **Mai Đông Anh** - [bebaobanhbao](https://github.com/bebaobanhbao)
 - **Dương Nguyễn Gia Khang** - [Naga-OS](https://github.com/Naga-OS)
 
-### Project Overview
-This project is a web application designed to offer a diverse range of coffee drinks in Vietnam. The goal is to create a user-friendly platform for coffee lovers to explore, customize, and order their favorite beverages.
-
-### Deploy Status
-***In progress***
-
-### Technology Stack
-- **Framework**: ASP.NET
-- **Database**: Microsoft SQL Server
-  
-### Project Timeline
-- **Start Date**: October 9, 2024
-- **Deadline**: November 15, 2024
 
 ### Features
-- Autocomplete search bar using Javascript for easier search.
-- Extensive coffee menu showcasing a variety of coffee available in Vietnam.
-- User-friendly ordering interface for a seamless experience.
-- Integration with the Entity Framework, LINQ for efficient database management.
+1. **Customer-Facing Features:**
+   - **Homepage:** Showcase products and categories.
+   - **User Management:** Allow customers to register and log in to their accounts.
+   - **Product Browsing:** View detailed information about beverages.
+   - **Shopping Cart:** Add, update, and review items for purchase.
+   - **Order Placement:** Enable customers to place online orders.
 
-### How to Run
-1. Clone the repository.
-2. Ensure you have the ASP.NET Framework and Entity Framework installed.
-3. Configure the database, and `Web.config` in the project settings.
-4. Run the application through your preferred IDE.
+2. **Admin-Facing Features:**
+   - **User Management:** Manage customer accounts.
+   - **Order Management:** View and manage customer orders.
+   - **Product Management:** Add, edit, or delete beverages from the catalog.
 
+---
+
+### Achievements
+- Built a simple and functional e-commerce website for beverages.
+- Implemented secure online account registration and login functionality.
+- Developed an admin management system for users, products, and orders.
+- Applied LINQ and C# for efficient backend operations.
+- Designed and managed the database using Entity Framework with Code-First approach.
+- Gained experience in collaborative development and database management.
+
+---
+
+## Technologies Used
+- **Framework:** ASP.NET Framework
+- **ORM:** Entity Framework (Code First)
+- **Language:** C#
+- **Database:** In-memory database
+- **Frontend:** Razor Views, HTML, CSS, JavaScript
+- **Backend:** LINQ and Entity Framework
+- **Version Control:** Git
+
+---
+
+## Future Development
+1. Add online payment functionality.
+2. Integrate home delivery and shipping options.
+3. Enhance the UI/UX with custom banners and product images.
+4. Introduce discount and promotional features.
+5. Develop a profile page for customers to view order history.
+6. Expand cart functionality with additional user-friendly features.
+
+---
+
+## References
+- **Learning Resources:**
+  - YouTube
+  - Google
+  - ChatGPT
+- **Inspirational Websites:**
+  - [The Coffee House](https://thecoffeehouse.com/)
+  - [Highlands Coffee](https://www.highlandscoffee.com.vn/)
+  - [Phúc Long](https://phuclong.com.vn/)
+
+---
+
+This project not only serves as a practical application of ASP.NET and Entity Framework but also demonstrates teamwork, database handling, and full-stack development skills.
