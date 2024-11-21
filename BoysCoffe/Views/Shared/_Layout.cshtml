@@ -12,6 +12,11 @@
     @Scripts.Render("~/bundles/modernizr")
     <!--Bootstrap CDN-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+
+
+
     <style>
         /* Đảm bảo rằng tất cả icon sẽ có màu sáng trên nền đen */
         footer .fab {
@@ -46,7 +51,7 @@
                 color: #FFD700;
                 text-decoration: underline;
             }
-         /* cho drop*/
+        /* cho drop*/
         .dropdown {
             position: relative;
             display: inline-block;
@@ -86,7 +91,7 @@
     </style>
     <!--Style for navbar-->
     <link href="~/Content/navbar.css" rel="stylesheet" />
-    
+
 </head>
 <body>
     <!--Custom navigation bar-->
@@ -115,21 +120,12 @@
                             @Html.ActionLink("Về chúng tôi", "About", "Home", new { area = "" }, new { @class = "nav-link" })
                         </li>
                     </ul>
-                    <form class="d-flex ms-auto" autocomplete="off" method="get" action="@Url.Action("Search", "Product")">
-                        <div class="input-group">
-                            <input id="input" type="text" name="query" class="form-control" placeholder="Tìm kiếm sản phẩm" />
-                            <button class="btn" type="submit">
-                                <i class="fa-solid fa-magnifying-glass" style="color: #63E6BE; font-size:30px"></i>
-                            </button>
+                   
+                    <a href="@Url.Action("Login", "Account")" style="margin-left:50px">
+                        <div>
+                            <i class="fas fa-user-circle" style="font-size: 30px; color: #20c579;"></i>
                         </div>
-                    </form>
-
-
-                    <a href="@Url.Action("Login", "Account")" class="d-flex align-items-center ms-auto" style=" padding-top: 5px; padding-bottom: 5px; text-decoration: none; color: #20c579; font-weight: 400;">
-                        <i class="fas fa-user-circle" style="font-size: 30px; color: #20c579;"></i>
-                        <span class="ms-2">Đăng nhập</span>
                     </a>
-
                 </div>
             </div>
         }
@@ -157,27 +153,21 @@
                             @Html.ActionLink("Về chúng tôi", "About", "Home", new { area = "" }, new { @class = "nav-link" })
                         </li>
                     </ul>
-                    <!-- Tìm kiếm -->
-                    <form class="d-flex ms-auto" autocomplete="off" method="get" action="@Url.Action("Search", "Product")">
-                        <div class="input-group">
-                            <input id="input" type="text" name="query" class="form-control" placeholder="Tìm kiếm sản phẩm" />
-                            <button class="btn" type="submit">
-                                <i class="fa-solid fa-magnifying-glass" style="color: #63E6BE; font-size:30px"></i>
-                            </button>
-                        </div>
-                    </form>
-
-
-                    <div class="cart-log d-flex align-items-center ms-auto" style="padding-top: 5px; padding-bottom: 5px;">
+                  
+                    <div class="cart-logo" style="margin-left:20px">
                         <a href="@Url.Action("ShowCart", "Products")" class="d-flex align-items-center text-dark text-decoration-none">
                             <i class="fa-solid fa-cart-shopping" style="font-size: 25px; color: #20c579;"></i>
                             <span class="ms-2">Giỏ hàng</span>
                         </a>
                     </div>
-                    <a href="@Url.Action("Logout", "Account")" class="d-flex align-items-center ms-auto" style=" padding-top: 5px; padding-bottom: 5px; text-decoration: none; color: #20c579; font-weight: 400;">
-                        <i class="fas fa-user-circle" style="font-size: 30px; color: #20c579;"></i>
-                        <span class="ms-2">Đăng xuất</span>
-                    </a>
+                    <div class="dropdown">
+                        <button onclick="myFunction()" style="background: none; border: none; cursor: pointer;">
+                            <i class="fas fa-user-circle" style="font-size: 30px; color: #20c579;"></i>
+                        </button>
+                        <div id="myDropdown" class="dropdown-content">
+                            <a href="@Url.Action("Logout", "Account")">Đăng xuất</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         }
@@ -212,18 +202,22 @@
                 </li>
             </ul>
         </div>
-        <a href="@Url.Action("Logout", "Account")" class="d-flex align-items-center" style="padding-top: 5px; padding-bottom: 5px; text-decoration: none; color: #20c579; font-weight: 400;">
-            <i class="fas fa-user-circle" style="font-size: 30px; color: #20c579;"></i>
-            <span>Đăng xuất</span>
-        </a>
+        <div class="dropdown">
+            <button onclick="myFunction()" style="background: none; border: none; cursor: pointer;">
+                <i class="fas fa-user-circle" style="font-size: 30px; color: #20c579;"></i>
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="@Url.Action("Logout", "Account")">Đăng xuất</a>
+            </div>
+        </div>
     </div>
-            
         }
     </nav>
-
+    <br />
     <div class="container-fluid body-content">
         @RenderBody()
     </div>
+    <br/>
     <!-- Footer -->
     <footer class="bg-dark text-white py-3">
         <div class="container">
@@ -303,6 +297,61 @@
 <script>
     function myFunction() {
         document.getElementById("myDropdown").classList.toggle("show");
-
     }
+     document.addEventListener("DOMContentLoaded", function () {
+        const searchTermInput = document.getElementById('searchTerm');
+        const autocompleteList = document.getElementById('autocomplete-list');
+
+        // Hàm để làm sạch danh sách gợi ý
+        function clearSuggestions() {
+            autocompleteList.innerHTML = '';
+        }
+
+        // Hàm hiển thị các gợi ý
+        function showSuggestions(suggestions) {
+            clearSuggestions();
+            if (suggestions.length === 0) return;
+
+            suggestions.forEach(function (suggestion) {
+                const li = document.createElement('li');
+                li.textContent = suggestion.label;
+                li.style.padding = '8px';
+                li.style.cursor = 'pointer';
+                li.addEventListener('click', function () {
+                    searchTermInput.value = suggestion.value;
+                    clearSuggestions();
+                });
+                autocompleteList.appendChild(li);
+            });
+        }
+
+        // Sự kiện khi người dùng gõ trong ô tìm kiếm
+        searchTermInput.addEventListener('input', function () {
+            const term = searchTermInput.value.trim();
+
+            // Chỉ tìm kiếm khi từ khóa có ít nhất 2 ký tự
+            if (term.length < 2) {
+                clearSuggestions();
+                return;
+            }
+
+            // Gọi API để tìm kiếm sản phẩm theo từ khóa
+            fetch(`/Products/SearchAutocomplete?term=${term}`)
+                .then(response => response.json())
+                .then(data => {
+                    showSuggestions(data);
+                })
+                .catch(error => {
+                    console.error('Có lỗi xảy ra khi tìm kiếm:', error);
+                    clearSuggestions();
+                });
+        });
+
+        // Sự kiện khi người dùng click bên ngoài (để đóng danh sách gợi ý)
+        document.addEventListener('click', function (e) {
+            if (!autocompleteList.contains(e.target) && e.target !== searchTermInput) {
+                clearSuggestions();
+            }
+        });
+    });
 </script>

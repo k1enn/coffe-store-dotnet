@@ -1,11 +1,9 @@
-﻿using BoysCoffe.Custom_Attribute;
-using BoysCoffe.Models;
+﻿using BoysCoffe.Models;
 using System.Linq;
 using System.Web.Mvc;
 
 namespace BoysCoffe.Controllers
 {
-    [AdminAuthorize]
     public class AdminController : Controller
     {
         private readonly BoysCoffeContext _context;
@@ -16,7 +14,6 @@ namespace BoysCoffe.Controllers
         }
 
         // GET: Admin/Dashboard
-        
         public ActionResult Dashboard()
         {
             var recentOrders = _context.Orders

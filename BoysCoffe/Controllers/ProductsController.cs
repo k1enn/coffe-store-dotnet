@@ -28,28 +28,39 @@ namespace BoysCoffe.Controllers
             return View(products.ToList());
         }
 
-        // Action xử lý tìm kiếm sản phẩm
-        public ActionResult Search(string query)
+        public ActionResult Shopping(int? categoryId, string searchTerm)
         {
-            if (string.IsNullOrEmpty(query))
+            var products = db.Products.AsQueryable();
+
+            // Nếu có chọn danh mục
+            if (categoryId.HasValue && categoryId.Value > 0)
             {
-                // Nếu không có từ khóa, trả về tất cả sản phẩm
-                var products = db.Products.ToList();
-                return View("Shopping", products);
+                products = products.Where(p => p.CategoryId == categoryId);
             }
 
-            // Tìm kiếm sản phẩm theo tên
-            var searchResults = db.Products
-                                        .Where(p => p.Name.Contains(query)) // Tìm sản phẩm có tên chứa từ khóa
-                                        .ToList();
+            // Nếu có từ khóa tìm kiếm
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                products = products.Where(p => p.Name.Contains(searchTerm));
+            }
 
-            return View("SearchResult", searchResults); // Trả về view với kết quả tìm kiếm
+            // Lấy danh sách các danh mục sản phẩm để hiển thị trong dropdown
+            ViewBag.Categories = db.Categories.ToList();
+
+            // Trả về danh sách sản phẩm theo các tiêu chí lọc
+            return View(products.ToList());
         }
-        public ActionResult Shopping()
+        public JsonResult SearchAutocomplete(string term)
         {
-            var products = db.Products.Include(p => p.Category).ToList();
-            return View(products);
+            var products = db.Products
+                .Where(p => p.Name.Contains(term)) // Tìm kiếm sản phẩm theo tên
+                .Select(p => new { label = p.Name, value = p.Name }) // Chỉ trả về tên sản phẩm
+                .Take(10) // Giới hạn số lượng kết quả gợi ý
+                .ToList();
+
+            return Json(products, JsonRequestBehavior.AllowGet); // Trả về dữ liệu dạng JSON
         }
+
         public ActionResult AddToCart(int id)
         {
             // Get the product by its ID
@@ -94,7 +105,7 @@ namespace BoysCoffe.Controllers
             {
                 // Chuyển hướng đến trang đăng nhập với ReturnUrl là Checkout
                 return RedirectToAction("Login", "Account", new { returnUrl = Url.Action("Checkout", "Products") });
-            }   
+            }
 
             var cart = GetCart(); // Lấy giỏ hàng của người dùng
 
@@ -141,7 +152,7 @@ namespace BoysCoffe.Controllers
             return RedirectToAction("OrderConfirmation", new { orderId = order.OrderId });
         }
 
-        public int GetCurrentUserId() => Session["UserId"] != null ? (int)Session["UserId"] : 0;        
+        public int GetCurrentUserId() => Session["UserId"] != null ? (int)Session["UserId"] : 0;
 
         [HttpPost]
         public ActionResult RemoveFromCart(int id)
@@ -157,7 +168,7 @@ namespace BoysCoffe.Controllers
 
             if (item != null)
             {
-                if (item.Quantity < 1)
+                if (item.Quantity <= 1)
                 {
                     // Nếu Quantity < 1, xóa sản phẩm khỏi giỏ hàng
                     cart.Remove(item);

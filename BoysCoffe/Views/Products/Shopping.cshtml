@@ -1,126 +1,220 @@
-﻿
-
-@using BoysCoffe.Models;
+﻿@using BoysCoffe.Models;
 @{
-    ViewBag.Title = "Shopping";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Shopping";  /* Thiết lập tiêu đề trang */
+    Layout = "~/Views/Shared/_Layout.cshtml";  /* Thiết lập layout cho trang */
 }
 
-@model IEnumerable<Product>
+@model IEnumerable<Product>  /* Dữ liệu là danh sách các sản phẩm */
 
 <style>
-    /* Định dạng chung */
+    /* Định dạng chung cho trang */
     body {
-        background-color: #e0f6e6; /* Màu nền */
+        background-color: #e0f6e6; /* Màu nền của trang */
     }
 
     .container {
-
-        margin: 0 auto;
+     /* Đặt chiều rộng tối đa cho container */
+        margin: 0 auto; /* Canh giữa container */
     }
 
     h2 {
-        color: #5a5a5a;
-        text-align: center;
-        margin-top: 30px;
-        font-size: 2rem;
-        font-weight: bold;
+        color: #5a5a5a; /* Màu sắc của tiêu đề */
+        text-align: center; /* Canh giữa tiêu đề */
+        margin-top: 30px; /* Khoảng cách từ trên xuống */
+        font-size: 2rem; /* Kích thước phông chữ */
+        font-weight: bold; /* Chữ đậm */
     }
 
-    /* Tìm kiếm và giỏ hàng */
+    /* Khung tìm kiếm và lọc sản phẩm */
+    .search-box-container {
+        display: flex; /* Sử dụng Flexbox để tạo layout theo hàng */
+        justify-content: space-between; /* Căn đều khoảng cách giữa các phần tử */
+        margin-bottom: 20px; /* Khoảng cách giữa các khối */
+    }
+
+    /* Định dạng cho mỗi khung tìm kiếm và lọc */
     .search-box {
-        margin-bottom: 20px;
-        padding: 15px;
-        border-radius: 8px;
-        display: flex;
-        justify-content: space-between;
+        padding: 15px; /* Khoảng cách trong khung */
+        border-radius: 8px; /* Bo tròn các góc của khung */
+        display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
+        justify-content: space-between; /* Căn đều các phần tử trong khung */
+        width: 100%; /* Mỗi khung chiếm 100% chiều rộng của container */
+        position: relative; /* Để có thể đặt gợi ý dưới input */
     }
 
+        .search-box input {
+            flex: 1; /* Chiếm phần còn lại của khung tìm kiếm */
+            padding: 10px; /* Khoảng cách trong input */
+            border-radius: 8px; /* Bo tròn các góc */
+            border: 1px solid #ddd; /* Viền xung quanh input */
+        }
+
+        .search-box button {
+            background-color: #20c579; /* Màu nền của nút */
+            color: white; /* Màu chữ của nút */
+            padding: 10px 15px; /* Khoảng cách chữ trong nút */
+            border-radius: 8px; /* Bo tròn các góc của nút */
+            border: none; /* Bỏ viền của nút */
+            margin-left: 10px; /* Khoảng cách giữa input và nút */
+            display: flex;
+            align-items: center; /* Căn chỉnh nội dung bên trong nút */
+            justify-content: center; /* Căn giữa icon trong nút */
+        }
+
+            .search-box button i {
+                font-size: 18px; /* Kích thước icon */
+            }
+
+    /* Định dạng cho danh sách gợi ý */
+    #autocomplete-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        background: white;
+        border: 1px solid #ddd;
+        width: 100%; /* Chiều rộng của danh sách gợi ý bằng chiều rộng input */
+        max-height: 200px; /* Đặt chiều cao tối đa để có thể cuộn */
+        overflow-y: auto; /* Cho phép cuộn khi quá dài */
+        top: 100%; /* Đặt danh sách dưới ô input */
+        left: 0;
+        z-index: 10; /* Đảm bảo danh sách gợi ý nằm trên các phần tử khác */
+    }
+
+        /* Định dạng cho từng mục gợi ý */
+        #autocomplete-list li {
+            padding: 10px; /* Khoảng cách trong từng mục gợi ý */
+            cursor: pointer; /* Con trỏ khi hover vào mục gợi ý */
+        }
+
+            #autocomplete-list li:hover {
+                background-color: #f0f0f0; /* Đổi màu nền khi hover */
+            }
+
+
+    /* Định dạng cho nút hủy tìm kiếm */
     .btn-danger {
-        background-color: #ff4b4b;
-        border: none;
-        color: #fff;
-        padding: 8px 15px;
-        border-radius: 8px;
-        font-weight: 500;
+        background-color: #ff4b4b; /* Màu nền của nút */
+        border: none; /* Bỏ đường viền */
+        color: #fff; /* Màu chữ của nút */
+        padding: 8px 15px; /* Khoảng cách xung quanh chữ */
+        border-radius: 8px; /* Bo tròn các góc của nút */
+        font-weight: 500; /* Độ đậm của chữ */
     }
 
-    .col-lg-4, .col-md-4, .col-sm-6 {
-        margin-bottom: 20px;
-    }
-
-    /* Card sản phẩm */
+    /* Định dạng cho thẻ card sản phẩm */
     .card-pro {
-        background-color: #fff;
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        transition: transform 0.3s;
-        cursor: pointer;
+        background-color: #fff; /* Màu nền trắng cho thẻ sản phẩm */
+        padding: 20px; /* Khoảng cách trong thẻ */
+        border-radius: 10px; /* Bo tròn các góc của thẻ */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ */
+        transition: transform 0.3s; /* Hiệu ứng khi di chuột qua (hover) */
+        cursor: pointer; /* Con trỏ khi di chuột vào thẻ */
     }
 
         .card-pro:hover {
-            transform: translateY(-10px);
+            transform: translateY(-10px); /* Hiệu ứng di chuyển thẻ lên một chút khi hover */
         }
 
+        /* Định dạng cho hình ảnh sản phẩm */
         .card-pro img {
-            border-radius: 16px;
-            object-fit: cover;
-            margin-bottom: 15px;
-            max-height: 250px;
-            width: 200px;
-            height: 200px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 16px; /* Bo tròn góc của hình ảnh */
+            object-fit: cover; /* Đảm bảo hình ảnh không bị méo và đầy đủ */
+            margin-bottom: 15px; /* Khoảng cách dưới hình ảnh */
+            max-height: 250px; /* Chiều cao tối đa của hình ảnh */
+            width: 200px; /* Chiều rộng cố định của hình ảnh */
+            height: 200px; /* Chiều cao cố định của hình ảnh */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng cho hình ảnh */
         }
 
+        /* Định dạng cho các thông tin trong thẻ card */
         .card-pro p {
-            margin: 0;
-            color: #333;
-            font-weight: 500;
+            margin: 0; /* Bỏ margin mặc định */
+            color: #333; /* Màu chữ tối */
+            font-weight: 500; /* Độ đậm của chữ */
         }
 
+        /* Định dạng cho tên sản phẩm */
         .card-pro .product-name {
-            font-size: 1.1rem;
-            margin-bottom: 5px;
+            font-size: 1.1rem; /* Kích thước chữ cho tên sản phẩm */
+            margin-bottom: 5px; /* Khoảng cách dưới tên sản phẩm */
         }
 
+        /* Định dạng cho giá sản phẩm */
         .card-pro .product-price {
-            font-size: 1rem;
-            color: #20c579; /* Màu thương hiệu */
-            font-weight: bold;
-            margin-bottom: 15px;
+            font-size: 1rem; /* Kích thước chữ cho giá sản phẩm */
+            color: #20c579; /* Màu xanh lá cây cho giá (màu thương hiệu) */
+            font-weight: bold; /* Độ đậm của giá */
+            margin-bottom: 15px; /* Khoảng cách dưới giá sản phẩm */
         }
 
+        /* Định dạng cho nút "Đặt ngay" */
         .card-pro .btn-buy {
-            background-color: #20c579; /* Màu thương hiệu */
-            border: none;
-            padding: 8px 15px;
-            border-radius: 8px;
-            color: #fff;
-            font-weight: 500;
+            background-color: #20c579; /* Màu nền của nút */
+            border: none; /* Bỏ đường viền */
+            padding: 8px 15px; /* Khoảng cách xung quanh chữ */
+            border-radius: 8px; /* Bo tròn các góc của nút */
+            color: #fff; /* Màu chữ của nút */
+            font-weight: 500; /* Độ đậm của chữ */
         }
 </style>
 
 <div class="container">
+    <h2 style="padding-top: 2rem;">Menu Sản Phẩm</h2>
+
+    <!-- Khung tìm kiếm và lọc sản phẩm -->
+    <div class="search-box-container">
+        <!-- Tìm kiếm sản phẩm -->
+        @using (Html.BeginForm("Shopping", "Products", FormMethod.Get))  /* Form tìm kiếm sản phẩm */
+        {
+            <div class="search-box">
+                <input type="text" name="searchTerm" id="searchTerm" class="form-control" placeholder="Tìm kiếm sản phẩm..." style="padding: 10px;" />
+                <ul id="autocomplete-list"></ul> <!-- Danh sách gợi ý sẽ hiển thị dưới đây -->
+                <button type="submit">
+                    <i class="fa fa-search"></i> <!-- Icon tìm kiếm -->
+                </button>
+            </div>
+
+        }
+
+        <!-- Lọc sản phẩm theo danh mục -->
+        @using (Html.BeginForm("Shopping", "Products", FormMethod.Get))  /* Form lọc sản phẩm theo danh mục */
+        {
+            <div class="search-box">
+                <!-- Khung lọc -->
+                <select name="categoryId" class="form-control" style="width: 200px; padding: 10px;">
+                    <option value="">Chọn Danh Mục</option>  <!-- Chọn danh mục -->
+                    @foreach (var category in ViewBag.Categories as IEnumerable<Category>)  /* Duyệt qua danh sách các danh mục */
+                    {
+                        <option value="@category.CategoryId">@category.Name</option>
+                        <!-- Hiển thị tên danh mục -->
+                    }
+                </select>
+                <button type="submit" class="btn" style="background-color: #20c579; color: white; margin-top: 10px;">Lọc</button>  <!-- Nút lọc -->
+            </div>
+        }
+    </div>
 
     <!-- Danh sách sản phẩm -->
-    <div class="container" style="padding-top: 5rem;">
+    <div class="container">
         <div class="row">
-            @foreach (var pro in Model)
-            {
+            <!-- Dòng chứa các sản phẩm -->
+            @foreach (var pro in Model)  /* Duyệt qua tất cả các sản phẩm trong model */
+             {
                 <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+                    <!-- Định dạng mỗi sản phẩm trong các cột -->
                     <div class="card-pro text-center" onclick="window.location.href='/Products/Details/@pro.ProductId'">
-                        <img src="~/Content/images/@pro.ImageUrl" alt="@pro.Name" />
-                        <p class="product-name">@pro.Name</p>
-                        <p class="product-price">@pro.Price.ToString("N0") đ</p>
-
+                        <!-- Thẻ sản phẩm, khi click sẽ chuyển tới chi tiết sản phẩm -->
+                        <img src="~/Content/images/@pro.ImageUrl" alt="@pro.Name" />  <!-- Hình ảnh sản phẩm -->
+                        <p class="product-name">@pro.Name</p>  <!-- Tên sản phẩm -->
+                        <p class="product-price">$@pro.Price.ToString("N0")</p>  <!-- Giá sản phẩm (định dạng số với dấu phân cách ngàn) -->
                         <!-- Nút "Đặt ngay" -->
                         <form action="@Url.Action("AddToCart", "Products", new { id = pro.ProductId })" method="post" style="display:inline;">
-                            <button type="submit" class="btn-buy">Đặt ngay</button>
+                            <button type="submit" class="btn-buy">Đặt ngay</button>  <!-- Nút đặt hàng -->
                         </form>
                     </div>
                 </div>
-            }
+             }
         </div>
     </div>
 </div>

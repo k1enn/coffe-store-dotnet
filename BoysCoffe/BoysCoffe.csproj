@@ -185,6 +185,7 @@
     <Content Include="Content\images\banner\event1.jpg" />
     <Content Include="Content\images\banner\event2.jpg" />
     <Content Include="Content\images\banner\event3.jpg" />
+    <Content Include="Content\images\cofe.jpg" />
     <Content Include="Content\images\coffee\cappuccino.jpg" />
     <Content Include="Content\images\coffee\den.jpg" />
     <Content Include="Content\images\coffee\muoi.jpg" />
@@ -297,8 +298,6 @@
     <Content Include="Views\Home\Menu.cshtml" />
     <Content Include="Views\Products\Menu.cshtml" />
     <Content Include="Views\Secure\Unauthorized.cshtml" />
-    <Content Include="Views\Products\SearchResult.cshtml" />
-    <Content Include="Views\Products\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

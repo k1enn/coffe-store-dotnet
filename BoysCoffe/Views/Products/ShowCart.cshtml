@@ -1,7 +1,11 @@
 ﻿@model List<BoysCoffe.Models.CartItem>
-
-<div class="container">
-    <h2>Your Cart</h2>
+<style>
+    #cart {
+        min-height: 60vh;
+    }
+</style>
+<div style="padding-top: 3rem;" class="container" id="cart">
+    <h2 >Your Cart</h2>
 
     @if (Model.Count == 0)
     {

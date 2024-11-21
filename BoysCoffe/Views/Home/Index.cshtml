@@ -1,46 +1,18 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<br />
 <!--thêm banner-->
-<section style=" padding-top: 4rem;" class="banner_home">
+<section class="banner_home">
     <div class="banner-slider">
         <!--Cần kiếm thêm hình để thêm vào-->
         <img src="~/Content/images/banner/event1.jpg" alt="Image 1">
         <img src="~/Content/images/banner/event2.jpg" alt="Image 2">
-        <img src="~/Content/images/banner/event.jpg"alt="Image 3">
+        <img src="~/Content/images/banner/event3.jpg" alt="Image 3">
     </div>
 </section>
 
-<img  />
-
-
-<!--chỉnh sửa feel back-->
-
-<section class="testimonial">
-    <h2>KHÁCH HÀNG NÓI GÌ</h2>
-    <div class="testimonial-icons">
-
-        <img src="/Content/images/feelback2.png" alt="icon" class="testimonial-icon" data-index="0">
-        <img src="~/Content/images/feelback1.jpg" alt="icon" class="testimonial-icon" data-index="1">
-        <img src="~/Content/images/feelback4.png" alt="icon" class="testimonial-icon" data-index="2">
-        <img src="~/Content/images/feelback3.png" alt="icon" class="testimonial-icon" data-index="3">
-        <img src="~/Content/images/feelback5.png" alt="icon" class="testimonial-icon" data-index="4">
-    </div>
-    
-    <hr class="separator">
-    <div class="testimonial-content">
-        <img src="/Content/images/feelback2.png" alt="Customer photo" class="customer-photo" id="customer-photo">
-        <h3 id="customer-name">MR. Gia Lâm</h3>
-        <blockquote id="customer-feedback">
-            <span class="quote-start">“</span>
-            Tôi vừa ghé thăm BoysCoffee và thật sự ấn tượng! Cà phê ở đây rất ngon, hương vị đậm đà và thơm lừng. Tôi đã thử cappuccino và nó thật sự tuyệt vời! Không gian quán rất thoải mái, giúp mình thư giãn và làm việc hiệu quả. Nhân viên cũng rất thân thiện và chu đáo. Chắc chắn sẽ quay lại thường xuyên! Highly recommend cho những ai yêu thích cà phê!
-            <span class="quote-end">”</span>
-        </blockquote>
-    </div>
-</section>
-
-
-<<section class="sec">
+<section class="sec">
     <div class="column-left">
         <h2>Chúng tôi là</h2>
         <h2>Boy Coffee</h2>
@@ -62,11 +34,39 @@
         <img src="~/Content/images/logo.png" alt="Boy Coffee Logo" />
     </div>
 </section>
+<br/>
+<!--chỉnh sửa feel back-->
+<section class="testimonial">
+    <h2>KHÁCH HÀNG NÓI GÌ</h2>
+    <div class="testimonial-icons">
+
+        <img src="/Content/images/feelback2.png" alt="icon" class="testimonial-icon" data-index="0">
+        <img src="~/Content/images/feelback1.jpg" alt="icon" class="testimonial-icon" data-index="1">
+        <img src="~/Content/images/feelback4.png" alt="icon" class="testimonial-icon" data-index="2">
+        <img src="~/Content/images/feelback3.png" alt="icon" class="testimonial-icon" data-index="3">
+        <img src="~/Content/images/feelback5.png" alt="icon" class="testimonial-icon" data-index="4">
+    </div>
+
+    <hr class="separator">
+    <div class="testimonial-content">
+        <img src="/Content/images/feelback2.png" alt="Customer photo" class="customer-photo" id="customer-photo">
+        <h3 id="customer-name">MR. Gia Lâm</h3>
+        <blockquote id="customer-feedback">
+            <span class="quote-start">“</span>
+            Tôi vừa ghé thăm BoysCoffee và thật sự ấn tượng! Cà phê ở đây rất ngon, hương vị đậm đà và thơm lừng. Tôi đã thử cappuccino và nó thật sự tuyệt vời! Không gian quán rất thoải mái, giúp mình thư giãn và làm việc hiệu quả. Nhân viên cũng rất thân thiện và chu đáo. Chắc chắn sẽ quay lại thường xuyên! Highly recommend cho những ai yêu thích cà phê!
+            <span class="quote-end">”</span>
+        </blockquote>
+    </div>
+</section>
+
+
+
 
 <script src="~/Scripts/autocomplete-search.js"></script>
 <script src="~/Scripts/script.js"></script>
 <!--js để banner chuyển tự động sau 3s-->
-<script>let currentIndex = 0;
+<script>
+    let currentIndex = 0;
     const images = document.querySelectorAll('.banner-slider img');
     const totalImages = images.length;
 
@@ -78,7 +78,8 @@
 
     setInterval(changeImage, 3000); // Thay ảnh mỗi 3 giây</script>
 <!--thêm js để chuyển đổi các feel back của khách hàng-->
-<script>document.addEventListener("DOMContentLoaded", function () {
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
         // Mảng chứa các thông tin của từng khách hàng
         const testimonials = [
             {
@@ -454,4 +455,3 @@
             }
 </style>
 
-<!--Front end: Mai Đông Anh-->

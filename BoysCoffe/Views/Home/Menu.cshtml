@@ -105,7 +105,7 @@
         }
 
         /* Style cho button */
-        .btn {
+        .btnMenu {
             background-color: #66cdaa; /* Màu nền xanh */
             color: white; /* Màu chữ trắng */
             padding: 10px 20px;
@@ -118,12 +118,12 @@
             display: inline-block; /* Đảm bảo button hiển thị trong dòng */
         }
 
-            .btn:hover {
+            .btnMenu:hover {
                 background-color: #55a88a; /* Màu nền khi hover */
                 transform: translateY(-3px); /* Hiệu ứng đẩy nút lên khi hover */
             }
 
-            .btn:active {
+            .btnMenu:active {
                 transform: translateY(1px); /* Khi nhấn, nút sẽ hơi đẩy xuống */
             }
     </style>
@@ -139,9 +139,9 @@
                 Cà phê là sự kết hợp hoàn hảo giữa hương thơm nồng nàn và vị đậm đà, mỗi ngụm mang đến cảm giác sâu lắng và sảng khoái. Từ sự mạnh mẽ của espresso cho đến sự mượt mà của cappuccino, cà phê không chỉ đánh thức các giác quan mà còn là một trải nghiệm tinh tế, mang lại sự thư giãn và nguồn cảm hứng bất tận.
             </p>
             <!-- Button cho Coffee -->
-            <a href="@Url.Action("Shopping", "Products", new { categoryId = 1 })" class="btn">Khám phá Cà Phê</a>
+            <a style="text-decoration:none" href="@Url.Action("Shopping", "Products", new { categoryId = 1 })" class="btnMenu">Khám phá Cà Phê</a>
         </div>
-        <img src="~/Content/images/logo.png" alt="Boys Coffee Image" style="width: 30%; border-radius: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <img src="~/Content/images/cofe.jpg" alt="Boys Coffee Image" style="width: 30%; border-radius: 20px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
     </div>
 
     <!-- Phần Giới thiệu Tea -->
@@ -152,7 +152,7 @@
             <h3 style="color:white">Tea</h3>
             <p>Trà là một hành trình của sự nhẹ nhàng và thanh thoát, nơi mỗi ngụm mang đến sự tươi mới và thư giãn. Từ hương vị dịu nhẹ của trà xanh đến sự đậm đà của trà đen, trà không chỉ làm dịu mát cơ thể mà còn mang đến một không gian yên bình, giúp tâm hồn tĩnh lặng và sảng khoái. Chất liệu tự nhiên, kết hợp cùng cách pha chế tinh tế, tạo nên một trải nghiệm đầy cảm hứng và bình yên.</p>
             <!-- Button cho Tea -->
-            <a href="@Url.Action("Shopping", "Products", new { categoryId = 4 })" class="btn">Khám Phá Trà</a>
+            <a style="text-decoration: none;" href="@Url.Action("Shopping", "Products", new { categoryId = 4 })" class="btnMenu">Khám Phá Trà</a>
         </div>
     </div>
 

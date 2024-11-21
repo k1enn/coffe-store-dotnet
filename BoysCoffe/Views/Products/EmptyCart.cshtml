@@ -3,8 +3,12 @@
     ViewBag.Title = "EmptyCart";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-<h2>Giỏ hàng trống</h2>
+<style>
+   .text-right {
+       min-height: 50vh;
+   }
+</style>
+<h2 style="padding-top: 3rem;">Giỏ hàng trống</h2>
 
 <div class="text-right">
     <a href="@Url.Action("Shopping", "Products")" class="btn btn-warning">Back to Shopping</a>

@@ -1,62 +1,106 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Ca-Phe-Boys-main\\",
+  "WorkspaceRootPath": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\views\\products\\shopping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\shopping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\Ca-Phe-Boys-main\\boyscoffe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\Ca-Phe-Boys-main\\boyscoffe\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\views\\products\\searchresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\searchresult.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\controllers\\securecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\controllers\\securecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\views\\secure\\unauthorized.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\secure\\unauthorized.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\ca-phe-boys-main\\boyscoffe\\custom attribute\\adminauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|d:\\2nd year\\laptrinhweb\\finalproject\\boyscoffe\\custom attribute\\adminauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\custom attribute\\adminauthorizeattribute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\Ca-Phe-Boys-main\\boyscoffe\\views\\home\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\products\\shopping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\shopping.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\products\\showcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\showcart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\products\\emptycart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\emptycart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\secure\\unauthorized.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\secure\\unauthorized.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\orders\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\orders\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\orders\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\orders\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\orders\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\orders\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\carts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\carts\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\categories\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\categories\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\categories\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\categories\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\carts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\carts\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\products\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\admin\\dashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\home\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\home\\menu.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|D:\\2nd Year\\LapTrinhWeb\\FinalProject\\boyscoffe\\content\\images\\ve-chung-toi\\bao-mat.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}",
+      "RelativeMoniker": "D:0:0:{E03272A0-96C2-4077-A87A-DA1B01AE2ECE}|BoysCoffe\\BoysCoffe.csproj|solutionrelative:boyscoffe\\content\\images\\ve-chung-toi\\bao-mat.jpg||{58961B49-13E0-48C0-9258-13CBC4D40279}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,91 +110,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Products\\Create.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\Create.cshtml",
-              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Products\\Create.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Products\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T16:47:21.742Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAMMAAAAAAAAAAAAAANkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T14:45:53.564Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "BoysCoffe\\Controllers\\ProductsController.cs",
-              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "BoysCoffe\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAALwAAAAAAAAAAADgv8wAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:16:01.667Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Dashboard.cshtml",
-              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Admin\\Dashboard.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Admin\\Dashboard.cshtml",
-              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Admin\\Dashboard.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Admin\\Dashboard.cshtml",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAG0AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T16:41:30.522Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Configuration.cs",
-              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Migrations\\Configuration.cs",
-              "RelativeDocumentMoniker": "BoysCoffe\\Migrations\\Configuration.cs",
-              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Migrations\\Configuration.cs",
-              "RelativeToolTip": "BoysCoffe\\Migrations\\Configuration.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwCEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:37:42.669Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Shopping.cshtml",
-              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Products\\Shopping.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\Shopping.cshtml",
-              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Products\\Shopping.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Products\\Shopping.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T16:37:05.399Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
             },
             {
               "$type": "Bookmark",
@@ -162,106 +130,303 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "SearchResult.cshtml",
-              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Products\\SearchResult.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\SearchResult.cshtml",
-              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Products\\SearchResult.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Products\\SearchResult.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T16:30:19.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "SecureController.cs",
-              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Controllers\\SecureController.cs",
-              "RelativeDocumentMoniker": "BoysCoffe\\Controllers\\SecureController.cs",
-              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Controllers\\SecureController.cs",
-              "RelativeToolTip": "BoysCoffe\\Controllers\\SecureController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AdminAuthorizeAttribute.cs",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Custom Attribute\\AdminAuthorizeAttribute.cs",
+              "RelativeDocumentMoniker": "BoysCoffe\\Custom Attribute\\AdminAuthorizeAttribute.cs",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Custom Attribute\\AdminAuthorizeAttribute.cs",
+              "RelativeToolTip": "BoysCoffe\\Custom Attribute\\AdminAuthorizeAttribute.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:16:43.696Z",
+              "WhenOpened": "2024-11-20T02:50:50.385Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "BoysCoffe\\Controllers\\ProductsController.cs",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "BoysCoffe\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAIYAAAAAAAAAAAAswI4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T02:47:05.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmptyCart.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Products\\EmptyCart.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\EmptyCart.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Products\\EmptyCart.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Products\\EmptyCart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T14:06:44.316Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T02:45:36.553Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Unauthorized.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Secure\\Unauthorized.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Secure\\Unauthorized.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Secure\\Unauthorized.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Secure\\Unauthorized.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T02:42:47.964Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 10,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "BoysCoffe\\Models\\Product.cs",
-              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Models\\Product.cs",
-              "RelativeToolTip": "BoysCoffe\\Models\\Product.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA1wCAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:27:49.525Z",
-              "EditorCaption": ""
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Orders\\Details.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Orders\\Details.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Orders\\Details.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Orders\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T02:42:18.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Orders\\Edit.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Orders\\Edit.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Orders\\Edit.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Orders\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T02:42:14.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Orders\\Index.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Orders\\Index.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Orders\\Index.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Orders\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T02:42:07.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Shopping.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Products\\Shopping.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\Shopping.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Products\\Shopping.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Products\\Shopping.cshtml",
+              "ViewState": "AgIAAMEAAAAAAAAAAAASwNEAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T02:37:58.983Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ShowCart.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Products\\ShowCart.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\ShowCart.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Products\\ShowCart.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Products\\ShowCart.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T02:37:58.128Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Orders\\Create.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Orders\\Create.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Orders\\Create.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Orders\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T02:42:34.142Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAHIAAAAAAAAAAAAAAKcAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T14:45:53.564Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Orders\\Delete.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Orders\\Delete.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Orders\\Delete.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Orders\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T02:42:29.466Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Categories\\Create.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Categories\\Create.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Categories\\Create.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Categories\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T02:41:49.597Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Categories\\Delete.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Categories\\Delete.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Categories\\Delete.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Categories\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T02:41:45.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Categories\\Details.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Categories\\Details.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Categories\\Details.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Categories\\Details.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T02:41:41.74Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
               "Title": "About.cshtml",
-              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Home\\About.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "BoysCoffe\\Views\\Home\\About.cshtml",
-              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Home\\About.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Home\\About.cshtml",
               "RelativeToolTip": "BoysCoffe\\Views\\Home\\About.cshtml",
               "ViewState": "AgIAAG8AAAAAAAAAAAAAAIIAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T14:54:31.916Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T14:54:31.916Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Unauthorized.cshtml",
-              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Secure\\Unauthorized.cshtml",
-              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Secure\\Unauthorized.cshtml",
-              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Secure\\Unauthorized.cshtml",
-              "RelativeToolTip": "BoysCoffe\\Views\\Secure\\Unauthorized.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Categories\\Edit.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Categories\\Edit.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Categories\\Edit.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Categories\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-19T16:15:44.957Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-20T02:41:37.464Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AdminAuthorizeAttribute.cs",
-              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Custom Attribute\\AdminAuthorizeAttribute.cs",
-              "RelativeDocumentMoniker": "BoysCoffe\\Custom Attribute\\AdminAuthorizeAttribute.cs",
-              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Custom Attribute\\AdminAuthorizeAttribute.cs",
-              "RelativeToolTip": "BoysCoffe\\Custom Attribute\\AdminAuthorizeAttribute.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T16:15:58.41Z",
-              "EditorCaption": ""
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Categories\\Index.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Categories\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T02:41:28.302Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Carts\\Index.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Carts\\Index.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Carts\\Index.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Carts\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T02:41:10.679Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Carts\\Edit.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Carts\\Edit.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Carts\\Edit.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Carts\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T02:41:08.527Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Products\\Index.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Products\\Index.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Products\\Index.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Products\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T02:40:39.913Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Dashboard.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Admin\\Dashboard.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Admin\\Dashboard.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Admin\\Dashboard.cshtml",
+              "ViewState": "AgIAAF0AAAAAAAAAAAAAAG4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-20T02:39:11.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "bao-mat.jpg",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Content\\images\\ve-chung-toi\\bao-mat.jpg",
+              "RelativeDocumentMoniker": "BoysCoffe\\Content\\images\\ve-chung-toi\\bao-mat.jpg",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Content\\images\\ve-chung-toi\\bao-mat.jpg",
+              "RelativeToolTip": "BoysCoffe\\Content\\images\\ve-chung-toi\\bao-mat.jpg",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2024-11-19T14:59:46.076Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "Menu.cshtml",
-              "DocumentMoniker": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Home\\Menu.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Home\\Menu.cshtml",
               "RelativeDocumentMoniker": "BoysCoffe\\Views\\Home\\Menu.cshtml",
-              "ToolTip": "D:\\Ca-Phe-Boys-main\\BoysCoffe\\Views\\Home\\Menu.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Home\\Menu.cshtml",
               "RelativeToolTip": "BoysCoffe\\Views\\Home\\Menu.cshtml",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAAAJMAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAJoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-19T14:43:41.397Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "BoysCoffe\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\2nd Year\\LapTrinhWeb\\FinalProject\\BoysCoffe\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "BoysCoffe\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAADMAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-19T14:06:44.316Z"
             }
           ]
         }
