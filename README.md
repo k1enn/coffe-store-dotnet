@@ -1,4 +1,4 @@
-# BoysCoffee Web Application
+# Coffe Store Dotnet (Boys Cofffe)
 
 BoysCoffee is a web application designed to provide a convenient platform for customers to browse, select, and order beverages from anywhere. Beyond serving as an online shopping tool, BoysCoffee equips administrators with a powerful system for managing customer information, orders, and products, enabling effective business growth strategies.
 
