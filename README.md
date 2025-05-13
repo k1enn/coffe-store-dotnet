@@ -6,11 +6,20 @@ BoysCoffee is a web application designed to provide a convenient platform for cu
 
 ## Project Overview
 
-### Team Members
-- **Đinh Trung Kiên** - [k1enn](https://github.com/k1enn)
-- **Trương Gia Lâm** - [LamaTrw](https://github.com/LamaTrw)
-- **Mai Đông Anh** - [bebaobanhbao](https://github.com/bebaobanhbao)
-- **Dương Nguyễn Gia Khang** - [Naga-OS](https://github.com/Naga-OS)
+### UI
+We lost some data so we only have old and broken images.
+### Home page
+![Home page](./images/web_1.png)
+### Login page
+![Login page](./images/web_2.png)
+### Menu page
+![Menu page](./images/web_3.png)
+
+### Team Members and Role
+- **Đinh Trung Kiên** (Fullstack) - [k1enn](https://github.com/k1enn)
+- **Trương Gia Lâm** (Frontend) - [LamaTrw](https://github.com/LamaTrw)
+- **Mai Đông Anh** (UI/UX Design, Frontend) - [bebaobanhbao](https://github.com/bebaobanhbao)
+- **Dương Nguyễn Gia Khang** (Frontend) - [Naga-OS](https://github.com/Naga-OS)
 
 
 ### Features
